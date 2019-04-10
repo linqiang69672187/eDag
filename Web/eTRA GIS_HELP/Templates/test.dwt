@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="../main.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="../pic/logo.png" width="138" height="64" /></p>
+<!-- TemplateBeginEditable name="Title" -->
+<h2>Title</h2>
+<p class="text">&nbsp;</p>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><img src="../pic/Snap2.png" width="15" height="17" /> 创建***操作步骤如下：</p>
+</div>
+<div id="div1">
+  <p>1）</p>
+  <p class="text">&nbsp;</p>
+</div>
+<p class="text"><img src="../pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<p class="text">&nbsp;</p>
+<!-- TemplateEndEditable -->
+<p>&nbsp;</p>
+<!-- TemplateBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><img src="../pic/top.gif" width="60" height="49" /></div></td>
+    <td width="141"><div align="center"><img src="../pic/mulu.gif" width="49" height="60" /></div></td>
+    <td width="110"><div align="center"><img src="../pic/next.gif" width="60" height="49" /></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- TemplateEndEditable -->
+<p>&nbsp;</p>
+</body>
+</html>

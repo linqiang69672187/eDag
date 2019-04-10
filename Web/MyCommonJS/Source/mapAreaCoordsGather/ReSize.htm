@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>同比调整图形大小后</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var str = "421,68 426,62 431,57 427,50 429,33 431,20 424,5 429,3 431,1 435,5 444,6 450,7 446,21 455,25 459,28 463,24 470,31 475,29 483,39 485,46 494,48 499,47 505,53 511,60 520,51 527,57 529,57 533,61 542,62 542,57 545,52 540,49 540,40 543,30 552,31 552,34 557,39 563,38 568,43 579,42 575,36 578,30 586,27 592,27 600,27 609,28 612,28 612,22 618,20 621,36 621,40 625,42 624,53 619,63 615,70 619,79 623,85 628,87 619,93 614,94 614,110 606,106 608,98 602,101 595,98 595,91 593,83 594,75 588,79 585,75 574,85 574,82 563,78 564,88 567,95 563,100 558,95 553,95 550,100 542,92 531,91 531,96 530,105 530,110 535,112 539,116 540,124 542,128 539,135 536,142 530,149 525,154 523,163 510,167 502,173 499,172 497,161 494,161 489,162 481,163 475,168 471,159 471,153 476,141 478,137 476,125 467,126 469,115 460,117 459,111 458,107 459,99 452,88 442,77 436,75 433,76 421,69";
+            var result = resize(str, { "x": 1400 / 750, "y": 943 / 600 });
+            //var result = reverse(str);
+            showCoords.innerText = result;
+        }
+        //coords 字符串 
+        //size 放大比列{"x":value,"y":value}
+        function resize(str, size) {
+            var result = "";
+            var arr = str.split(' ');
+            for (var arr_i in arr) {
+                var x = arr[arr_i].split(',')[0];
+                var y = arr[arr_i].split(',')[1];
+                x = x * size.x;
+                y = y * size.y;
+                var arr_i_new = Math.round(x) + "," + Math.round(y);
+                result = result + arr_i_new + " ";
+            }
+            return result;
+        }
+        //反转字符串
+        function reverse(str) {
+            var result = "";
+            var arr = str.split(' ');
+            for (var arr_i = arr.length - 1; arr_i >= 0; arr_i--) {
+                result = result + arr[arr_i] + " ";
+            }
+            return result;
+        }
+    </script>
+</head>
+<body>
+    <div id="showCoords" style="background: #EEEEEE; width: 100%; left: 0px" align="left">
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+        var win_isResize;
+        var win_space_x_Resize;
+        var win_space_y_Resize;
+        var win_min_xResize = 50;
+        var win_min_yResize = 50;
+        //开始调整大小
+        function startResizeWindow(obj) {
+            if (event.button == 1) {
+                obj.setCapture();
+                win_isResize = true;
+                var cur_window = obj.parentNode;
+                win_space_x_Resize = window.event.clientX - parseInt(cur_window.style.width); //不变值
+                win_space_y_Resize = window.event.clientY - parseInt(cur_window.style.height); //不变值
+            }
+        }
+        //调整大小
+        function resizeWindow(obj) {
+            if (win_isResize) {
+                var width = window.event.clientX - win_space_x_Resize;
+                var heigth = window.event.clientY - win_space_y_Resize;
+                var _obj = obj.parentNode;
+                if (width <= win_min_xResize) {
+                    _obj.style.width = win_min_xResize;
+                }
+                else {
+                    _obj.style.width = width;
+                }
+                if (heigth <= win_min_yResize) {
+                    _obj.style.height = win_min_yResize;
+
+                }
+                else {
+                    _obj.style.height = heigth;
+                }
+            }
+        }
+        //结束调整
+        function stopResizeWindow(obj) {
+            obj.releaseCapture();
+            win_isResize = false;
+        }
+        var win_isMove;
+        var win_space_x_Move;
+        var win_space_y_Move;
+        var win_min_xMove = 50 - 10; //减去宽度
+        var win_min_yMove = 50 - 20;
+        //开始拖动
+        function startDragWindow(obj) {
+            if (event.button == 1) {// && event.srcElement.tagName.toUpperCase() == "DIV"
+                obj.setCapture();
+
+                var cur_window = obj;
+                win_space_x_Move = window.event.clientX - parseInt(cur_window.offsetLeft);
+                win_space_y_Move = window.event.clientY - parseInt(cur_window.offsetTop);
+                win_isMove = true;
+            }
+        }
+        //拖动
+        function dragWindow(obj) {
+            if (win_isMove) {
+                var cur_window = obj;
+                var left = window.event.clientX - win_space_x_Move;
+                var top = window.event.clientY - win_space_y_Move;
+                if (left <= win_min_xMove) {
+                    cur_window.style.left = win_min_xMove;
+                }
+                else {
+                    cur_window.style.left = left;
+                }
+                if (top <= win_min_yMove) {
+                    cur_window.style.top = win_min_yMove;
+                }
+                else {
+                    cur_window.style.top = top;
+                }
+            }
+        }
+        //结束拖动
+        function stopDragWindow(obj) {
+            obj.releaseCapture();
+            win_isMove = false;
+        }
+    </script>
+
+</head>
+<body>
+    <div style="width: 500px; height: 500px;">
+        <div id="div" id="divDiagramColumn" style="position: absolute; left: 50; top: 20;
+            width: 100px; height: 100px; background-color: Black;">
+            <div id="divResize" style="position: absolute; left: 90; top: 80; width: 10px; height: 20px;
+                background-color: Red; cursor: se-resize;" onmousedown="startResizeWindow(this);startDragWindow(this);"
+                onmousemove="resizeWindow(this);dragWindow(this);" onmouseup="stopResizeWindow(this);stopDragWindow(this);">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

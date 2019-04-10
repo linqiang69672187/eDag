@@ -1,0 +1,24 @@
+﻿.btn {
+    BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#3C9562); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid; width:70px; height:25px
+    }
+
+         .CALLBUTTON2
+        {
+            visibility: visible;
+            border-right: #bdbcbc 1px solid;
+            padding-right: 2px;
+            border-top: #bdbcbc 1px solid;
+            padding-left: 2px;
+            font-size: 12px;
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#bdbcbc);
+            border-left: #bdbcbc 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #bdbcbc 1px solid;
+            width: 60px;
+            height: 25px;
+        }
+        .yellowC {
+    BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=yellow); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid; width:70px; height:25px
+    }

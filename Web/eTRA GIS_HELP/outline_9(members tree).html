@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>成员树</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>成员树</h2>
+<p class="text">只在调度用户登录界面，才能显示成员树。因此所有的针对成员树的操作，首先要确认调度用户成功登陆GIS系统。</p>
+<p class="text">在成员树区域中可进行如下操作：</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#a">在成员树上查找用户、编组和调度台并查看用户、编组和调度台信息</a></p>
+  </li>
+  <li>
+    <p><a href="#b">通过成员树选择调度业务</a></p>
+  </li>
+  <li>
+    <p><a href="#c">在线用户统计</a></p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" class="expanding" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /><a href="#a">在成员树上查找用户、编组和调度台并查看用户、编组和调度台信息</a></p>
+</div>
+<div id="div1">
+  <p class="text">成员树是按照行政体系的树形结构设计的，在成员树中，可直观显示各个单位级别的所属关系，同时可迅速查看各个单位及子单位内的用户、编组及调度台详细信息，也可对用户进行设置和定位。</p>
+  <p class="text">1）<strong>查找用户并查看其信息</strong>：先在成员树的用户标签列表上找到单位并单击该单位名称，界面右边窗口就会跳出这个单位下所有的用户列表，可在用户列表页面输入用户姓名进行搜索，找到目标用户后，再单击该用户名，弹出用户信息对话框，如下图1所示。</p>
+  <p class="center"><img src="pic/system/查看成员树.png" width="1680" height="848" /></p>
+  <p class="center">图1. 查找并查看用户信息 </p>
+<p class="text">2）<strong>查找编组并查看其信息：</strong>先在成员树上切换到编组标签，在标签页底部输入编组名称，进行搜索，找到目标编组，然后单击该编组名，弹出编组信息对话框，如下图2所示。</p>
+ <p class="center"><img src="pic/system/查看编组信息.png" width="1679" height="848" /></p>
+  <p class="center">图2. 查找并查看编组信息 </p>
+<p class="text">3）<strong>查找调度台并查看其信息：</strong>先在成员树上切换到调度台标签，在标签页底部输入调度台名称，进行搜索，找到目标调度台，然后单击该调度台名称，弹出调度台信息对话框，如下图3所示。</p>
+ <p class="center"><img src="pic/system/查看调度台信息.png" width="1680" height="845" /></p>
+  <p class="center">图3. 查找并查看调度台信息 </p>
+
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过成员树选择调度业务</p>
+</div>
+<div id="div2">
+  <p class="text">在GIS界面上打开成员树，如<a href="#a">在成员树上查找用户、编组和调度台并查看用户、编组和调度台信息</a>所述，选中用户或编组或调度台，单击对应的扩展键，可选择相应的调度业务，执行各种调度功能，如下图4所示。</p>
+  <p class="center"><img src="pic/system/成员树选择调度业务.png" width="1679" height="846" /></p>
+  <p class="center">图4. 成员树选择调度业务</p>
+  <p class="text">成员树中，用户、编组、调度台可选择的调度功能是不同的：</p>
+  <ul>
+    <li>
+      <p>用户选择的<a href="outline_7(dispatch function).html">呼叫业务</a>包括：<a href="outline_7.1(private call).html">单呼</a>、<a href="outline_7.2(group call).html">组呼</a>；编组选择的呼叫业务只有<a href="outline_7.2(group call).html">小组呼叫</a>；调度台选择的呼叫业务只有<a href="outline_7.1(private call).html">单呼</a>。</p>
+    </li>
+    <li>
+      <p>用户选择的<a href="outline_6(SDS service).html">短信业务</a>包括：给该用户端发送个人短信、给该用户的驻留组发送组短信以及给该用户发送状态消息；可以给编组以及调度台发送普通消息及状态消息。</p>
+    </li>
+    <li>
+      <p>可以对用户执行相应的<a href="outline_5(application service).html">应用业务</a>，包括：<a href="outline_5.8(located).html#c">定位</a>、<a href="outline_5.7(lock).html#d">锁定</a>、<a href="outline_5.9(attention).html">关注</a>等功能。</p>
+    </li>
+  </ul>
+</div>
+
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> 在线用户统计</p>
+</div>
+<div id="div3">
+  <p class="text">在成员树中可显示单位在线用户数量。若当前已注册且正常上报GPS的有：单位“杭州公安局”（总人数为20人）下有10人，单位“滨江公安局”（总人数为15人）下有5人，则打开成员树，单击“用户”项，可以看到在单位“杭州公安局”后面有［10/20］，即表示该单位当前有10人在线，同样，在其下级单位“滨江公安局”后面有［5/15］。</p>
+</div>
+
+<table width="100" border="0" align="right" cellspacing="1">
+  <tr>
+    <td width="96"><a href="#top"><img src="pic/top.png" width="15" height="17" border="0" /></a><a href="#top"> 返回顶端</a></td>
+  </tr>
+</table>
+<p class="text">&nbsp;</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_8(log management).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><img src="pic/mulu.gif" width="49" height="60" /></div></td>
+    <td width="110"><div align="center"><a href="outline_10(parameters).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

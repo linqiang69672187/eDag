@@ -1,0 +1,72 @@
+﻿
+v\:Stroke
+{
+    behavior: url(#default#VML);
+}
+v\:Polyline
+{
+    behavior: url(#default#VML);
+}
+v\:Oval
+{
+    behavior: url(#default#VML);
+}
+v\:Rect
+{
+    behavior: url(#default#VML);
+}
+v\:Line
+{
+    behavior: url(#default#VML);
+}
+.toolbar_div
+{
+    height: 41px;
+    width: 100%;
+    position: absolute;
+    background-repeat: repeat-x;
+   
+}
+.Navigator_div
+{
+    background-image: url(/Images/ToolBar/divNavigator_Back.png);
+    position: absolute;
+    z-index: 999;
+    left: -2px;
+    top: 40px;
+    width: 94px;
+    height: 304px;
+    background-repeat: no-repeat;
+}
+body
+{
+    overflow: hidden;
+    margin: 0px;
+}
+
+.hor_ul
+{
+    padding: 0;
+    margin: 0;
+    margin-left: 0px;
+    list-style-type: none;
+}
+.hor_ul li
+{
+    float: left;
+}
+.tool_div
+{
+  
+    color:White;
+    font-size:12px;
+}
+#refreshtime
+{
+  font-family: "宋体"; font-size: 12px; BEHAVIOR: url('css/selectBox.htc'); cursor: hand;
+}
+#mhplayer
+{
+    width:0px;
+    height:0px;
+}

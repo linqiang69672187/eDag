@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logconfig name="cball" open="1">
+  <logtype name="operlog" value="0" open="1">
+    <logmodule name="Module0" value="0" open="1">
+      <logoper name="OperateLogOperType0" value="0" open="1" />
+      <logoper name="OperateLogOperType1" value="1" open="1" />
+    </logmodule>
+    <logmodule name="Module1" value="1" open="1">
+      <logoper name="OperateLogOperType2" value="2" open="1" />
+      <logoper name="OperateLogOperType3" value="3" open="1" />
+      <logoper name="OperateLogOperType4" value="4" open="1" />
+      <logoper name="OperateLogOperType5" value="5" open="1" />
+      <logoper name="OperateLogOperType6" value="6" open="1" />
+      <logoper name="OperateLogOperType7" value="7" open="1" />
+      <logoper name="OperateLogOperType8" value="8" open="1" />
+      <logoper name="OperateLogOperType9" value="9" open="1" />
+      <logoper name="OperateLogOperType10" value="10" open="1" />
+      <logoper name="OperateLogOperType11" value="11" open="1" />
+      <logoper name="OperateLogOperType12" value="12" open="1" />
+      <logoper name="OperateLogOperType13" value="13" open="1" />
+      <logoper name="OperateLogOperType14" value="14" open="1" />
+      <logoper name="OperateLogOperType15" value="15" open="1" />
+      <logoper name="OperateLogOperType16" value="16" open="1" />
+      <logoper name="OperateLogOperType17" value="17" open="1" />
+      <logoper name="OperateLogOperType18" value="18" open="1" />
+      <logoper name="OperateLogOperType19" value="19" open="1" />
+      <logoper name="OperateLogOperType33" value="33" open="1" />
+    </logmodule>
+    <logmodule name="Module2" value="2" open="1">
+      <logoper name="OperateLogOperType25" value="25" open="1" />
+      <logoper name="OperateLogOperType26" value="26" open="1" />
+    </logmodule>
+    <logmodule name="Module3" value="3" open="1">
+      <logoper name="OperateLogOperType27" value="27" open="1" />
+      <logoper name="OperateLogOperType28" value="28" open="1" />
+      <logoper name="OperateLogOperType29" value="29" open="1" />
+      <logoper name="OperateLogOperType31" value="31" open="1" />
+    </logmodule>
+    <logmodule name="Module4" value="4" open="1">
+      <logoper name="OperateLogOperType20" value="20" open="1" />
+      <logoper name="OperateLogOperType21" value="21" open="1" />
+      <logoper name="OperateLogOperType22" value="22" open="1" />
+      <logoper name="OperateLogOperType23" value="23" open="1" />
+      <logoper name="OperateLogOperType24" value="24" open="1" />
+      <logoper name="OperateLogOperType30" value="30" open="1" />
+    </logmodule>
+  </logtype>
+  <logtype name="calllog" value="1" open="1">
+  </logtype>
+  <logtype name="smslog" value="2" open="1">
+  </logtype>
+  <logtype name="syslog" value="3" open="1">
+  </logtype>
+</logconfig>

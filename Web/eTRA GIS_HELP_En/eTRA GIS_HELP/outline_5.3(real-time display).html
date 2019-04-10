@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>实时显示</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>实时显示</h2>
+<p class="text">调度员可以控制是否进行移动用户的实时位置显示。</p>
+<p class="text">如果关闭实时显示，则从地图上移除该移动用户的图标及信息；如果打开实时显示，则在收到移动用户位置信息时，将在地图上显示该移动用户的图标及相应信息。</p>
+<p class="text">同样，调度员也可通过<a href="#a">用户成员列表</a>、<a href="#b">地图右键操作</a>以及<a href="#c">呼叫面板</a>来设置是否开启用户实时位置显示功能。而且，实时显示功能的开启关闭也可通过这三种方式可交叉操作。</p>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过用户成员列表开启/关闭“实时显示”功能</p>
+</div>
+<div id="div1">
+  <p>1）可以通过<a href="outline_4.0(find user).html">查找用户</a>、<a href="outline_9(members tree).html">成员树</a>、或者<a href="outline_4.1(frame selection).html#c">框选用户</a>三种方式，弹出“移动用户列表”对话框。</p>
+  <p>2）在移动用户列表右侧“显示”栏下，单击勾选，则在地图上开启该用户的实时显示。下图1以框选为例。</p>
+  <p class="center"><img src="pic/Application/移动用户列表开启显示.png" width="649" height="495" /></p>
+  <p class="center">图1. 移动用户列表开启显示</p>
+  <p>3）取消勾选，则关闭该用户的实时位置显示功能。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过地图右键操作实现“实时显示”功能</p>
+</div>
+<div id="div2">
+  <p class="text">若某移动用户在地图上已显示，则可通过地图右键操作关闭显示。</p>
+  <p>1）在地图上选中移动用户。</p>
+  <p>2）右键单击［应用业务/关闭显示］，如下图2所示。</p>
+  <p class="center"><img src="pic/Application/右键关闭显示.png" width="251" height="254" /></p>
+  <p class="center">图2. 右键关闭显示</p>
+  <p>3）关闭显示后，此用户在地图上不再显示。</p>
+  <p>4）调度员可查找该用户，在用户列表上把这个用户的显示状态选上，则又可以开启该用户在地图上的实时显示。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫面板开启/关闭“实时显示”功能</p>
+</div>
+<div id="div3">
+  <p class="text">调度员也可在［调度功能/呼叫面板］上开启或关闭实时显示功能，具体操作步骤如下：</p>
+  <p>1）在系统操作菜单栏中单击<span class="text">［调度功能/呼叫面板］</span>，弹出“呼叫面板”对话框。</p>
+  <p>2）单击“应用业务”模块中的“实时显示”，弹出“实时显示”对话框，如下图3所示。</p>
+  <p class="center"><img src="pic/Application/实时显示对话框.png" width="351" height="180" /></p>
+  <p class="center">图3. 实时显示对话框</p>
+  <p>3）输入终端标识号或者单击右侧＜选择＞添加要开启或关闭的移动用户，此时，在“状态”属性中户显示当前该用户的显示状态，如下图4所示。</p>
+  <p class="center"><img src="pic/Application/用户显示状态.png" width="350" height="178" /></p>
+  <p class="center">图4. 用户显示状态</p>
+  <p>4）若状态为“显示中”，则单击＜确定＞将关闭该用户在地图上的显示。若状态为“关闭显示中”，则单击＜确定＞将开启该用户在地图上的显示功能。</p>
+</div>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<p class="text">若用户当前经纬度为0或者未配置，并且当前状态为隐藏，则开启实时显示功能后，当该用户有正确的经纬度上报时，其将会在地图上实时显示，否则，该用户不在地图上显示。</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_5.2(detailed information).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_5(application service).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_5.4(real-time trace).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

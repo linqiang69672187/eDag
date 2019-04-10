@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">	
+    <!-- 
+    Smart developers always View Source. 
+    
+    This application was built using Adobe Flex, an open source framework
+    for building rich Internet applications that get delivered via the
+    Flash Player or to desktops via Adobe AIR. 
+    
+    Learn more about Flex at http://flex.org 
+    // -->
+    <head>
+        <title></title>
+        <meta name="google" value="notranslate">         
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Include CSS to eliminate any default margins/padding and set the height of the html element and 
+		     the body element to 100%, because Firefox, or any Gecko based browser, interprets percentage as 
+			 the percentage of the height of its parent container, which has to be set explicitly.  Fix for
+			 Firefox 3.6 focus border issues.  Initially, don't display flashContent div so it won't show 
+			 if JavaScript disabled.
+		-->
+        <style type="text/css" media="screen"> 
+			html, body	{ height:100%; }
+			body { margin:0; padding:0; overflow:auto; text-align:center; 
+			       background-color: #ffffff; }   
+			object:focus { outline:none; }
+			#flashContent { display:none; }
+        </style>
+		
+		<!-- Enable Browser History by replacing useBrowserHistory tokens with two hyphens -->
+        <!-- BEGIN Browser History required section -->
+        <link rel="stylesheet" type="text/css" href="history/history.css" />
+        <script type="text/javascript" src="history/history.js"></script>
+        <!-- END Browser History required section -->
+         <style type="text/css">
+        v\:* {
+            behavior: url(#default#VML);
+            position: absolute;
+        }
+
+        o\:* {
+            behavior: url(#default#VML);
+        }
+
+        v\:shape {
+            behavior: url(#default#VML);
+        }
+    </style>
+    <%--邮件菜单样式--%>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body, div, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 12px/1.5 \5fae\8f6f\96c5\9ed1;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #policemouseMenu, #groupmouseMenu, #dispatchmouseMenu {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            z-index: 22;
+        }
+
+            #policemouseMenu ul, #groupmouseMenu ul, #dispatchmouseMenu ul {
+                float: left;
+                border: 1px solid #979797;
+                background: #f1f1f1 url(Images/line.png) 24px 0 repeat-y;
+                padding: 2px;
+                box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+            }
+
+                #policemouseMenu ul li, #groupmouseMenu ul li, #dispatchmouseMenu ul li {
+                    float: left;
+                    clear: both;
+                    height: 24px;
+                    cursor: pointer;
+                    line-height: 24px;
+                    white-space: nowrap;
+                    padding: 0 30px;
+                }
+
+                    #policemouseMenu ul li.sub, #groupmouseMenu ul li.sub, #dispatchmouseMenu ul li.sub {
+                        background-repeat: no-repeat;
+                        background-position: right 9px;
+                        background-image: url(Images/arrow.png);
+                    }
+
+                    #policemouseMenu ul li.active, #groupmouseMenu ul li.active, #dispatchmouseMenu ul li.active {
+                        background-color: #f1f3f6;
+                        border-radius: 3px;
+                        border: 1px solid #aecff7;
+                        height: 22px;
+                        line-height: 22px;
+                        background-position: right -8px;
+                        padding: 0 29px;
+                    }
+
+                #policemouseMenu ul ul, #groupmouseMenu ul ul, #dispatchmouseMenu ul ul {
+                    display: none;
+                    position: absolute;
+                }
+    </style>
+    <link href="CSS/Default.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/lq_style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/smartMenu.css" type="text/css" />
+    <script src="lqnew/js/StringPrototypeFunction.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="pro_dropdown_2/pro_dropdown_2.css" />
+    <script src="lqnew/js/GlobalVar.js" type="text/javascript"></script>
+    <script src="MyCommonJS/addAll.js" type="text/javascript"></script>
+    <script src="WebGis/js/AddAll.js" type="text/javascript"></script>
+    <script src="JS/addAll.js" type="text/javascript"></script>
+ 
+    <script src="lqnew/js/DrawPolygon.js" type="text/javascript"></script>
+    <script src="lqnew/js/BaseStation.js" type="text/javascript"></script>
+    <script src="lqnew/js/PoliceStation.js" type="text/javascript"></script>
+    <script src="lqnew/js/List.js" type="text/javascript"></script>
+    <script src="lqnew/js/DefaultJS.js" type="text/javascript"></script>
+    <script src="lqnew/js/DrawOval.js" type="text/javascript"></script>
+    <script src="lqnew/js/PlayerJS.js" type="text/javascript"></script>
+    <script src="lqnew/js/GlobalConst.js" type="text/javascript"></script>
+    <script src="WebGis/js/model/ReplaceJQ.js" type="text/javascript"></script>
+    <script src="../lqnew/js/Cookie.js" type="text/javascript"></script>
+    <script src="../lqnew/js/MouseMenuEvent.js" type="text/javascript"></script>
+    <script src="../js/MouseMenu.js" type="text/javascript"></script>
+    <script src="JS/LangueSwitch.js" type="text/javascript"></script>
+    <script src="../lqnew/js/Dragobj.js" type="text/javascript"></script>
+        <script type="text/javascript" src="SWF/swfobject.js"></script>
+
+        <script type="text/javascript">
+            function getInitLoLa() {
+              
+                return { initLo: '120.3323232', initLa: '30.23455' }
+            }
+
+            function getLatLngByPoint(point) {
+                var mian= document.getElementById("main");
+                return mian.PxToLalo(point.x,point.y);
+            }
+            
+            function bodyonclickTest(){
+             
+                var e = window.event;
+                var point = { x: e.clientX, y: e.clientY };
+
+                this.xx = getLatLngByPoint(point).lo;
+                this.yy = getLatLngByPoint(point).la;
+                alert(xx);
+                alert(yy);
+            }
+            function test2(){
+                var mian= document.getElementById("main");
+                mian.rectselectBut();
+            }
+
+            function getCookieByName(cookname) {
+                var cookieValue = "";
+                var strCookies = document.cookie;
+                var strArray = document.cookie.split(';');
+                for (var i = 0; i < strArray.length; i++) {
+                    var vl = strArray[i].split('=');
+                    if (vl[0].replace(" ", "") == cookname.replace(" ", "")) {
+                        cookieValue = vl[1];
+                        break;
+                    }
+                }
+                return cookieValue;
+            }
+            function Page_Onload(){
+                get_usepramater(); //获取用户初始化配置参数
+
+                window.document.getElementById("Lang_dispatchopr").innerHTML= "调度功能<ul> <li id='Lang_singlecall'>单呼</li><li id='Lang_groupcall'>组呼</li></ul>";
+                window.document.getElementById("Lang_ApplicationService").innerHTML= "应用功能<ul> <li id='Lang_Location'>定位</li><li id='locked'></li><li id='Lang_concern'>关注</li></ul>";
+                window.document.getElementById("Lang_smsopr").innerHTML=   "短信功能<ul> <li id='Lang_generalsms'>短信</li><li id='Lang_groupsms'>组短信</li><li id='Lang_Status_message'>状态消息</li></ul>";
+
+                MouseMenuEvent();//加载警员右键新的菜单事件
+
+                creatconcernlistwindow();
+            }
+            function drowDZZL(){
+                var mian = document.getElementById("main");
+                mian.drowDZZL();
+            }
+        </script>
+
+        <script type="text/javascript">
+            <!-- For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. --> 
+            var swfVersionStr = "11.1.0";
+            <!-- To use express install, set to playerProductInstall.swf, otherwise the empty string. -->
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {};
+            var params = {};
+             params.wmode = "opaque";
+            params.quality = "high";
+            params.bgcolor = "#ffffff";
+            params.allowscriptaccess = "sameDomain";
+            params.allowfullscreen = "true";
+            var attributes = {};
+            attributes.id = "main";
+            attributes.name = "main";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "SWF/main.swf", "flashContent", 
+                "100%", "100%", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+			<!-- JavaScript enabled so display the flashContent div in case it is not replaced with a swf object. -->
+			swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+        </script>
+    </head>
+    <body onload="Page_Onload()">
+        <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
+			 JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
+			 when JavaScript is disabled.
+		-->
+      
+        <div id="UpCallPanl" align="right" style="z-index: 10; position: absolute; top: 400px; right: 0px; width: 323px; height: 230px; overflow: hidden; display: block">
+            <iframe id="mypancallContent" name="mypancallContent" src="" width="100%" allowtransparency="true"
+                scrolling="no" style="padding-bottom: 0px;" frameborder="0" height="300px"></iframe>
+        </div>
+        
+        <%--底部背景--%>
+        <div id="divbootombar">
+        </div>
+          <div id="bgDiv" style="display: none">
+        </div>
+        <div id="mybkdiv" style="display: none">
+            <p id="mydivp">
+            </p>
+        </div>
+        <div id="regDiv"></div>
+        <%--实时轨迹--%>
+        <div id="nowtrace">
+        </div>
+        <%--编组按钮--%>
+        <div id="bzmenu">
+        </div>
+        <%--呼叫控件--%>
+        <object classid="clsid:C9C49299-69B6-4080-8747-8801C8397B3B" style="display: none;"
+            id="SCactionX">
+        </object>
+        <%-- 声音播放--%>
+        <object id="mhplayer" style="display: none" classid='CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6' width="0"
+            height="0" type="application/x-oleobject">
+            <param name='AutoStart' value='false' />
+            <param name='Enabled' value='true' />
+            <param name="volume" value="5000" />
+        </object>
+
+           <form target="select_user_ifr" method="post" id="submit_selectUser" action="lqnew/opePages/select_user.aspx">
+        <input type="hidden" id="hidsid" name="hidsid" value="" />
+    </form>
+
+    <form target="SendGPSEnableOrDisable_ifr" method="post" id="SendGPSEnableOrDisableFrom" action="lqnew/opePages/SendGPSEnableOrDisable.aspx">
+        <input type="hidden" id="sendgpshidsids" name="sendgpshidsids" value="" />
+    </form>
+    <form target="Send_SMS_ifr" method="post" id="Send_SMSFrom" action="lqnew/opePages/Send_SMS.aspx">
+        <input type="hidden" id="sid" name="sid" value="" />
+    </form>
+    <form target="SendGPSContral_ifr" method="post" id="SendGPSContralFrom" action="lqnew/opePages/SendGPSContral.aspx">
+        <input type="hidden" id="sendgpscontralhidsids" name="sendgpscontralhidsids" value="" />
+    </form>
+        <div id="mouseMenu" runat="server">
+            <div id="policemouseMenu" style="z-index: 56">
+                <ul>
+                    <li id="Lang_selecteduser" runat="server" style="display: none"><%--选中用户SelectUser--%></li>
+                    <li id="Lang_dispatchopr" runat="server"></li>
+                    
+                    <li id="Lang_smsopr" runat="server">
+                        <%--短信功能--%>
+            
+                    </li>
+                    <li id="Lang_ApplicationService" runat="server">
+                        <%--应用业务--%>
+            
+                    </li>
+                </ul>
+            </div>
+            <div id="groupmouseMenu" runat="server" style="z-index: 56">
+                <ul runat="server">
+                    <li id="Lang_smallGroupCall" runat="server"><%--小组呼叫--%></li>
+                    <li id="Lang_groupgroupsms" runat="server"><%--小组短信--%></li>
+                    <li id="Lang_groupstatussms" runat="server"><%--状态消息--%></li>
+                </ul>
+            </div>
+            <div id="dispatchmouseMenu" runat="server" style="z-index: 56">
+                <ul>
+                    <li id="Lang_dispatchsinglecall" runat="server"><%--单呼--%></li>
+                    <li id="Lang_dispatchsms" runat="server"><%--短信--%></li>
+                    <li id="Lang_dispatchstatussms" runat="server"><%--状态消息--%></li>
+                </ul>
+            </div>
+
+           
+        </div>
+
+    <%--左侧树形进度条--%>
+    <%--<div id="processbar" style="width:130px; position:absolute; margin-top:150px;margin-left:50px;z-index:3000;font-size:large;display:none;color:red">
+                <span>加载中</span>......
+            </div>--%>
+    <div id="policelistsdiv" style="position: absolute; width: 330px; height: 550px; margin-left: 204px; margin-top: 43px; border: solid; border-color: gray; border-width: 1px; display: none; z-index: 20">
+        <iframe id="policelists" style="width: 330px; height: 550px;" frameborder="0" src="lqnew/opePages/policelists.aspx"></iframe>
+        
+    </div>
+        <div class="opendivwindow" id="concernlist" style="position: absolute; width: 550px; height: 550px; left: 400px; top: 100px; display: none; z-index: 20">
+        <iframe name="concernlist_ifr" id="concernlist_ifr"  width="100%" allowtransparency="true"
+                scrolling="no" style="padding-bottom: 0px; height:460px" frameborder="0" src="" ></iframe>
+        </div>
+        <div id="flashContent">
+        	<p>
+	        	To view this page ensure that Adobe Flash Player version 
+				11.1.0 or greater is installed. 
+			</p>
+			<script type="text/javascript"> 
+				var pageHost = ((document.location.protocol == "https:") ? "https://" :	"http://"); 
+				document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" 
+								+ pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" ); 
+			</script> 
+        </div>
+	   	<script type="text/javascript">
+	   	    function hidepolicelistsdiv() {
+	   	        var policelists_div = document.getElementById("policelistsdiv");
+	   	        if (policelists_div) {
+	   	            policelists_div.style.display = "none";
+	   	        }
+	   	    }
+	   	    function displaypolicelistsdiv() {
+	   	        var policelists_div = document.getElementById("policelistsdiv");
+	   	        if (policelists_div) {
+	   	            policelists_div.style.display = "block";
+	   	        }
+	   	    }
+	   	    function creatconcernlistwindow() {
+	   	        window.document.getElementById("concernlist_ifr").src = "lqnew/opePages/concernlist.aspx";
+	   	        var concerndiv = window.document.getElementById("concernlist");
+	   	        concerndiv.onmousedown = function () { mystartDragWindow(this); this.style.border = "solid 3px transparent"; cgzindex(this); };
+	   	        concerndiv.onmouseup = function () { mystopDragWindow(this); this.style.border = "0px"; };
+	   	        concerndiv.onmousemove = function () { mydragWindow(this) };
+	   	    }
+	   	    function hideconcernlistdiv() {
+	   	        var policelists_div = document.getElementById("concernlist");
+	   	        if (policelists_div) {
+	   	            policelists_div.style.display = "none";
+	   	        }
+	   	    }
+	   	    function displayconcernlistdiv() {
+	   	        var policelists_div = document.getElementById("concernlist");
+	   	        if (policelists_div) {
+	   	            policelists_div.style.display = "block";
+	   	        }
+	   	    }
+        </script>
+       	<noscript>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="main">
+                <param name="movie" value="SWF/main.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#ffffff" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="allowFullScreen" value="true" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="SWF/main.swf" width="100%" height="100%">
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#ffffff" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="allowFullScreen" value="true" />
+                <!--<![endif]-->
+                <!--[if gte IE 6]>-->
+                	<p> 
+                		Either scripts and active content are not permitted to run or Adobe Flash Player version
+                		11.1.0 or greater is not installed.
+                	</p>
+                <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflashplayer">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                    </a>
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+	    </noscript>		
+       
+   </body>
+</html>

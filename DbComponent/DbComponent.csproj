@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F68B6C2F-CE49-4D76-980B-9E372AF56514}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DbComponent</RootNamespace>
+    <AssemblyName>DbComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Web\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOI.DDF, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOI.HPSF, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOI.HSSF, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOI.POIFS, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="NPOI.Util, Version=1.2.2.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseStationDao.cs" />
+    <Compile Include="BSGroupInfoDao.cs" />
+    <Compile Include="Comm\enums\volume.cs" />
+    <Compile Include="DTProcedureDao.cs" />
+    <Compile Include="DTProcedureType.cs" />
+    <Compile Include="GetLDAPInfo.cs" />
+    <Compile Include="FS_Info\FixedStation.cs" />
+    <Compile Include="FS_Info\IFixedStationDao.cs" />
+    <Compile Include="FS_Info\Model_FixedStation.cs" />
+    <Compile Include="HistoryRSSIInfoDao.cs" />
+    <Compile Include="IDAO\IHistoryRSSIInfoDao.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="LanguageSwitch.cs" />
+    <Compile Include="Comm\CookieContent.cs" />
+    <Compile Include="Comm\LogHelper.cs" />
+    <Compile Include="Comm\SessionContent.cs" />
+    <Compile Include="Comm\TypeConverter.cs" />
+    <Compile Include="DispatchInfoDao.cs" />
+    <Compile Include="DispatchUserViewDao.cs" />
+    <Compile Include="DTGroupInfoDao.cs" />
+    <Compile Include="DXGroupInfoDao.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="ExportTableToExcel.cs" />
+    <Compile Include="FactoryMethod\DispatchInfoFactory.cs" />
+    <Compile Include="Gis.cs" />
+    <Compile Include="IDAO\IBaseStationDao.cs" />
+    <Compile Include="IDAO\IBSGroupInfoDao.cs" />
+    <Compile Include="IDAO\IDispatchInfoDao.cs" />
+    <Compile Include="IDAO\IDispatchUserViewDao.cs" />
+    <Compile Include="IDAO\IDTGroupInfoDao.cs" />
+    <Compile Include="IDAO\IDXGroupInfoDao.cs" />
+    <Compile Include="IDAO\IIsInStockadeViewDao.cs" />
+    <Compile Include="IDAO\ISMSInfoDao.cs" />
+    <Compile Include="IDAO\IStockadeDao.cs" />
+    <Compile Include="IDAO\IUserISSIViewDao.cs" />
+    <Compile Include="IDAO\IUserTypeDao.cs" />
+    <Compile Include="IsInStockadeViewDao.cs" />
+    <Compile Include="LDAPConnect .cs" />
+    <Compile Include="LogInfo.cs" />
+    <Compile Include="LogModule\ILog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogModule\SystemLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="resPermissions\dispatchUserGetGroupsByLoginUserId.cs" />
+    <Compile Include="resPermissions\dispatchUserResourcePermissions_get.cs" />
+    <Compile Include="resPermissions\LoginuserResourcePermissions.cs" />
+    <Compile Include="resPermissions\OnlyEntityList.cs" />
+    <Compile Include="resPermissions\resPermissionsDao.cs" />
+    <Compile Include="resPermissions\selectedUsertype.cs" />
+    <Compile Include="resPermissions\SelfEntityAndUsertypeByEntityId.cs" />
+    <Compile Include="resPermissions\SubEntityAndUsertypeByEntityId.cs" />
+    <Compile Include="resPermissions\SubEntityAndUsertypeByEntityId_edit.cs" />
+    <Compile Include="resPermissions\SubEntityAndUsertypeByEntityId_virtual.cs" />
+    <Compile Include="resPermissions\SubEntityByEntityId_virtual.cs" />
+    <Compile Include="resPermissions\SubLoginuserResourcePermissions.cs" />
+    <Compile Include="resPermissions\SubLoginuserResourcePermissions_edit.cs" />
+    <Compile Include="resPermissions\SubLoginuserResourcePermissions_virtual.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="selectedentityfile.cs" />
+    <Compile Include="SMSInfoDao.cs" />
+    <Compile Include="NPOIExcelOperator.cs" />
+    <Compile Include="SqlData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLHelper.cs" />
+    <Compile Include="StatuesManage\DutyRecordDao.cs" />
+    <Compile Include="Duty\GPSReportStatisticsDao.cs" />
+    <Compile Include="StatuesManage\ProcedureDao.cs" />
+    <Compile Include="StockadeDao.cs" />
+    <Compile Include="stringfilter.cs" />
+    <Compile Include="Tree.cs" />
+    <Compile Include="UChangeETree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usepramater.cs" />
+    <Compile Include="UserISSIViewDao.cs" />
+    <Compile Include="UserTypeDao.cs" />
+    <Compile Include="VideoDao.cs" />
+    <Compile Include="WebSQLDb.cs" />
+    <Compile Include="XMLOpreation.cs" />
+    <Compile Include="ISSI.cs" />
+    <Compile Include="group.cs" />
+    <Compile Include="userinfo.cs" />
+    <Compile Include="login.cs" />
+    <Compile Include="AddMemberTree.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LQCommonCS\LQCommonCS.csproj">
+      <Project>{fc3ad7b6-f56c-4582-b08f-82952ba2ff3b}</Project>
+      <Name>LQCommonCS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyModel\MyModel.csproj">
+      <Project>{7EAFF7FE-2C00-4813-BBF2-078AC353C783}</Project>
+      <Name>MyModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ryu666.Components\Ryu666.Components.csproj">
+      <Project>{dc1cfed6-196d-434f-98ec-5a3dbfed718c}</Project>
+      <Name>Ryu666.Components</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="lib\Microsoft.Office.Interop.Excel.xml" />
+    <Content Include="lib\Microsoft.Vbe.Interop.dll" />
+    <Content Include="lib\NPOI.DDF.dll" />
+    <Content Include="lib\NPOI.dll" />
+    <Content Include="lib\NPOI.HPSF.dll" />
+    <Content Include="lib\NPOI.HSSF.dll" />
+    <Content Include="lib\NPOI.POIFS.dll" />
+    <Content Include="lib\NPOI.Util.dll" />
+    <Content Include="lib\office.dll" />
+    <Content Include="lib\office.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTGroupDao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../../shorteningEvent.js" type="text/javascript"></script>
+    <script src="rightMenu.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function menuRight(arg) {
+            alert(arg);
+        }
+        function right() {
+            //data
+            var array = new Array();
+            var temp1 = {};
+            temp1[0] = function (arg) { menuRight(arg); }; //fun
+            temp1[1] = "menu1Right"; //arg
+            temp1[2] = "点信息"; //name
+            array.push(temp1);
+            var temp2 = {};
+            temp2[0] = function (arg) { menuRight(arg); };
+            temp2[1] = "menu2Right";
+            temp2[2] = "告警信息";
+            array.push(temp2);
+            //show
+            var obj = createMenu(array);
+            obj.style.left = event.clientX - 1;
+            obj.style.top = event.clientX;
+            document.body.appendChild(obj);
+        }
+    </script>
+</head>
+<body>
+    <div style="width: 50px; height: 50px; background-color: green; border-style: solid;
+         border-width: 1px; border-color: Red;" oncontextmenu="right()">
+    </div>
+</body>
+</html>

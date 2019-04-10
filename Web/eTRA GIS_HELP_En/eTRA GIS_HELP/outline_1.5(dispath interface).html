@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>系统主界面</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>调度用户主界面</h2>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 主界面布局 </p>
+</div>
+<div id="div1">
+  <p class="text">调度用户登录成功后，系统显示出客户端的操作主界面，主界面整体布局如下图1所示。主要由操作菜单栏、成员树、日志、呼叫工具栏、鹰眼、地图导航栏、地图主界面以及上行呼叫记录栏组成。调度用户通过主界面主要实现调度功能。</p>
+  <p class="center"><img src="pic/login/GIS系统调度用户主界面.png" width="1086" height="764" /></p>
+  <p class="center">图1. GIS调度系统调度用户主界面</p>
+  <table width="600" border="1" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="24">（1） 菜单栏</td>
+      <td height="24">（2） 地图切换按钮</td>
+      <td height="24">（3） 地图操作工具栏</td>
+      <td height="24">（4） 呼叫上行面板</td>
+    </tr>
+    <tr>
+      <td height="24">（5） 鹰眼</td>
+      <td height="24">（6） 呼叫工具栏</td>
+      <td height="24">（7） 实时日志窗口</td>
+      <td height="24">（8） 成员树</td>
+    </tr>
+  </table>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 地图主界面</p>
+</div>
+<div id="div2">
+  <p class="text">地图主界面主要显示当前地图的区域和属于该调度员管理权限的所有移动用户。调度员可以对地图进行拖动、缩放，对单个移动用户或基站执行右键操作等，如下图2所示。</p>
+  <p class="center"><img src="pic/login/地图主界面.png" width="547" height="564" /></p>
+  <p class="center">图2. 地图主界面</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 菜单栏</p>
+</div>
+<div id="div3">
+  <p class="text">菜单栏位于主界面的顶部，布局如下图3所示。</p>
+  <p class="center"><img src="pic/login/调试用户菜单栏.png" width="1078" height="35" /></p>
+  <p class="center">图3. 操作菜单栏</p>
+  <p class="text">利用菜单，调度员可进行调度功能的操作以及参数设置，在菜单栏的最右端显示登录的调度用户名称以及可以设置地图的刷新时间。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div4')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 地图切换按钮</p>
+</div>
+<div id="div4">
+  <p class="text">地图切换按钮位于地图界面的右侧，布局如下图4所示。</p>
+  <p class="center"><img src="pic/login/地图切换按钮.png" width="100" height="26" /></p>
+  <p class="center">图4. 地图切换按钮</p>
+  <p class="text">点击该按钮，用户可在平面图和卫星图之间切换。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div5')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 地图操作工具栏</p>
+</div>
+<div id="div5">
+  <p class="text">地图操作工具栏位于地图界面的最右侧，布局如下图5所示。</p>
+  <p class="center"><img src="pic/login/地图工具栏.png" width="124" height="354" /></p>
+  <p class="center">图5. 地图操作工具栏</p>
+  <p class="text">用户可在该区域实现框选、测距、放大、缩小、平移、导航等地图功能。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div6')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 呼叫上行面板</p>
+</div>
+<div id="div6">
+  <p class="text">该模块记录了系统呼叫上行的所有记录，包括单呼上行记录，组呼上行记录以及紧急呼叫上行记录，如下图6所示。调度台可在此模块直接接听、拒绝或参与所有正在进行的呼叫。</p>
+  <p class="center"><img src="pic/login/呼叫上行记录.png" width="306" height="222" /></p>
+  <p class="center">图6. 呼叫上行面板</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div7')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 鹰眼</p>
+</div>
+<div id="div7">
+  <p class="text">地图主界面右下角，提供了鹰眼功能，如下图7所示。</p>
+  <p class="center"><img src="pic/login/鹰眼.png" width="155" height="139" /></p>
+  <p class="center">图7. 鹰眼示意图</p>
+  <p class="text">所谓鹰眼，就是一个缩略地图，鹰眼的矩形区域就是当前显示的地图区域，拖动矩形框可以改变主地图的显示位置，起到导航的作用。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div8')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 呼叫工具栏</p>
+</div>
+<div id="div8">
+  <p class="text">呼叫工具栏布局如下图8所示。</p>
+  <p class="center"><img src="pic/login/呼叫工具栏.png" width="313" height="104" /></p>
+  <p class="center">图8. 呼叫工具栏</p>
+  <p class="text">该工具栏提供了单呼和组呼发起和结束按钮，以及呼叫的状态文本提示。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div9')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 日志</p>
+</div>
+<div id="div9">
+  <p class="text">当有系统信息、呼叫信息、短信信息和操作日志产生时，在该模块中会以文本的形式列出相应的日志。同时，事件类型不同，图标也会有相应的变化，如下图9所示。</p>
+  <p class="center"><img src="pic/login/日志.png" width="306" height="123" /></p>
+  <p class="center">图9. 日志</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div10')">
+  <p class="expanding"><img src="pic/Snap2.png" width="15" height="17" /> 成员树</p>
+</div>
+<div id="div10">
+  <p class="text">成员树位于主界面的左侧，布局如下图10所示。</p>
+  <p class="center"><img src="pic/login/成员树.png" width="194" height="442" /></p>
+  <p class="center">图10. 成员树</p>
+  <p class="text">用户可在本区域查看相关移动用户（终端/编组/调度台）及其单位组的层次结构，并可对这些对象进行快速操作。</p>
+</div>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_1.4(login).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_1(eTRA GIS system).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_1.6(config interface).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

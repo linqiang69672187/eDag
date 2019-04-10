@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>单呼</title>
+<script>
+ function isHidden(oDiv){ 
+ var vDiv = document.getElementById(oDiv); 
+ vDiv.style.display = (vDiv.style.display == 'none')?'block':'none'; 
+ } 
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style type="text/css">
+.style2 {
+	border-width: 0px;
+}
+.style3 {
+	border: 1px solid #000000;
+}
+</style>
+</head>
+
+<body style="background-color: #F5F0E6; width: 98%;">
+
+<p>
+
+
+<img alt="" src="logo.png" width="138" height="64" style="float: right" /></p>
+<p>&nbsp;</p>
+<h3 class="标题">单呼</h3>
+<p class="正文">
+
+调度员可选择单个移动用户，发出单呼，在对端接听后开始通话；亦可在接收到呼叫振铃提示音时，按“接听”键开始通话。</p>
+<p class="正文">
+
+目前在本系统中，调度台发起单呼的方式分为电话模式以及对讲模式。</p>
+<p class="正文">
+
+本节主要介绍在地图上对移动用户的右键操作，具体单呼操作步骤可详见“<a href="outline_15(Call%20Operations).htm">呼叫操作</a>”一章。</p>
+
+<Div style="cursor:hand" onclick="isHidden('div1')"> 
+
+
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 
+电话模式</p>
+
+</Div>
+<Div id="div1">
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在地图上选中移动用户。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）单击右键选择[呼叫业务/单呼]，弹出“单呼”对话框。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>3）选择呼叫方式为“电话模式”，单击&lt;开始&gt;按钮，此时&lt;开始&gt;按钮变为&lt;结束&gt;按钮。如下图1所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/单呼/电话模式.png" width="381" height="274" /></p>
+<p class="版权所有">
+
+图1. 电话模式</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>4）随后系统可收听到正常的回铃音或异常事件的语音信息，同时系统会受到指示呼叫状态的相关API消息。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+5）如果收到正常的回铃音且对端用户随后摘机，则开始通话。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+6）调度员单击&lt;结束&gt;按钮结束呼叫，此时&lt;结束&gt;按钮变成&lt;开始&gt;按钮，如下图2所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/单呼/电话模式呼叫结束.png" width="379" height="274" /></p>
+<p class="版权所有">
+
+图2. 结束呼叫</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>&nbsp;</p>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div2')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 对讲模式</p>
+
+</Div>
+<Div id="div2">
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在地图上选中移动用户。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）单击右键选择[呼叫业务/单呼]，弹出“单呼”对话框。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>3）选择呼叫方式为“对讲模式”，单击&lt;PTT&gt;按钮，如下图3所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/单呼/对讲模式.png" width="380" height="275" /></p>
+<p class="版权所有">
+
+图3. 对讲模式</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>4）随后系统可收听到正常的回铃音或异常事件的语音信息，同时系统会受到指示呼叫状态的相关API消息。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+5）如果收到正常的回铃音且对端用户随后摘机，则开始通话。调度员按下&lt;PTT&gt;键授权讲话，释放PTT键释放授权。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+6）调度员单击&lt;结束&gt;按钮结束呼叫，此时界面变成&lt;PTT&gt;按钮，如下图4所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/单呼/对讲模式呼叫结束.png" width="379" height="276" /></p>
+<p class="版权所有">
+
+图4. 对讲模式呼叫结束</p>
+
+
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div3')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 单呼活动列表基本信息表</p>
+
+</Div>
+<Div id="div3">
+
+<table style="width: 825px" align="center" class="表格变色">
+	<tr>
+		<td style="height: 24px" class="style3" colspan="2">
+		<p>ISSI</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户的唯一ISSI编号，可通过“选择”按钮重新选择要单呼的移动用户</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 24px" class="style3" colspan="2">
+		<p>姓名</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户的名称</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 24px" class="style3" colspan="2">
+		<p>单位</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户所属的单位名称</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 24px" class="style3" colspan="2">
+		<p>警号</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户的警号</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 15%" class="style3" rowspan="10">
+		<p>状态</p>
+		</td>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>有呼叫请求进入</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户主动呼叫当前调度台</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>呼叫正在处理中</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>当前调度台主动呼出，等待服务器回应</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>对方在振铃中</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>服务器已经回应，等待对方应答</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>呼叫已连接</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>对端用户已应答，服务器分配线路资源，连接建立</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>获取授权</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>连接已经建立，申请到话语权</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>发射权已释放</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>用户释放PTT键，释放发射权</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>调度员讲话</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>调度员申请通话权成功，开始讲话</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>对端讲话</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>对端用户在连接建立后申请到通话权</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>呼叫结束</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>连接已经被挂断</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>应答模式</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>可分为自动应答模式以及非自动应答模式</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 15%" class="style3" rowspan="2">
+		<p>呼叫方式</p>
+		</td>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>电话模式</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>全双工单呼类型：调度台至移动用户的点对点语音通讯，其中语音发送与接收并行完成</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>对讲模式</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>
+		半双工单呼类型：调度台至移动台的点对点语音通讯，终端用户在同一时刻只能进行接收或者发送语音其中一项任务，双方需通过按下PTT键抢占发送语音权利</p>
+		</td>
+	</tr>
+</table>
+
+</Div>
+
+
+
+<p class="正文">
+
+&nbsp;</p>
+
+
+
+<p class="正文">
+<img alt="" src="chm.png" width="90" height="59" />&nbsp; 
+<span style='font-family:黑体;'><strong>说明：</strong></span></p>
+<ul>
+	<li>
+	<p class="正文">调度员在任一时刻仅能与最多一个移动用户或调度台进行单呼。</p>
+	</li>
+	<li>
+	<p class="正文">
+	单呼也可通过单击[调度功能/呼叫面板]中的“单呼”按钮，弹出“单呼”对话框，在“ISSI”右侧单击&lt;选择&gt;添加单呼的用户。其他操作步骤如上所述。</p>
+	</li>
+</ul>
+<p class="正文">
+
+&nbsp;</p>
+
+<p class="上一页下一页">
+	<a href="outline_13.1(call%20service%20management).htm">
+	<img alt="" src="top.gif" width="54" height="34" class="style2" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a href="outline_13.1(call%20service%20management).htm"> 
+	<img alt="" src="mulu.gif" width="49" height="60" class="style2" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="outline_13.1.2(group%20call).htm">
+	<img alt="" src="next.gif" width="54" height="34" class="style2" /></a></p>
+
+<p class="版权所有">
+Copyright © 2011 Eastcom, Inc. All right reserved.</p> 
+
+</body>
+
+</html>

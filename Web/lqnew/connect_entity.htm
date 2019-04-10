@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size:12px;
+	background-color:transparent;
+}
+.STYLE1 {font-size: 12px;
+        height: 22px;
+        vertical-align:middle;
+    }
+.STYLE4 {
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+a:link {
+	font-size: 12px;
+	color: #06482a;
+	text-decoration: none;
+
+}
+a:visited {
+	font-size: 12px;
+	color: #06482a;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: underline;
+}
+a:active {
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.STYLE7 {font-size: 12}
+
+    .style1
+    {
+        font-size: 12px;
+        height: 18px;
+    }
+
+      
+
+    .style6
+    {
+        width: 18px;
+        height: 17px;
+    }
+
+
+    .style7
+    {
+        width: 14px;
+        height: 14px;
+    }
+    
+
+ 
+    .STYLE2
+    {
+      
+    }
+    #TextArea1
+    {
+            height: 99px;
+        width: 252px;
+        SCROLLBAR-FACE-COLOR: #D9F1BA;
+ SCROLLBAR-HIGHLIGHT-COLOR: #6c6c90;
+ SCROLLBAR-SHADOW-COLOR: #fcfcfc;
+ SCROLLBAR-3DLIGHT-COLOR: #D9F1BA;
+ SCROLLBAR-ARROW-COLOR: #240024;
+ SCROLLBAR-TRACK-COLOR: #fcfcfc;
+ SCROLLBAR-DARKSHADOW-COLOR: #48486c;
+ SCROLLBAR-BASE-COLOR: #fcfcfc;
+
+    }
+
+    .style9
+    {
+        width: 76px;
+        height: 26px;
+    }
+
+    .style10
+    {
+        height: 16px;
+    }
+    .style11
+    {
+        height: 28px;
+    }
+
+-->
+</style>
+<script>
+    function add(str,pc) {
+        var txt = document.getElementById("innerPC").innerHTML;
+        var obj = document.getElementById(pc);
+        if (txt.indexOf(str) < 0) {
+            document.getElementById("innerPC").innerHTML += str + ";";
+            obj.innerHTML = "<img class='style8' src='images/010.gif' />[移除]";
+        }
+        else {
+            document.getElementById("innerPC").innerHTML = txt.replace(str + ";", "");
+            obj.innerHTML = "<img class='style7' src='images/001.gif' />[添加]";
+        }
+
+    }
+
+  
+
+
+</script>
+
+</head>
+
+<body>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0"  >
+      <tr>
+        <td width="15" height="32"><img src="images/tab_03.png" width="15" height="32" /></td>
+        <td width="1101" background="images/tab_05.gif"><img src="images/311.gif" width="16" height="16" />
+            <span class="STYLE4">单位列表</span></td>
+        <td width="281" background="images/tab_05.gif" align="right">
+            <img class="style6"  style="cursor:hand;"onclick="window.parent.lq_closedemo3()" onmouseover="javascript:this.src='images/close_un.png';" onmouseout="javascript:this.src='images/close.png';" src="images/close.png" /></td>
+        <td width="14"><img src="images/tab_07.png" width="14" height="32" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15" background="images/tab_12.gif">&nbsp;</td>
+        <td bgcolor="#f3ffe3"><table width="99%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#c0de98" >
+          <tr style="height:25px;">
+            <td  background="images/tab_14.gif" align="center" class="style1">
+                单位</td>
+          </tr><td  bgcolor="#FFFFFF" align="left" height="22px">
+                &nbsp;<input id="Checkbox1" type="checkbox" />西湖区公安局</td>
+          <tr>  
+          </tr>
+            <tr>
+            <td  bgcolor="#FFFFFF" align="left" height="22px">
+                &nbsp;<input id="Checkbox2" type="checkbox" />江干区公安局</td>
+            </tr>
+            <tr>
+            <td  bgcolor="#FFFFFF" align="left" height="22px"> &nbsp;<input id="Checkbox3" 
+                    type="checkbox" />上城区公安局</td>
+            </tr>
+            <tr>
+            <td  bgcolor="#FFFFFF" align="left" height="22px">
+                &nbsp;<input id="Checkbox4" type="checkbox" />下城区公安局</td>
+            </tr>
+            <tr>
+            <td  bgcolor="#FFFFFF" align="left" height="22px">
+                &nbsp;<input id="Checkbox5" type="checkbox" />滨江区公安局</td>
+            </tr>
+            <tr>
+            <td  bgcolor="#FFFFFF" align="left" height="22px">
+                &nbsp;<input id="Checkbox6" type="checkbox" />拱墅区公安局</td>
+            </tr>
+            <tr>
+            <td height="22" align="left" bgcolor="#FFFFFF" class="STYLE2" 
+                    id="innerPC">&nbsp;</td>
+            </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2">
+                <br />
+                汇报内容<br />
+                <textarea id="TextArea1" name="S1"></textarea>
+
+</td>
+            </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2">
+                <img class="style9" src="images/send_SMS.png" style="cursor:hand;" onclick="alert('发送成功')" />&nbsp;
+                <img class="style9" src="images/cancel_SMS.png" /></td>
+            </tr>
+          </table></td>
+        <td width="14" background="images/tab_16.gif">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="15"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15" height="29"><img src="images/tab_20.png" width="15" height="29" /></td>
+        <td background="images/tab_21.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="25%"  nowrap="nowrap">&nbsp;</td>
+            <td width="75%" valign="top" class="STYLE1">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="14"><img src="images/tab_22.png" width="14" height="29" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

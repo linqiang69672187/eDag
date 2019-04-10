@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size:12px;
+	background-color: transparent;
+
+
+}
+.STYLE1 {font-size: 12px;
+        height: 22px;
+        vertical-align:middle;
+    }
+.STYLE4 {
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+a:link {
+	font-size: 12px;
+	color: #06482a;
+	text-decoration: none;
+
+}
+a:visited {
+	font-size: 12px;
+	color: #06482a;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: underline;
+}
+a:active {
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.STYLE7 {font-size: 12}
+
+    .style1
+    {
+        font-size: 12px;
+        height: 18px;
+    }
+
+      
+
+    .style6
+    {
+        width: 18px;
+        height: 17px;
+    }
+
+
+    .style7
+    {
+        width: 14px;
+        height: 14px;
+    }
+    .style8
+    {
+        width: 9px;
+        height: 9px;
+    }
+
+
+ 
+    .STYLE2
+    {
+      
+    }
+    #TextArea1
+    {
+            height: 99px;
+        width: 252px;
+        SCROLLBAR-FACE-COLOR: #D9F1BA;
+ SCROLLBAR-HIGHLIGHT-COLOR: #6c6c90;
+ SCROLLBAR-SHADOW-COLOR: #fcfcfc;
+ SCROLLBAR-3DLIGHT-COLOR: #D9F1BA;
+ SCROLLBAR-ARROW-COLOR: #240024;
+ SCROLLBAR-TRACK-COLOR: #fcfcfc;
+ SCROLLBAR-DARKSHADOW-COLOR: #48486c;
+ SCROLLBAR-BASE-COLOR: #fcfcfc;
+
+    }
+
+    .style9
+    {
+        width: 76px;
+        height: 26px;
+    }
+
+-->
+</style>
+<script>
+    function add(str,pc) {
+        var txt = document.getElementById("innerPC").innerHTML;
+        var obj = document.getElementById(pc);
+        if (txt.indexOf(str) < 0) {
+            document.getElementById("innerPC").innerHTML += str + ";";
+            obj.innerHTML = "<img class='style8' src='images/010.gif' />[移除]";
+        }
+        else {
+            document.getElementById("innerPC").innerHTML = txt.replace(str + ";", "");
+            obj.innerHTML = "<img class='style7' src='images/001.gif' />[添加]";
+        }
+
+    }
+
+
+</script>
+
+</head>
+
+<body>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15" height="32"><img src="images/tab_03.png" width="15" height="32" /></td>
+        <td width="1101" background="images/tab_05.gif"><img src="images/311.gif" width="16" height="16" />
+            <span class="STYLE4">警员列表</span></td>
+        <td width="281" background="images/tab_05.gif" align="right">
+            <img class="style6"  style="cursor:hand;"onclick="window.parent.lq_closedemo2()" onmouseover="javascript:this.src='images/close_un.png';" onmouseout="javascript:this.src='images/close.png';" src="images/close.png" /></td>
+        <td width="14"><img src="images/tab_07.png" width="14" height="32" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15" background="images/tab_12.gif">&nbsp;</td>
+        <td bgcolor="#f3ffe3"><table width="99%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#c0de98" >
+          <tr style="height:25px;">
+            <td width="40px" background="images/tab_14.gif" align="center" class="style1">
+                序号</td>
+            <td  background="images/tab_14.gif" align="center" class="style1">
+                姓名</td>
+            <td  background="images/tab_14.gif" align="center" class="style1">
+                电话</td>
+            <td  background="images/tab_14.gif" align="center" class="style1">
+                ISSI</td>
+            <td  background="images/tab_14.gif" align="center" class="style1">
+                警号</td>
+            <td  background="images/tab_14.gif" align="center" class="style1">
+                性别</td>
+            <td  background="images/tab_14.gif" align="center" class="style1">
+                单位</td>
+            <td width="80px" align="center" background="images/tab_14.gif" class="style1">
+                操作</td>
+          </tr>
+          <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2">
+                1</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                <div id="simple-target-1">&nbsp; 张警官</div></td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13137895644</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13999931</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;100001</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;男</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;西湖区公安局</td>
+            <td   align="center" bgcolor="#FFFFFF">
+                <a onclick="add('张警官 13137895644','apc1');" style="cursor:hand;" id="apc1"><img class="style7" src="images/001.gif" />[添加]</a></td>
+          </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2">
+                2</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                <div id="simple-target-2">&nbsp; 吴警官</div></td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13089674532</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13999932</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;100002</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;男</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;西湖区公安局</td>
+            <td   align="center" bgcolor="#FFFFFF">
+                 <a onclick="add('吴警官 13089674532','apc2');" style="cursor:hand;"  id="apc2"><img class="style7" src="images/001.gif" />[添加]</a></td>
+            </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2">
+                3</td>
+            <td  bgcolor="#FFFFFF" align="left"> <div id="simple-target-3">&nbsp; 陈警官</div></td>
+            <td  bgcolor="#FFFFFF" align="left"> &nbsp;88800678</td>
+            <td  bgcolor="#FFFFFF" align="left"> &nbsp;13999933</td>
+            <td  bgcolor="#FFFFFF" align="left"> &nbsp;100003</td>
+            <td  bgcolor="#FFFFFF" align="left"> &nbsp;男</td>
+            <td  bgcolor="#FFFFFF" align="left"> &nbsp;西湖区公安局</td>
+            <td   align="center" bgcolor="#FFFFFF">
+                <a onclick="add('陈警官 88800678','apc3');" style="cursor:hand;"  id="apc3"><img class="style7" src="images/001.gif" />[添加]</a></td>
+            </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2">
+                4</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                <div id="simple-target-4">&nbsp; 朱警官</div></td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13486338756</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13999934</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;100004</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;男</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;西湖区公安局</td>
+            <td   align="center" bgcolor="#FFFFFF">
+                <a onclick="add('朱警官 13486338756','apc4');" style="cursor:hand;"  id="apc4"><img class="style7" src="images/001.gif" />[添加]</a></td>
+            </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2">
+                5</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp; 杨警官</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;88563421</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13999935</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;100005</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;男</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;西湖区公安局</td>
+            <td   align="center" bgcolor="#FFFFFF">
+                <a onclick="add('杨警官 88563421','apc5');" style="cursor:hand;"  id="apc5"><img class="style7" src="images/001.gif" />[添加]</a></td>
+            </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2">
+                6</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp; 谢警官</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13606808043</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;13999936</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;100006</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;男</td>
+            <td  bgcolor="#FFFFFF" align="left">
+                &nbsp;西湖区公安局</td>
+            <td   align="center" bgcolor="#FFFFFF">
+                <a onclick="add('谢警官 13606808043','apc6');" style="cursor:hand;"  id="apc6"><img class="style7" src="images/001.gif" />[添加]</a></td>
+            </tr>
+            <tr>
+            <td height="22" align="left" bgcolor="#FFFFFF" class="STYLE2"><b>&nbsp;名单</b></td>
+            <td height="22" align="left" bgcolor="#FFFFFF" class="STYLE2" colspan="6" id="innerPC">&nbsp;</td>
+            <td height="22" align="left" bgcolor="#FFFFFF" class="STYLE2">
+                <img class="style9" src="images/send_PTT.png" style="cursor:hand;" /></td>
+            </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2" colspan="8">
+                <br />
+                短信内容<br />
+                <textarea id="TextArea1" name="S1"></textarea>
+
+</td>
+            </tr>
+            <tr>
+            <td height="22" align="center" bgcolor="#FFFFFF" class="STYLE2" colspan="8">
+                <img class="style9" src="images/send_SMS.png" style="cursor:hand;" onclick="alert('短信发送成功')" />&nbsp;
+                <img class="style9" src="images/cancel_SMS.png" /></td>
+            </tr>
+          </table></td>
+        <td width="14" background="images/tab_16.gif">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="15"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15" height="29"><img src="images/tab_20.png" width="15" height="29" /></td>
+        <td background="images/tab_21.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="25%"  nowrap="nowrap">&nbsp;</td>
+            <td width="75%" valign="top" class="STYLE1">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="14"><img src="images/tab_22.png" width="14" height="29" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

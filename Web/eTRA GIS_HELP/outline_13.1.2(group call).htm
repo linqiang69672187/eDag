@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>通话组呼叫</title>
+<script>
+ function isHidden(oDiv){ 
+ var vDiv = document.getElementById(oDiv); 
+ vDiv.style.display = (vDiv.style.display == 'none')?'block':'none'; 
+ } 
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style type="text/css">
+.style3 {
+	border: 1px solid #000000;
+}
+.style4 {
+	border-width: 0px;
+}
+</style>
+</head>
+
+<body style="background-color: #F5F0E6; width: 98%;">
+
+<p>
+
+
+<img alt="" src="logo.png" width="138" height="64" style="float: right" /></p>
+<p>&nbsp;</p>
+<h3 class="标题">通话组呼叫</h3>
+<p class="正文">
+
+调度员可选择单个小组发出组呼；亦可接听任一小组发起的组呼。</p>
+<p class="正文">
+
+组呼是以通话组为单位发起的半双工呼叫。同一时刻，一个通话组最多只允许一个组员发起组呼，其他的通话组成员只能接收语音信号。</p>
+<p class="正文">
+
+本节主要介绍在地图上对移动用户的右键操作，具体组呼的操作步骤可详见“<a href="outline_15(Call%20Operations).htm">呼叫操作</a>”一章。</p>
+
+<Div style="cursor:hand" onclick="isHidden('div1')"> 
+
+
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 通话组呼叫操作步骤如下：</p>
+
+</Div>
+<Div id="div1">
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在地图上选中移动用户。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）单击右键选择[呼叫业务/通话组呼叫]，弹出“通话组呼叫”对话框。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+3）按下&lt;PTT&gt;键获取授权，开始讲话，松开PTT键让别人讲话，按下&lt;结束&gt;按钮则结束呼叫。如下图所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/组呼/通话组呼叫.png" width="381" height="245" /></p>
+<p class="版权所有">
+
+通话组呼叫</p>
+
+
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div2')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 组呼活动列表基本信息表</p>
+
+</Div>
+<Div id="div2">
+
+<table style="width: 825px" align="center" class="表格变色">
+	<tr>
+		<td style="height: 24px" class="style3" colspan="2">
+		<p>GSSI</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户所在编组的唯一GSSI编号，可通过“选择”按钮重新选择要组呼的编组</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 24px" class="style3" colspan="2">
+		<p>组名</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户所在编组的名称</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 24px" class="style3" colspan="2">
+		<p>单位</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户所属的单位名称</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 24px" class="style3" colspan="2">
+		<p>类型</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户所在编组类型：普通组或通播组</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 15%" class="style3" rowspan="8">
+		<p>状态</p>
+		</td>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>有呼叫请求进入</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>移动用户主动呼叫当前调度台</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>呼叫正在处理中</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>当前调度台主动呼出，等待服务器回应</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>对方在振铃中</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>服务器已经回应，等待对方应答</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>呼叫已连接</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>对端用户已应答，服务器分配线路资源，连接建立</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>获取授权</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>连接已经建立，申请讲话，等待服务器分配资源</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>发射权已释放</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>用户释放PTT键，释放发射权</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>呼叫结束</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>连接已经被挂断</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 24%; height: 24px" class="style3">
+		<p>应答模式</p>
+		</td>
+		<td style="width: 60%; height: 24px" class="style3">
+		<p>可分为自动应答模式以及非自动应答模式</p>
+		</td>
+	</tr>
+	</table>
+
+</Div>
+
+
+
+<p class="正文">
+<img alt="" src="chm.png" width="90" height="59" />&nbsp; 
+<span style='font-family:黑体;'><strong>说明：</strong></span></p>
+
+
+
+<p class="正文">
+
+通话组呼叫也可通过单击[调度功能/呼叫面板]中的“通话组呼叫”按钮，弹出“通话组呼叫”对话框，在“GSSI”右侧单击&lt;选择&gt;添加要呼叫的编组。其他操作步骤如上所述。</p>
+<p class="正文">
+
+&nbsp;</p>
+
+<p class="上一页下一页">
+	<a href="outline_13.1.1(private%20call).htm">
+	<img alt="" src="top.gif" width="54" height="34" class="style4" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a href="outline_13(MS%20right%20key%20operations).htm"> 
+	<img alt="" src="mulu.gif" width="49" height="60" class="style4" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="outline_13.1.3(kill%20and%20revive).htm">
+	<img alt="" src="next.gif" width="54" height="34" class="style4" /></a></p>
+
+<p class="版权所有">
+Copyright © 2011 Eastcom, Inc. All right reserved.</p> 
+
+</body>
+
+</html>

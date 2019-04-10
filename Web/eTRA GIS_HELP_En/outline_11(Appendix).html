@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/text.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Appendix</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="main.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #F0F0F0;
+}
+-->
+</style></head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>Appendix</h2>
+<p>Currently,  the types of terminals can be divided into Sepura and MOTO. For the normal use  of eTRA GIS system, both of the two types need to be configured correctly. Their  programming methods are different.</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#a">Sepura Configuration Considerations</a> </p>
+  </li>
+  <li>
+    <p><a href="#b">MOTO Configuration Considerations</a></p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> Sepura Configuration Considerations </p>
+</div>
+<div id="div1">
+  <p>1) If  you have shortened dialing configured in the Network template, it is always  best to program the GPS command ISSI (or any command address) with the full 8  digits or more longer. For example, the terminal ISSI is 5 digits, then you  should set the GPS command ISSI (or any command address) with the full 5 digits,  or fill 0 in front of  the GPS command ISSI (or any command address) without enough digits.</p>
+  <p>2) In  the All parameters template, the default report distance cannot be set to 0. If  it is set to 0, the distance report function will be disabled. The recommended  setting is 0.1(100M).</p>
+  <p>3) There are following handling precautions for Sepura  GPS air interfaces:</p>
+  <ul>
+    <li>Immediate location report function: the dispatch user  ISSI is the GPS command ISSI,  shown in Figure 1.</li>
+  </ul>
+  <p class="center"><img src="pic/appendix/GPS command ISSI.jpg" width="547" height="332" /></p>
+  <p class="center">Figure 1. The GPS command  ISSI</p>
+  <ul>
+    <li><p>Location reporting enable/disable function: the  dispatch user ISSI is as  above.</p></li>
+    <li><p>Modify the destination: the dispatch user ISSI is as above.</p></li>
+    <li><p>Modify the maximum reporting interval: the dispatch  user ISSI is as above. Principles: input the time of Multiples 30s on  gis web, else rounded up in accordance with 30s.</p></li>
+  </ul>
+  <p class="center"><img src="pic/appendix/Interval parameter explanation for Sepura.gif" width="340" height="203" /></p>
+  <p class="center">Figure 2. Interval parameter explanation for Sepura</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> MOTO Configuration Considerations </p>
+</div>
+<div id="div2">
+  <p>There are following handling precautions for MOTO GPS  air interfaces:</p>
+  <ul>
+    <li>Immediate location report function: The dispatch user  ISSI must meet the conditions in Figure 3. For example, the GPS  Authorised ISSI Base is A, the GPS   Authorised ISSI   Range is B, and the dispatch  user ISSI is XX. Then A ≤ XX ≤ B.</li>
+  </ul>
+  <p class="center"><img src="pic/appendix/MOTO ISSI parameter explanation.jpg" width="553" height="469" /></p>
+  <p class="center">Figure 3. MOTO ISSI parameter explanation</p>
+  <ul>
+    <li><p>Location reporting enable/disable function: the  dispatch user ISSI is as  above.</p></li>
+    <li><p>Modify the destination: the dispatch user ISSI is as above.</p></li>
+    <li><p>Modify the maximum reporting interval: the dispatch  user ISSI is as above. Principles: input the time of Multiples 10s on  gis web, else rounded up in accordance with 10s.</p></li>
+  </ul>
+  <p class="center"><img src="pic/appendix/Interval parameter explanation for MOTO.gif" width="336" height="291" /></p>
+  <p class="center">Figure 4. Interval parameter explanation for MOTO </p>
+</div>
+<!-- InstanceEndEditable -->
+<p class="text">&nbsp;</p>
+<!-- InstanceBeginEditable name="link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_10.3(Log Window).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><img src="pic/mulu2.png" width="49" height="60" /></div></td>
+    <td width="110"><div align="center"><img src="pic/next2.png" width="60" height="49" /></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

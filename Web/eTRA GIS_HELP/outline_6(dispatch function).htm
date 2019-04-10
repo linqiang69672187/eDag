@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>调度功能</title>
+<script>
+ function isHidden(oDiv){ 
+ var vDiv = document.getElementById(oDiv); 
+ vDiv.style.display = (vDiv.style.display == 'none')?'block':'none'; 
+ } 
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style type="text/css">
+.style1 {
+	border-width: 0px;
+}
+</style>
+</head>
+
+<body style="background-color: #F5F0E6; width: 98%;">
+
+<p>
+
+
+<img alt="" src="logo.png" width="138" height="64" style="float: right" /></p>
+<p>&nbsp;</p>
+<h3 class="标题">调度功能</h3>
+
+<p class="正文">
+
+GIS系统提供的调度功能主要包括：</p>
+<ul>
+	<li>
+	<p class="正文">私密呼叫：可对移动用户进行半双工单呼、全双工单呼</p>
+	</li>
+	<li>
+	<p class="正文">小组呼叫：可选择单个小组发出组呼；亦可接听任一小组发起的组呼</p>
+	</li>
+	<li>
+	<p class="正文">通播组呼叫：可选择单个通播组发出组呼；亦可接听任一通播组发起的组呼</p>
+	</li>
+	<li>
+	<p class="正文">短信功能：可对单个或多个用户发送短信，也可对某个组发短信，也可接收短信</p>
+	</li>
+</ul>
+<p class="正文">在GIS系统中可通过几种方式来执行调度功能，用户可根据实际需要来选择执行的方式。具体方式如下：</p>
+
+<Div style="cursor:hand" onclick="isHidden('div1')">
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 呼叫面板</p>
+
+</Div>
+<Div id="div1">
+<p class="正文">
+
+单击菜单栏上的调度功能按钮，选择呼叫面板，弹出呼叫面板对话框，在该对话框中，调度功能主要包含三大类，分别为呼叫业务、消息业务以及应用业务。</p>
+<ul>
+	<li>
+	<p class="正文">在呼叫业务中分别有单呼、通话组呼叫、基站类呼叫、遥启遥毙、慎密监听、环境监听；</p>
+	</li>
+	<li>
+	<p class="正文">在消息业务中主要包括普通短消息及状态消息；</p>
+	</li>
+	<li>
+	<p class="正文">在应用业务中主要包括实时显示、实时轨迹、历史轨迹、电子栅栏、立即定位以及锁定功能。</p>
+	</li>
+</ul>
+<p class="正文">
+
+如下图1所示。</p>
+<p class="版权所有">
+
+<img alt="" src="pic/调度功能.png" width="965" height="675" /></p>
+<p class="版权所有">
+
+图1.
+
+呼叫面板</p>
+</Div>
+<Div style="cursor:hand" onclick="isHidden('div2')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 导航树</p>
+
+</Div>
+<Div id="div2">
+<p class="正文">
+
+在GIS界面上打开导航树，选中用户或终端或编组或调度台，单击扩展键，选择相应的调度业务。如下图2所示。</p>
+<p class="版权所有">
+
+<img alt="" src="pic/导航树执行调度功能.png" width="1190" height="448" /></p>
+<p class="版权所有">
+
+图2. 导航树选择调度业务</p>
+
+
+
+<p class="正文">
+<img alt="" src="chm.png" width="90" height="59" />&nbsp; 
+<span style='font-family:黑体;'><strong>说明：</strong></span></p>
+<p class="正文">
+
+导航树中，用户、终端、编组、调度台可选择的调度功能是不同的：</p>
+<ul>
+	<li>
+	<p class="正文">用户、终端选择的呼叫业务包括：单呼、通话组呼叫、遥启遥毙、慎密监听以及环境监听；编组选择的呼叫业务只有组呼；调度台选择的呼叫业务只有单呼。</p>
+	</li>
+	<li>
+	<p class="正文">用户、终端选择的短信业务包括：给该用户或该终端所属的用户发送个人短信、给该用户或该终端所属的通话通播组发送组短信以及给该用户或该终端所属的用户发送状态消息；可以给编组以及调度台发送普通消息及状态消息。</p>
+	</li>
+	<li>
+	<p class="正文">可以对用户及终端执行相应的应用业务，包括：详细信息、实时轨迹、历史轨迹、图上定位、电子栅栏、锁定功能。</p>
+	</li>
+</ul>
+</Div>
+<Div style="cursor:hand" onclick="isHidden('div3')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 地图操作</p>
+
+</Div>
+<Div id="div3">
+<p class="正文">
+
+右键点击地图上的移动用户，将弹出呼叫业务、短信业务以及应用业务三大功能，如下图3所示。</p>
+<p class="版权所有">
+
+<img alt="" src="pic/移动用户的右键菜单.png" width="198" height="126" /></p>
+<p class="版权所有">
+
+图3. 地图移动用户右键选择调度业务</p>
+<p class="正文">
+
+单击地图上的基站图标，会出现呼叫按钮，按住呼叫按钮，可建立单基站广播呼叫；右键单击基站，会弹出基站呼叫及修改基站两大功能，如下图4所示。</p>
+<p class="版权所有">
+
+<img alt="" src="pic/基站右键操作.png" width="184" height="124" /></p>
+<p class="版权所有">
+
+图4. 基站右键操作</p>
+</Div>
+<p class="正文">
+
+&nbsp;</p>
+<p class="正文">
+
+&nbsp;</p>
+
+<p class="上一页下一页">
+	<a href="outline_12(Send%20SMS).htm">
+	<img alt="" src="top.gif" width="54" height="34" class="style1" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a href="outline_6(dispatch%20function).htm"> 
+	<img alt="" src="mulu.gif" width="49" height="60" class="style1" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="outline_7(set%20parameters).htm">
+	<img alt="" src="next.gif" width="54" height="34" class="style1" /></a></p>
+
+<p class="版权所有">
+Copyright © 2011 Eastcom, Inc. All right reserved.</p> 
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>状态消息</title>
+<script>
+ function isHidden(oDiv){ 
+ var vDiv = document.getElementById(oDiv); 
+ vDiv.style.display = (vDiv.style.display == 'none')?'block':'none'; 
+ } 
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style type="text/css">
+.style4 {
+	border: 1px solid #000000;
+}
+.style5 {
+	border-width: 0px;
+}
+</style>
+</head>
+
+<body style="background-color: #F5F0E6; width: 98%;">
+
+<p>
+
+
+<img alt="" src="logo.png" width="138" height="64" style="float: right" /></p>
+<p>&nbsp;</p>
+<h3 class="标题">状态消息</h3>
+<p class="正文">
+
+调度员可发送状态信息，也可接收状态信息。</p>
+<p class="正文">
+
+目前本系统中，状态消息的发送有两种方式：文本发送以及状态号发送。</p>
+
+<Div style="cursor:hand" onclick="isHidden('div1')"> 
+
+
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 
+发送/接收状态消息操作步骤如下：</p>
+
+</Div>
+<Div id="div1">
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在地图上选中移动用户。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）右键单击[短信业务/状态消息]，弹出”状态消息发送“对话框。如下图1所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/短信业务/状态消息发送.png" width="380" height="246" /></p>
+<p class="版权所有">
+
+图1. 状态消息发送对话框</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>3）用户可根据实际需要添加多个用户。选择发送方式：文本发送或者状态号发送。</p>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div2')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 
+文本发送</p>
+
+</Div>
+<Div id="div2">
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在发送方式右侧选择“文本发送”，在“文本”对话框中输入要发送的文本内容，如下图2所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/短信业务/文本发送.png" width="381" height="271" /></p>
+<p class="版权所有">
+
+图2. 文本发送</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）选择接收的设备，单击&lt;发送&gt;按钮完成操作。</p>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div3')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 
+状态号发送</p>
+
+</Div>
+<Div id="div3">
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在发送方式右侧选择“状态号发送”，在“状态号”对话框中输入要发送的状态号，如下图3所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/短信业务/状态号发送.png" width="383" height="270" /></p>
+<p class="版权所有">
+
+图3. 状态号发送</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）选择接收的设备，单击&lt;发送&gt;按钮完成操作。</p>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div4')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 
+状态消息信息说明</p>
+
+</Div>
+<Div id="div4">
+
+<table style="width: 825px" align="center" class="表格变色">
+	<tr class="表格第一行">
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>参数名称</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>描述</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>类型</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>缺省值</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>ISSI</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>状态消息业务的目标ISSI（可多个）或GSSI号</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>1～13666666</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>N/A</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>文本</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>状态信息内容</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>0～140个字符串，支持中英文混合</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>N/A</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>状态号</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>状态信息ID号</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>1～2000</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>N/A</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>回执</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>选择是否请求回执</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>通过在回执右侧是否打勾选择</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>不要回执</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>发送到</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>短信接收方设备</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>调度台组短信发送到公网手机或者发送到数字集群终端</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>发送到数字集群终端</p>
+		</td>
+	</tr>
+	</table>
+
+
+
+</Div>
+
+
+
+<p class="正文">
+&nbsp;</p>
+<p class="正文">
+<img alt="" src="chm.png" width="90" height="59" />&nbsp; 
+<span style='font-family:黑体;'><strong>说明：</strong></span></p>
+<p class="正文">
+
+状态消息的发送也可通过单击[调度功能/状态消息]，添加用户，其他操作步骤如上述所述。</p>
+<p class="正文">
+
+&nbsp;</p>
+
+<p class="上一页下一页">
+	<a href="outline_13.2.2(group%20message).htm">
+	<img alt="" src="top.gif" width="54" height="34" class="style5" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a href="outline_13.2(SDS%20service%20management).htm"> 
+	<img alt="" src="mulu.gif" width="49" height="60" class="style5" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="outline_13.3(application%20service%20management).htm">
+	<img alt="" src="next.gif" width="54" height="34" class="style5" /></a></p>
+
+<p class="版权所有">
+Copyright © 2011 Eastcom, Inc. All right reserved.</p> 
+
+</body>
+
+</html>

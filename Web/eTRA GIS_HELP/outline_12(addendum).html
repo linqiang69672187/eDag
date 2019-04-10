@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>成员树</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>附录</h2>
+<p class="text">目前我们在用的终端手台类型有MOTO和Sepura两种，要让这两种手台都能正常使用eTRA GIS调度系统， 手台的烧号必须要注意以下几点：<br />
+</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#a"><span class="text">Sepura</span>手台烧号注意事项</a></p>
+  </li>
+  <li>
+    <p><a href="#b">MOTO手台烧号注意事项</a></p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" class="expanding" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /><a href="#a"></a><span class="text">Sepura</span>手台烧号注意事项</p>
+</div>
+<div id="div1">
+  <p class="text">1）Sepura手台烧号在network里设置了缩位拨号，建议在烧号软件中将command ISSI设置的位数大于手台ISSI号码位数，例如手台号码位数为5位，则设置command ISSI位数为大于或等于5位，不够时则在command ISSI前填充0。</p>
+  <p class="text">2）在烧号时，sepura手台中的Default report distance 不能设置为0，如果设置为0将距离上报的功能关闭，建议设置为0.1(100M)。</p>
+  <p class="text">3）在烧号时，sepura手台GPS空中接口使用操作注意事项有以下几点：</p>
+  <ul>
+  <li>
+    <p>立即下拉：使用手台烧号的调度号码控制。</p>
+  </li>
+  <li>
+    <p>使能接口：使用手台烧号的调度号码控制。</p>
+  </li>
+  <li>
+  <p>修改目的地：使用手台烧号的调度号码控制。</p>
+  </li>
+  <li>
+  <p>修改间隔：使用手台烧号的调度号码控制，其中修改间隔的原则如下：（页面输入的时间为30s的整数，大于30s的整数则按照30s取模，小于30s则相当于30s设置，参数具体参照图1：</p>
+  </li>
+    <p class="center"><img src="pic/addendum/supera参数.png" width="335" height="293" /></p>
+  <p class="center">图1 <span class="text">sepura手台</span>修改间隔参数说明</p>
+  </ul>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" />MOTO手台烧号注意事项</p>
+</div>
+<div id="div2">
+  <p class="text">1）在烧号时，MOTO手台GPS空中接口使用操作注意事项有以下几点：</p>
+  <ul>
+    <li>
+      <p align="left">立即下拉：发起立即定位的调度用户ISSI号码XX必须满足如图2所示条件，<span class="center">例如GPS Authorised ISSI Base值为A,GPS Authorised ISSI Range 值为B,则A&lt;=  XX&lt;=B</span></p>
+    </li>
+      <p class="center"><img src="pic/addendum/MOTO参数1.png" width="546" height="324" /></p>
+      <p class="center">图2 <span class="text">MOTO手台</span>烧号ISSI参数说明</p>
+      <p class="center">&nbsp;</p>
+    <li>
+      <p>使能接口：进行控制的调度号码如图2所示。</p>
+    </li>
+    <li>
+      <p>修改目的地和修改间隔：进行控制的调度号码如上图所示。</p>
+    </li>
+    <li>
+      <p>修改时间间隔的原则：进行控制的调度号码如上，其中修改间隔的原则如下：（页面输入的时间为10s的整数，不是10s的整数则按照10s取模，小于10s则按10s设置），参数具体参照图3：</p>
+    </li>
+    <p class="center"><img src="pic/addendum/MOTO参数2.png" width="333" height="200" /></p>
+  </ul>
+  <p class="center">&nbsp;</p>
+  <p class="center">图3. <span class="text">MOTO手台</span>修改间隔参数说明</p>
+  <p class="text">&nbsp;</p>
+
+<table width="100" border="0" align="right" cellspacing="1">
+  <tr>
+    <td width="96"><a href="#top"><img src="pic/top.png" width="15" height="17" border="0" /></a><a href="#top"> 返回顶端</a></td>
+  </tr>
+</table>
+<p class="text">&nbsp;</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_10(parameters).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_12(addendum).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_11(version).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

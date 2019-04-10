@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>紧急呼叫</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>紧急呼叫</h2>
+<p class="text">紧急呼叫是一种具有最高排队优先级的呼叫，即当对正在进行呼叫的终端发起紧急呼叫时，调度台可以抢占呼叫。</p>
+<p class="text">在本系统中，紧急呼叫可以由调度台发起，亦可由终端发起。若调度用户发起紧急呼叫紧急通知呼叫成员，在呼叫的成员终端上会产生声光报警。紧急通话状态需在紧急呼叫解除后才能消除。当调度台收到紧急呼叫后，界面会显示紧急状态消息提示，并作声光告警。</p>
+<p class="text">目前，在本系统中，紧急呼叫种类包括：</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="outline_7.3.1(Full-Duplex emergency).html">紧急全双工单呼</a></p>
+  </li>
+  <li>
+    <p><a href="outline_7.3.2(Half-Duplex emergency).html">紧急半双工单呼</a></p>
+  </li>
+  <li>
+    <p><a href="outline_7.3.3(group emergency call).html">紧急组呼</a></p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<p class="text">紧急呼叫活动基本信息如下表所示。</p>
+<table width="750" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <th height="24" colspan="2" bgcolor="#99CCFF">标识</th>
+    <td width="510" height="24"><p>要发起紧急呼叫的终端标识或者小组标识，可通过“选择”按钮选择要紧急呼叫的终端或小组</p></td>
+  </tr>
+  <tr>
+    <th height="24" colspan="2" bgcolor="#99CCFF">姓名/组名</th>
+    <td height="24"><p>移动用户的名称或编组的名称</p></td>
+  </tr>
+  <tr>
+    <th height="24" colspan="2" bgcolor="#99CCFF">单位</th>
+    <td height="24"><p>终端或小组所在单位名称</p></td>
+  </tr>
+  <tr>
+    <th height="24" colspan="2" bgcolor="#99CCFF">编号</th>
+    <td height="24"><p>移动用户的编号</p></td>
+  </tr>
+  <tr>
+    <th width="98" rowspan="10" bgcolor="#99CCFF">状态</th>
+    <td width="134" height="24">有呼叫请求进入</td>
+    <td height="24"><p>移动用户紧急呼叫调度台或调度台所在编组</p></td>
+  </tr>
+  <tr>
+    <td height="24">呼叫正在处理中</td>
+    <td height="24"><p>当前调度台主动呼出，等待服务器回应</p></td>
+  </tr>
+  <tr>
+    <td height="24">对方在振铃中</td>
+    <td height="24"><p>服务器已经回应，等待对方应答</p></td>
+  </tr>
+  <tr>
+    <td height="24">呼叫已连接</td>
+    <td height="24"><p>对端用户已应答，服务器分配线路资源，连接建立</p></td>
+  </tr>
+  <tr>
+    <td height="24">获取授权</td>
+    <td height="24"><p>连接已经建立，申请讲话，等待服务器分配资源</p></td>
+  </tr>
+  <tr>
+    <td height="24">发射权已释放</td>
+    <td height="24"><p>用户释放PTT键，释放发射权</p></td>
+  </tr>
+  <tr>
+    <td height="24">对方挂断</td>
+    <td height="24"><p>连接已经被挂断。当紧急组呼时，只有调度台结束紧急呼叫，才是真正的结束</p></td>
+  </tr>
+  <tr>
+    <td height="24">应答模式</td>
+    <td height="24"><p>可分为自动应答模式以及非自动应答模式</p></td>
+  </tr>
+</table>
+<p class="text">在GIS系统中，主要可以通过以下几种方式发起紧急呼叫：</p>
+<ol>
+  <li>
+    <p>地图右键选择呼叫业务菜单中的“紧急呼叫”按钮</p>
+  </li>
+  <li>
+    <p>调度功能菜单下的“呼叫面板”</p>
+  </li>
+  <li>
+    <p>若调度台接收到终端的紧急呼叫，调度员也可在呼叫上行面板中进行接听操作。针对已有紧急呼叫上行记录，调度员可在此面板中发起紧急呼叫，其模式由已有呼叫上行记录决定。</p>
+  </li>
+</ol>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<p class="text">方式1与方式2操作步骤类似，在本节中只介绍其中一种方式的具体操作步骤。</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_7.2.2(multi group call).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_7(dispatch function).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_7.3.1(Full-Duplex emergency).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

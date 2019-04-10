@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>上行单呼</title>
+<script>
+ function isHidden(oDiv){ 
+ var vDiv = document.getElementById(oDiv); 
+ vDiv.style.display = (vDiv.style.display == 'none')?'block':'none'; 
+ } 
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style type="text/css">
+.style1 {
+	border-width: 0px;
+}
+</style>
+</head>
+
+<body style="background-color: #F5F0E6; width: 98%;">
+
+<p>
+
+
+<img alt="" src="logo.png" width="138" height="64" style="float: right" /></p>
+<p>&nbsp;</p>
+<h3 class="标题">上行单呼</h3>
+
+<p class="正文">
+
+上行单呼即手持台往调度台发起的单终端呼叫。目前在本系统里分为：全双工单呼、半双工单呼。</p>
+<ul>
+	<li>
+	<p class="正文">全双工单呼模式下，语音发送与接收并行完成，在该模式下，调度台在同一时刻只能跟一个用户进行单呼通话。</p>
+	</li>
+	<li>
+	<p class="正文">
+	半双工单呼模式下，终端用户在同一时刻只能进行接收或者发送语音其中一项任务，双方需通过按下PTT键抢占发送语音权利。无线用户通过按住手台的PTT按钮进行语音信息的发送，调度台用户通过按住呼叫工具栏中的＜PTT呼叫＞（或键盘空格键）进行语音信息的发送。</p>
+	</li>
+</ul>
+
+
+
+<Div style="cursor:hand" onclick="isHidden('div1')"> 
+
+
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 全双工单呼</p>
+
+</Div>
+<Div id="div1">
+
+
+
+<p class="正文">
+
+手持台向调度台发起全双工单呼的步骤如下：</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在手持台中输入调度台的ISSI号。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）按下手持台上的呼叫按钮，发起全双工呼叫，地图上警员图标侧出现全双工模式呼叫图标，界面显示如下图1所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/单呼/全双工单呼/呼叫请求.png" width="376" height="500" /></p>
+<p class="版权所有">
+
+图1. 全双工呼叫请求接入</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>3）调度台单击＜接听＞即可通话，此时“接听”字样变为“结束”。如下图2所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/单呼/全双工单呼/全双工通话中.png" width="375" height="89" /></p>
+<p class="版权所有">
+
+图2. 全双工通话中</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>4）单击＜结束＞结束本次呼叫。</p>
+
+
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div2')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 半双工单呼</p>
+
+</Div>
+<Div id="div2">
+
+<p class="正文">
+
+手持台向调度台发起半双工单呼的步骤如下：</p>
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在手持台中输入调度台的ISSI号。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）按下手持台上的PTT按钮，发起半双工呼叫，呼叫工具栏显示“刘警官（1240003）：有呼叫请求进入”，调度台按住＜接听＞即可通话，地图上警员图标侧出现半双工模式呼叫图标，同时调度台上“单呼”字样变为“结束”，如下图3所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/单呼/半双工单呼/半双工呼叫建立.png" width="377" height="407" /></p>
+<p class="版权所有">
+
+图3. 半双工呼叫建立</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>3）调度台按住手＜PTT呼叫＞（或键盘空格键）后不松开，可获取授权；语音发送完成后，松开＜PTT呼叫＞（或键盘空格键）后，释放授权。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>4）无线用户在调度台释放权限后，可以按住PTT键发送语音，呼叫工具栏显示如下图4所示。松开PTT键释放授权。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/单呼/半双工单呼/无线用户获取授权.png" width="374" height="96" /></p>
+<p class="版权所有">
+
+图4. 无线用户获取授权</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>5）半双工呼叫完成后，按下＜结束＞结束本次通话。</p>
+
+</Div>
+
+<p class="正文">
+
+&nbsp;</p>
+
+<p class="上一页下一页">
+	<a href="outline_15.4(downlink%20private%20call).htm">
+	<img alt="" src="top.gif" width="54" height="34" class="style1" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a href="outline_15(Call%20Operations).htm"> 
+	<img alt="" src="mulu.gif" width="49" height="60" class="style1" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="outline_14(FAQ).htm">
+	<img alt="" src="next.gif" width="54" height="34" class="style1" /></a></p>
+
+<p class="版权所有">
+Copyright © 2011 Eastcom, Inc. All right reserved.</p> 
+
+</body>
+
+</html>

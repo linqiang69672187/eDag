@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<script type="text/javascript" src="swfobject.js"></script>
+<style>
+body
+{
+    margin:0px;
+    background-color:transparent;
+}
+object
+{
+    margin-top:-40px;
+}
+
+</style>
+
+</head>
+<body>
+<p id="player1">
+<a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.</p>
+<script type="text/javascript">
+    var s1 = new SWFObject("flvplayer.swf", "", "500", "500", "7");
+    s1.addParam("allowfullscreen", "true");
+    s1.addVariable("file", "video1.flv");
+    s1.addVariable("image", "preview.jpg");
+    s1.addVariable("wmode", "opaque");
+    s1.addVariable("width", "230");
+    s1.addVariable("repeat", "true");
+    s1.addVariable("autostart", "true");
+    s1.addVariable("height", "210");
+    s1.write("player1");
+</script>
+</body>
+</html>

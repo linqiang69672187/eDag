@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>锁定功能</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>锁定功能</h2>
+<p class="text">调度员可对单个移动用户执行锁定跟踪模式，使得被锁定的移动用户有特殊的标记，以区别未被跟踪的移动用户，而且地图会不断地自动调整，以确保处于锁定状态的移动用户始终处于可见区域。调度员亦可在不需要时取消用户的锁定模式。</p>
+<p class="text">调度员可通过多种方式实现锁定，包括：</p>
+<ul class="xiangmuliebiao">
+  <li>
+  <p><a href="#a">地图右键操作</a></p>
+  </li>
+  <li>
+  <p><a href="#b">呼叫面板操作</a></p>
+  </li>
+  <li>
+  <p><a href="#c">对框选用户进行锁定</a></p>
+  </li>
+  <li>
+  <p><a href="#d">对成员树中用户进行锁定</a></p>
+  </li>
+</ul>
+<p class="text">其中各种方法可进行交叉操作。</p>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过地图右键操作实现“锁定功能”的具体操作步骤如下：</p>
+</div>
+<div id="div1">
+  <p>1）在地图上选中移动用户。</p>
+  <p>2）右键单击<span class="text">［应用业务/开启锁定］</span>，此时在用户的右上角会出现一个锁定的图标，如下图1所示。当用户离开当前视图时，地图的中心位置会立即定位到该用户所在的位置。</p>
+  <p class="center"><img src="pic/Application/开启锁定.png" width="92" height="87" /></p>
+  <p class="center">图1. 开启锁定</p>
+  <p>3）若不需要锁定该用户，则右键单击<span class="text">［应用业务/关闭锁定］</span>，锁定图标消失。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫面板开启/关闭“锁定功能”的操作步骤如下：</p>
+</div>
+<div id="div2">
+  <p>1）在系统操作菜单栏中单击<span class="text">［调度功能/呼叫面板］</span>，弹出“呼叫面板”对话框。</p>
+  <p>2）单击“应用业务”模块中的“锁定功能”，弹出“锁定”对话框，如下图2所示。</p>
+  <p class="center"><img src="pic/Application/锁定对话框.png" width="350" height="177" /></p>
+  <p class="center">图2. 锁定对话框</p>
+  <p>3）直接输入用户标识号或在终端标识右侧单击＜选择＞，弹出“用户/终端/调度台”对话框，添加要开启锁定的移动用户，如下图3所示。</p>
+  <p class="center"><img src="pic/Application/选择用户.png" width="625" height="510" /></p>
+  <p class="center">图3. 选择用户</p>
+  <p>4）单击＜确定＞按钮完成添加。“锁定”对话框中显示当前用户的锁定状态，如下图4所示。</p>
+  <p class="center"><img src="pic/Application/锁定状态.png" width="350" height="178" /></p>
+  <p class="center">图4. 锁定状态</p>
+  <p>5）单击＜确定＞，则开启跟踪锁定功能，并在用户右上角会出现一个锁定图标。当用户离开当前视图时，地图的中心位置会立即定位到该用户所在位置。</p>
+  <p>6）若之前用户是锁定状态，则按上述步骤操作，单击＜确定＞后，则将解锁成功，出现在用户右上角的锁定图标消失。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> 对框选用户实现“锁定功能”的具体操作步骤如下：</p>
+</div>
+<div id="div3">
+  <p>1）在地图上框选移动用户，该区域内被选中的所有用户（包括显示和隐藏的）都将呈现在用户列表中。</p>
+  <p>2）单击“选中用户列表”中要锁定的用户右侧三角按钮，选择<span class="text">［应用业务/锁定］，如下图5所示。</span></p>
+  <p class="center"><img src="pic/Application/对框选用户进行锁定.png" width="820" height="495" /></p>
+  <p class="center">图5. 对框选用户进行锁定</p>
+  <p>3）此时列表中锁定用户姓名侧出现锁的图标“<img src="pic/Application/锁定.png" width="18" height="21" />”，地图中用户的右上角出现一个锁定的图标。当用户离开当前视图时，地图的中心位置会立即定位到该用户所在的位置。</p>
+  <p>4）若不需要锁定该用户，则在列表中对锁定用户选择<span class="text">［应用业务/解锁］</span>，锁定图标消失。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div4')">
+  <p class="expanding"><a name="d" id="d"></a><img src="pic/Snap2.png" width="15" height="17" /> 对成员树中用户实现“锁定功能”的具体操作步骤如下：</p>
+</div>
+<div id="div4">
+  <p>1）在成员树中找到要锁定的用户，单击右侧三角按钮。</p>
+  <p>2）选择<span class="text">［应用业务/锁定］</span>，如图6所示。</p>
+  <p class="center"><img src="pic/Application/对成员树中用户进行锁定.png" width="726" height="559" /></p>
+  <p class="center">图6. 对成员树中用户进行锁定 </p>
+  <p>3）此时地图上的用户右上角会出现一个锁定的图标。当用户离开当前视图时，地图的中心位置会立即定位到该用户所在的位置。</p>
+  <p>4）若不需要锁定该用户，则在成员树中对锁定用户选择<span class="text">［应用业务/解锁］</span>，锁定图标消失。</p>
+</div>
+<p class="text">&nbsp;</p>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<ul>
+  <li>
+    <p>只能对单个移动用户进行锁定跟踪。只有对上个用户进行解锁后，才能对下个用户实现锁定功能。</p>
+  </li>
+  <li>
+    <p>锁定移动用户后，调度员不可放大缩小地图。</p>
+  </li>
+  <li>
+    <p>若用户经纬度为0或不存在，则无法锁定。</p>
+  </li>
+</ul>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_5.6(electronic fence).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_5(application service).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_5.8(located).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

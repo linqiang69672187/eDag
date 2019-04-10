@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>日志功能</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>日志功能</h2>
+<p class="text">只有调度用户成功登陆GIS系统后，才有权限进行日志功能。</p>
+<p class="text">系统提供了日志查询的界面，可以根据日志开始、结束时间和操作类型等查询条件对日志进行一个系统的查询。除了总的日志查询，界面左下角还有实时的日志显示窗口。如下图所示：</p>
+  <p class="center"><img src="pic/log/系统日志.png" width="308" height="124" /></p>
+  <p class="center">图1. 实时日志窗口</p>
+  <p class="text">实时日志窗口提供的日志功能包括：</p>
+  <ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#a">系统日志</a>：主要是系统对调度员登录注册eTRA   GIS系统进行记录，以及系统对调度员的正常操作及错误操作等进行完整记录。</p>
+  </li>
+  <li>
+    <p><a href="#b">呼叫日志</a>：主要记录系统中呼叫所产生的日志信息。</p>
+  </li>
+  <li>
+    <p><a href="#c">消息日志</a>：主要记录了发送/接收普通短消息以及发送/接收状态消息的日志信息。</p>
+  </li>
+  <li>
+    <p><a href="#d">操作日志</a>：主要记录了调度员在GIS系统上的一系列操作信息。</p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 实时日志窗口的系统日志</p>
+</div>
+<div id="div1">
+  <p class="text">打开系统左下角系统日志窗口，默认系统日志，显示如图2所示。</p>
+  <p class="center"><img src="pic/log/系统日志.png" width="308" height="124" /></p>
+  <p class="center">图2. 系统日志</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 实时日志窗口的呼叫日志</p>
+</div>
+<div id="div2">
+  <p class="text">在呼叫日志中除了记录呼叫所产生的操作日志外，对于组，单击鼠标左键可对该组发起组呼，对于用户，单击鼠标左键可对其发起单呼。</p>
+  <p class="text">打开系统左下角呼叫日志窗口，切换到“呼叫”标签，显示如图3所示。</p>
+  <p class="center"><img src="pic/log/呼叫日志.png" width="306" height="125" /></p>
+  <p class="center">图3. 呼叫日志</p>
+  <p class="text"><img src="pic/conicon.png" width="16" height="16" /> <span class="larger">组用户左键功能 </span></p>
+  <p class="text">例：对呼叫日志中的“2490002”组进行左右键操作，其操作步骤如下：</p>
+  <p>1）在呼叫日志中，找到“2490002”组，单击鼠标左键，或者右键选择“组呼”，弹出“小组呼叫”对话框，如下图4所示。</p>
+  <p class="center"><img src="pic/log/小组呼叫.png" width="378" height="238" /></p>
+  <p class="center">图4. 小组呼叫</p>
+  <p>2）按住＜PTT＞键发起组呼，单击＜结束＞键结束组呼，具体操作步骤可参见“<a href="outline_7.2.1(talk group call).html#c">小组呼叫</a>”。</p>
+  <p class="text"><img src="pic/conicon.png" width="16" height="16" /> <span class="larger">对用户操作</span> </p>
+  <p class="text">例：对呼叫日志中的“1008”进行操作，其操作步骤如下：</p>
+  <p>1）在呼叫日志中，找到“1008”，单击鼠标左键，弹出“单呼”对话框，如图5所示。具体单呼操作步骤可参见“<a href="outline_7.1(private call).html">单呼</a>”一章。</p>
+  <p class="center"><img src="pic/log/单呼.png" width="380" height="269" /></p>
+  <p class="center">图5. 单呼对话框</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> 实时日志窗口的消息日志</p>
+</div>
+<div id="div3">
+  <p class="text">在消息日志中，主要包含三个方面内容，一方面记录了发送/接收普通短消息的操作日志，另一方面记录了发送/接收状态消息的操作日志，除此两方面外，还包含部分的左右键的功能：</p>
+  <ul>
+    <li>
+      <p>对于组，单击鼠标左键可对该组发起组短信的功能；</p>
+    </li>
+    <li>
+      <p>对于用户，单击鼠标左键可对其发起短信。</p>
+    </li>
+  </ul>
+  <p class="text">打开系统左下角消息日志窗口，切换到“消息”标签，显示如图7所示。</p>
+  <p class="center"><img src="pic/log/消息日志.png" width="306" height="123" /></p>
+  <p class="center">图6. 消息日志</p>
+  <p class="text"><img src="pic/conicon.png" width="16" height="16" /> <span class="larger">组用户左键功能</span> </p>
+  <p class="text">例：对消息日志中的“TG1（10010001）”组进行左键操作，其操作步骤如下：</p>
+  <p>1）在消息日志中，找到“TG1（10010001）”组，单击鼠标左键，弹出“短信发送”对话框，具体操作步骤可参见“<a href="outline_6.2(group message).html">组短信发送</a>”。</p>
+  <p class="text"><img src="pic/conicon.png" width="16" height="16" /> <span class="larger">用户左右键功能</span> </p>
+  <p class="text">例：对消息日志中的“1008（1008）”进行左键操作，其操作步骤如下：</p>
+  <p>1）在消息日志中，在“1008（1008）”处单击鼠标左键，弹出“短信发送”对话框，如图7所示。具体操作步骤参见“<a href="outline_6.1(private message).html">个人短信发送</a>”。</p>
+  <p class="center"><img src="pic/log/个人短信.png" width="380" height="318" /></p>
+  <p class="center">图7. 发送个人短信</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div4')">
+  <p class="expanding"><a name="d" id="d"></a><img src="pic/Snap2.png" width="15" height="17" /> 实时日志窗口的操作日志</p>
+</div>
+<div id="div4">
+  <p class="text">打开系统左下角操作日志窗口，切换到“操作”标签，显示如图8所示。</p>
+  <p class="center"><img src="pic/log/操作日志.png" width="308" height="123" /></p>
+  <p class="center">图8. 操作日志</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div5')">
+  <p class="expanding"><a name="e" id="e"></a><img src="pic/Snap2.png" width="15" height="17" /> 历史日志查询</p>
+</div>
+<div id="div5">
+  <p class="text">系统将记录用户的各个操作，配置用户可通过日志查询来获取系统所有的历史操作信息。</p>
+    <p class="text">1）在系统操作菜单栏中单击［调度功能/操作日志］，弹出“日志查询”对话框。</p>
+    <p class="center"><img src="pic/log/日志查询窗口.png" width="821" height="516" /></p>
+  <p class="center">图9 日志查询窗口</p>
+   <p class="text">2）在“日志查询”对话框里按照查询的需要选择输入各项查询条件，其中日志的“开始时间”和“结束时间”是一定要输入的查询条件。然后在“操作类型”下拉框里选择一种操作类型，再点击“查询”按扭。对话框下方将列表显示符合查询条件的日志记录，如图10所示：</p>
+     <p class="center"><img src="pic/log/日志查询结果窗口.png" width="819" height="519" /></p>
+  <p class="center">图10 日志查询结果窗口</p>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<ul>
+  <li>
+    <p>日志查询条件包括开始时间、结束时间、登录用户、移动用户单位，移动用户标识、移动用户名称、设备单位、设备标识以及操作类型。</p>
+  </li>
+  <li>
+    <p>“开始时间”和“结束时间”这两个为必须输入的查询条件。</p>
+  </li>
+    <li>
+    <p>“开始时间”、“结束时间”、“移动用户单位”和“设备单位”这四个查询条件，只要点击就会跳出对话框让用户选择。</p>
+  </li>
+     <li>
+    <p>“操作类型”这个查询条件，在下拉框里让用户选择。操作类型的种类由同级的配置用户进行配置，详见<a href="outline_3.7(log config).html">日志配置</a>。</p>
+  </li>
+</ul>
+</div>
+
+<table width="100" border="0" align="right" cellspacing="1">
+  <tr>
+    <td width="96"><a href="#top"><img src="pic/top.png" width="15" height="17" border="0" /></a><a href="#top"> 返回顶端</a></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_7.10(GPS report switch).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><img src="pic/mulu.gif" width="49" height="60" /></div></td>
+    <td width="110"><div align="center"><a href="outline_9(members tree).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

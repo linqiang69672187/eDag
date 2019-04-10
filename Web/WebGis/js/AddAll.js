@@ -1,0 +1,17 @@
+﻿includesrcipt(basePath + 'WebGis/js/model/Choose.js');
+includesrcipt(basePath + 'WebGis/js/model/Draw.js');
+includesrcipt(basePath + 'WebGis/js/model/Hawkeye.js');
+includesrcipt(basePath + 'WebGis/js/model/Map.js');
+includesrcipt(basePath + 'WebGis/js/model/MapFather.js');
+includesrcipt(basePath + 'WebGis/js/model/MapNavigator.js');
+includesrcipt(basePath + 'WebGis/js/model/Multi_Ranging.js');
+includesrcipt(basePath + 'WebGis/js/model/Ranging.js');
+includesrcipt(basePath + 'WebGis/js/model/LayerManager.js');
+includesrcipt(basePath + 'WebGis/js/model/Romance.js');
+includesrcipt(basePath + 'WebGis/js/model/ZoomTool.js');
+includesrcipt(basePath + 'WebGis/js/VectorLanguageCls/VectorLanguageCls_VML.js');
+includesrcipt(basePath + 'WebGis/js/VectorLanguageCls/VectorLanguageCls_SVG.js');
+includesrcipt(basePath + 'WebGis/js/VectorLanguageCls/VectorLanguageCls_HTML5.js');
+includesrcipt(basePath + 'WebGis/js/mapEdushiHZ.js');
+includesrcipt(basePath + 'WebGis/js/map_hz.js');
+includesrcipt(basePath + 'WebGis/js/model/AddObjToMap.js');

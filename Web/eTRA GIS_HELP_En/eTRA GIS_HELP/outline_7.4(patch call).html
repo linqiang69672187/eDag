@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>派接组呼叫</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>派接组呼叫</h2>
+<p class="text">派接组呼叫是对所有组资源进行选择性的组合派接，使其能作为一个派接组呼叫。</p>
+<p class="text">当调度台发起派接组呼叫时，派接组中的所有通话组相当于合成为一个大的通话组，即：派接组中所有的通话组的成员都能接收到调度台语音；任意一个通话组内的成员使用组呼，派接组中所有的通话组成员都能接收到。</p>
+<p class="text">通话组派接可分为三个过程：</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#c">派接过程</a>：调度台选择要加入到派接组的通话组，即对这个组的所有成员进行动态重组，组号相同。</p>
+  </li>
+  <li>
+    <p><a href="#d">派接呼叫过程</a>：与组呼过程类似，是半双工呼叫。</p>
+  </li>
+  <li>
+    <p><a href="#e">解派过程</a>：对这个组的所有组员进行取消动态重组。</p>
+  </li>
+</ul>
+<p class="text">在本系统中，包括了<a href="outline_3.3(patch).html">预定义的派接组</a>（即“编组信息”中的“派接组”）和<a href="#a">自定义的派接组</a>。</p>
+<p class="text">单击［调度功能/呼叫面板］，在“呼叫业务”模块中选择“派接组呼叫”，弹出“派接”对话框，显示“编组信息”中的“派接组”信息，如下图1所示。调度员可进行派接组相关的<a href="#b">修改</a>、<a href="#c">派接</a>、<a href="#d">呼叫</a>、<a href="#e">解派接</a>操作。</p>
+<p class="center"><img src="pic/Call/派接组呼叫/派接组呼叫对话框.png" width="579" height="385" /></p>
+<p class="center">图1. 派接对话框</p>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 自定义派接组</p>
+</div>
+<div id="div1">
+  <p class="text">具有权限的调度员可以自定义添加派接组，具体操作步骤如下：</p>
+  <p>1）在“派接”对话框中单击＜自定义＞，弹出“添加”对话框，如下图2所示。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/添加派接组.png" width="571" height="362" /></p>
+  <p class="center">图2. 添加派接组</p>
+  <p>2）输入新增派接组信息，单击＜确定＞完成操作。</p>
+  <p>3）在“派接”对话框中显示新增派接组信息，且赋予一个派接组号。调度员可对新增的派接组发起派接组呼叫。</p>
+  <p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+  <ul>
+    <li>
+      <p>系统最多允许创建8个派接组。</p>
+    </li>
+    <li>
+      <p>一个派接组至少需要添加一个成员组。</p>
+    </li>
+    <li>
+      <p>自定义的派接组在关闭“派接”对话框后消失，不会保存至“编组信息”的“派接组”信息中。</p>
+    </li>
+  </ul>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 修改派接组</p>
+</div>
+<div id="div2">
+  <p class="text">具有权限的调度员可以修改派接组信息，具体操作步骤如下：</p>
+  <p>1）在对话框中选中要修改的派接组名称。</p>
+  <p>2）单击＜修改＞，弹出“修改成员”对话框，如下图3所示。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/修改派接组.png" width="635" height="337" /></p>
+  <p class="center">图3. 修改派接组</p>
+  <p>3）调度员可根据实际需要修改派接组成员信息。</p>
+  <p>4）单击＜确定＞完成操作。此时，在“派接”成员模块中显示已包含想要派接的成员信息。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> 派接</p>
+</div>
+<div id="div3">
+  <p>1）在对话框中选中要派接的派接组名称。</p>
+  <p>2）单击＜派接＞按钮，此时，在“成员列表”中会将派接的小组成员派接并显示派接状态。派接成功后，“派接组”模块中显示派接图标，且右侧“成员”的派接状态为“已派接”，如图4所示。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/派接.png" width="579" height="385" /></p>
+  <p class="center">图4. 派接</p>
+  <p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+  <p class="text">若本调度台其他派接组中已派接了当前组，则派接失败。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div4')">
+  <p class="expanding"><a name="d" id="d"></a><img src="pic/Snap2.png" width="15" height="17" /> 发起派接组呼叫</p>
+</div>
+<div id="div4">
+  <p class="text">派接成功后，调度员可对其发起派接组呼叫，具体操作步骤如下：</p>
+  <p>1）调度员按住中间区域的＜PTT＞按钮即可发起派接组呼叫，此时，所有被派接的小组成员都能接收到调度台语音，在“派接”对话框下方提示派接消息，如图5所示。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/调度台发起派接组呼叫.png" width="580" height="384" /></p>
+  <p class="center">图5. 调度台发起派接组呼叫</p>
+  <p>2）调度员释放＜PTT＞按钮，即可释放发射权，如图6所示。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/调度台释放授权.png" width="579" height="385" /></p>
+  <p class="center">图6. 调度台释放发射权</p>
+  <p>3）当调度台释放授权时，派接组内某一成员通过按下PTT键获取授权，发射语音，如图7所示。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/用户获取授权.png" width="580" height="384" /></p>
+  <p class="center">图7 用户获取授权</p>
+  <p>4）用户释放PTT键释放授权，如图8所示。此时组内其他成员也可发起语音。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/用户释放授权.png" width="580" height="386" /></p>
+  <p class="center">图8. 用户释放发射权</p>
+  <p>5）在通话过程中，都会收到一系列的呼叫消息。</p>
+  <p>6）当通话结束时，调度员可单击＜结束＞结束派接组呼叫，如图9所示。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/结束派接组呼叫.png" width="580" height="385" /></p>
+  <p class="center">图9. 结束派接组呼叫</p>
+  <p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+  <p class="text">只有调度员单击＜结束＞才可结束派接组呼叫。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div5')">
+  <p class="expanding"><a name="e" id="e"></a><img src="pic/Snap2.png" width="15" height="17" /> 解派接 </p>
+</div>
+<div id="div5">
+  <p>1）在对话框中选中要解派的派接组名称。</p>
+  <p>2）单击＜解派＞按钮即可取消派接，“派接组”模块中派接图标消失，且右侧“成员”的派接状态为“未派接”，如图10所示。</p>
+  <p class="center"><img src="pic/Call/派接组呼叫/解派.png" width="580" height="385" /></p>
+  <p class="center">图10. 解派接</p>
+  <p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+  <p class="text">若当前“派接”对话框中有派接组正在派接，则无法关闭“派接”对话框，需先结束相关派接。</p>
+</div>
+<table width="100" border="0" align="right" cellspacing="1">
+  <tr>
+    <td width="96"><a href="#top"><img src="pic/top.png" width="15" height="17" border="0" /></a><a href="#top"> 返回顶端</a></td>
+  </tr>
+</table>
+<p class="text">&nbsp;</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_7.3.3(group emergency call).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_7(dispatch function).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_7.5(multi-sel call).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

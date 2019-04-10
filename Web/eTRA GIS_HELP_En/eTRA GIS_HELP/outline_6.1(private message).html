@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>个人短信</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>个人短信</h2>
+<p class="text">调度员可以通过信息管理器发送和接收短信息，同时系统会对这些消息产生消息日志。</p>
+<p class="text">在本节，主要介绍通过<a href="#a">地图右键</a>选中移动用户发送个人短信，以及通过“调度功能”下的“<a href="#b">呼叫面板</a>”发送个人短信两种方法。其余操作方法类似。</p>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过地图右键发送个人短信的具体操作操作步骤如下：</p>
+</div>
+<div id="div1">
+  <p>1）在地图上选中移动用户。</p>
+  <p>2）右键单击<span class="text">［短信业务/个人短信］</span>，弹出“短信发送”对话框。</p>
+  <p>3）调度员可根据实际需要是否添加其他用户以及是否请求回执等，如下图1所示。</p>
+  <p class="center"><img src="pic/SDS/发送个人短信.png" width="380" height="318" /></p>
+  <p class="center">图1. 发送个人短信</p>
+  <p>4）单击＜发送＞按钮进行发送。</p>
+  <p>5）短信发送成功后，在系统下方的消息日志中会显示相关信息，如：“［发送（短信）］发送成功（1008（1008））［10:01:18］”。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫面板发送个人短信的操作操作步骤如下：</p>
+</div>
+<div id="div2">
+  <p>1）在系统操作菜单栏中单击<span class="text">［调度功能/呼叫面板］</span>，弹出“呼叫面板”对话框。</p>
+  <p>2）单击“消息业务”模块中的“短信”，弹出“短信发送”对话框，如下图2所示。</p>
+  <p class="center"><img src="pic/SDS/短信发送对话框.png" width="381" height="317" /></p>
+  <p class="center">图2. 短信发送对话框</p>
+  <p>3）在“终端\小组\调度台”下方单击＜选择＞按钮，弹出选择用户对话框。在左侧成员树中选择一个或多个移动用户，或者在右侧的“请输入终端标识或小组标识”对话框中输入终端标识，单击＜新增＞按钮。</p>
+  <p>4）单击＜确定＞完成用户添加。</p>
+  <p>5）调度员可根据实际需要添加短信内容以及是否请求回执等。</p>
+  <p>6）单击＜发送＞按钮进行发送。短信发送成功后，在系统下方的消息日志中会有成功发送的记录。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> 调度台接收个人短信的操作操作步骤如下：</p>
+</div>
+<div id="div3">
+  <p class="text">若调度台收到其他用户发来的短消息，则在“消息”日志中会显示收到的短信内容及发送方标识号。例如：“［接收（短信）］1008（1008）：警报［10:32:35］”。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div4')">
+  <p class="expanding"><a name="d" id="d"></a><img src="pic/Snap2.png" width="15" height="17" /> 个人短信信息说明</p>
+</div>
+<div id="div4">
+  <table width="700" border="1" align="center" cellpadding="0" cellspacing="0">
+    <tr align="center" bgcolor="#99CCFF">
+      <td width="114" height="24"><b><font color="#000000">&nbsp;参数名称</font></b></td>
+      <td width="310" height="24"><b><font color="#000000">描述</font></b></td>
+      <td width="209" height="24"><b><font color="#000000">&nbsp;类型</font></b></td>
+      <td width="57" height="24"><b><font color="#000000">&nbsp;缺省值</font></b></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td height="24" align="center">终端/小组/调度台</td>
+      <td height="24"><p>发送方或接收方（终端/小组/调度台）标识号</p></td>
+      <td height="24"><p>1～13999999</p></td>
+      <td height="24">N/A</td>
+    </tr>
+    <tr bgcolor="#F0F0F0">
+      <td height="24" align="center">内容</td>
+      <td height="24"><p>短信内容</p></td>
+      <td height="24"><p>0～70个汉字，字符数不超过140个</p></td>
+      <td height="24">N/A</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td height="24" align="center">回执</td>
+      <td height="24"><p>选择是否请求回执，若发送成功，则在“消息”日志中会有短信已读的记录</p></td>
+      <td height="24"><p>通过在回执右侧是否打勾选择</p></td>
+      <td height="24"><p>不要回执</p></td>
+    </tr>
+  </table>
+  </div>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<p class="text">若消息发送失败，在“消息”日志栏中会显示相应的信息。</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_6(SDS service).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_6(SDS service).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_6.2(group message).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

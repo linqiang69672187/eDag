@@ -1,0 +1,155 @@
+﻿        body, .style1 {
+            border: 0;
+            background-color: transparent;
+            margin: 0px;
+            font-size: 12px;
+            scrollbar-face-color: #DEDEDE;
+            scrollbar-base-color: #F5F5F5;
+            scrollbar-arrow-color: black;
+            scrollbar-track-color: #F5F5F5;
+            scrollbar-shadow-color: #EBF5FF;
+            scrollbar-highlight-color: #F5F5F5;
+            scrollbar-3dlight-color: #C3C3C3;
+            scrollbar-darkshadow-Color: #9D9D9D;
+        }
+
+        .style2 {
+            width: 10px;
+        }
+
+        .bg1 {
+            background-image: url('../../../view_infoimg/images/bg_02.png');
+            background-repeat: repeat-x;
+            vertical-align: top;
+        }
+
+        .bg2 {
+            background-image: url('../../../view_infoimg/images/bg_10.png');
+            background-repeat: repeat-x;
+        }
+
+        .bg3 {
+            background-image: url('../../../view_infoimg/images/bg_05.png');
+            background-repeat: repeat-y;
+        }
+
+        .bg4 {
+            background-image: url('../../../view_infoimg/images/bg_06.png');
+        }
+
+        .bg5 {
+            background-image: url('../../../view_infoimg/images/bg_07.png');
+            background-repeat: repeat-y;
+        }
+
+        .bg11 {
+            background-image: url('../../../view_infoimg/images/bg_01.png');
+            background-repeat: repeat-x;
+        }
+
+        .bg12 {
+            background-image: url('../../../view_infoimg/images/bg_04.png');
+        }
+
+        .bg21 {
+            background-image: url('../../../view_infoimg/images/bg_09.png');
+        }
+
+        .bg22 {
+            background-image: url('../../../view_infoimg/images/bg_11.png');
+        }
+
+        #divClose {
+            border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    width: 33px;
+            height: 16px;
+            position: relative;
+            float: right;
+            margin-top: 1px;
+            background-image: url('../../../view_infoimg/images/minidict_03.png');
+            cursor: hand;
+        }
+
+        .gridheadcss th {
+            background-image: url('../../images/tab_14.gif');
+            height: 25px;
+        }
+
+        #GridView1, #GridViewLog {
+            margin-top: 3px;
+            font-size: 12px;
+        }
+
+        .td1td {
+            background-color: #FFFFFF;
+            text-align: right;
+        }
+
+        .divgrd {
+            margin: 2 0 2 0;
+            overflow: auto;
+            height: 365px;
+        }
+
+        #tags {
+            width: 99px;
+        }
+
+        .style3 {
+            width: 37px;
+        }
+
+        .auto-style1 {
+            background-image: url('../../../view_infoimg/images/bg_04.png');
+            width: 10px;
+        }
+
+        .auto-style2 {
+            background-image: url('../../../view_infoimg/images/bg_07.png');
+            background-repeat: repeat-y;
+            width: 10px;
+        }
+
+        .auto-style3 {
+            background-image: url('../../../view_infoimg/images/bg_11.png');
+            width: 10px;
+        }
+
+        .auto-style4 {
+            width: 60px;
+        }
+
+        .auto-style5 {
+            width: 124px;
+        }
+
+#toolTip{
+   border:1px solid #CCC;
+   background-color:#F9F9F9;
+   width:150px;
+   position:absolute;
+   visibility: hidden;
+   overflow: hidden;
+  	font-family: Tahoma,"宋体";
+	font-size: 11px;
+	font-weight: normal;
+   color:#333;
+}
+
+#toolTip h1{
+   display:block;
+  	font-family: Tahoma,"宋体";
+	font-size: 12px;
+	font-weight: bold;
+   background-color:#F1F1F1;
+   border-bottom:1px solid #CCC;  
+   margin:0px;
+   padding:0px 2px;   
+}
+
+#toolTip p {
+   margin:0px;
+   padding:4px 2px;   
+}

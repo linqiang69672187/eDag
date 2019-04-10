@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>慎密监听</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>慎密监听</h2>
+<p class="text">慎密监听（Discreet   Listening，简称DL）是指在被监听用户毫不察觉的情况下，调度台对被监听用户进行监听追踪，当被追踪的用户有呼叫产生时，调度台则对该呼叫进行监听。在此基础上，还能对被监听的呼叫进行更深一步的<a href="outline_7.7.1(forced in).html">插入</a>和<a href="outline_7.7.2(break off).html">拆除</a>动作。</p>
+<p class="text">监听呼叫的结束有两种情况：监听用户主动结束监听；被监听呼叫断开导致监听呼叫被动结束。</p>
+<p class="text">慎密监听分为两个过程：</p>
+<ul>
+  <li>
+    <p>跟踪：监听前的准备，主要是激活DL，是监听的基础；</p>
+  </li>
+  <li>
+    <p>监听呼叫建立和结束：在调度台对某一移动用户进行跟踪后，当被跟踪的用户有满足监听要求的呼叫产生时，ECN会通知调度台。调度台会以监听模式加入该呼叫中（能够听到呼叫中产生的所有语音，但本身不能发送语音），监听呼叫中的语音。</p>
+  </li>
+</ul>
+<p class="text">调度员可通过地图右键选择呼叫业务菜单中的“慎密监听”按钮或者单击［调度功能/呼叫面板］下的“慎密监听”两种方式进行操作，操作步骤类似，在本节中就只介绍其中一种操作。</p>
+<p class="text">在本节中主要介绍：</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#a">对全双工呼叫进行慎密监听</a></p>
+  </li>
+  <li>
+    <p><a href="#b">对半双工呼叫进行慎密监听</a></p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 对全双工呼叫进行慎密监听的操作步骤如下：</p>
+</div>
+<div id="div1">
+  <p>1）在地图上选中移动用户，例如“1008（1008）”。</p>
+  <p>2）单击右键选择<span class="text">［呼叫业务/慎密监听］</span>，弹出“慎密监听”对话框，如图1所示。</p>
+  <p class="center"><img src="pic/Call/慎密监听/DL对话框.png" width="380" height="244" /></p>
+  <p class="center">图1. 慎密监听对话框</p>
+  <p>3）单击＜开始监听＞按钮，此时“开始监听”变为“结束监听”，用户“1008”一直处于被监听状态，界面显示如图2所示。</p>
+  <p class="center"><img src="pic/Call/慎密监听/全双工/激活成功.png" width="379" height="246" /></p>
+  <p class="center">图2. 慎密监听激活成功</p>
+  <p>4）当他与任一用户发生全双工单呼时，他们的通话过程将被该调度员所监听。在此基础上，调度员还能对被监听的呼叫进行<a href="outline_7.7.1(forced in).html#a">强插</a>和<a href="outline_7.7.2(break off).html#a">强拆</a>，如图3所示。</p>
+  <p class="center"><img src="pic/Call/慎密监听/全双工/全双工慎密监听.png" width="380" height="278" /></p>
+  <p class="center">图3. 对全双工通话中用户监听成功</p>
+  <p>5）若调度员单击＜结束监听＞或者用户结束全双工通话，则慎密监听结束，此时“结束监听”变为“开始监听”，如图4所示。</p>
+  <p class="center"><img src="pic/Call/慎密监听/全双工/结束DL.png" width="379" height="246" /></p>
+  <p class="center">图4. 结束慎密监听</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 对半双工呼叫进行慎密监听的操作步骤如下：</p>
+</div>
+<div id="div2">
+  <p>1）在地图上选中移动用户，例如“1008（1008）”。</p>
+  <p>2）单击右键选择<span class="text">［呼叫业务/慎密监听］</span>，弹出“慎密监听”对话框。</p>
+  <p>3）单击＜开始监听＞按钮，监听激活，此时“开始监听”变为“结束监听”，用户“1008”一直处于被监听状态。</p>
+  <p>4）若此时用户“1008”呼叫“1007”或者被其他用户呼叫，调度员均能监听到用户的整个通话过程，在此基础上，调度员还能对被监听的呼叫进行<a href="outline_7.7.1(forced in).html#b">强插</a>和<a href="outline_7.7.2(break off).html#b">强拆</a>，如图5所示。</p>
+  <p class="center"><img src="pic/Call/慎密监听/半双工/发起半双工DL.png" width="380" height="279" /></p>
+  <p class="center">图5. 对半双工通话中用户发起慎密监听</p>
+  <p>5）若“1007”获取授权发送语音信息，则“慎密监听”对话框显示如图6所示。若“1007”释放PTT键则释放授权。若“1008”获取授权发送语音信息，则界面显示“1008获取授权”，若“1008”释放授权，则“慎密监听”对话框显示如图7所示。</p>
+  <p class="center"><img src="pic/Call/慎密监听/半双工/1007获取授权.png" width="379" height="277" /></p>
+  <p class="center">图6. 1007获取授权</p>
+  <p class="center"><img src="pic/Call/慎密监听/半双工/1008释放授权.png" width="379" height="278" /></p>
+  <p class="center">图7. 1008释放授权</p>
+  <p>6）若半双工通话结束或者调度员单击＜结束监听＞按钮，则慎密监听结束。</p>
+</div>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<ul>
+  <li>
+    <p>同一时刻，一个调度台只能对一个用户进行慎密监听。</p>
+  </li>
+  <li>
+    <p>若用户当前处于未注册状态，则开始监听失败。</p>
+  </li>
+</ul>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_7.6.3(all BS call).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_7(dispatch function).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_7.7.1(forced in).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

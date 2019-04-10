@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FAQ</title>
+<script>
+ function isHidden(oDiv){ 
+ var vDiv = document.getElementById(oDiv); 
+ vDiv.style.display = (vDiv.style.display == 'none')?'block':'none'; 
+ } 
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style type="text/css">
+.style1 {
+	border-width: 0px;
+}
+.style3 {
+	text-align: center;
+	border: 1px solid #000000;
+}
+</style>
+</head>
+
+<body style="background-color: #F5F0E6; width: 98%;">
+
+<p>
+
+
+<img alt="" src="logo.png" width="138" height="64" style="float: right" /></p>
+<p>&nbsp;</p>
+<h3 class="标题">FAQ</h3>
+
+<Div style="cursor:hand" onclick="isHidden('div1')"> 
+
+
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 若登录后，在呼叫面板中显示“呼叫功能不可用”？</p>
+
+</Div>
+<Div id="div1">
+
+
+
+<p class="正文">
+
+为使调度用户能正常发起呼叫等业务，需在调度客户端侧安装“GIS客户端呼叫代理控件”。</p>
+<p class="正文">
+
+在“调度客户端安装”目录中包含以下文件：CallActiveocxSetup.msi，DispatchConfig.ini，vcredist_x86.exe，setup.exe。具体安装步骤如下：</p>
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+1）双击CallActiveocxSetup.msi安装呼叫代理控件。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）修改hosts文件，添加LDAP域名、告警服务器域名、网管应用程序域名以及调度台域名，例如：</p>
+
+<p class="正文">
+
+10.8.52.200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nms.etra.com</p>
+<p class="正文">
+
+10.8.52.200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ldap.etra.com</p>
+<p class="正文">
+
+10.8.52.200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; trap.etra.com</p>
+<p class="正文">
+
+10.8.54.224&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eds.etra.com</p>
+
+
+
+<p class="正文">
+<img alt="" src="chm.png" width="90" height="59" />&nbsp; 
+<span style='font-family:黑体;'><strong>说明：</strong></span></p>
+<ul>
+	<li>
+	<p class="正文">网管应用程序域名、告警服务器域名以及LDAP域名IP地址应与GIS调度台所属网管的IP地址一致。</p>
+	</li>
+	<li>
+	<p class="正文">GIS调度台域名IP地址为调度台客户端本机的IP地址。</p>
+	</li>
+</ul>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>3）网管中配置本地IP所对应的GIS调度台以及配置用户。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>4）修改调度台控件的配置文件：DispatchConfig.ini，修改的参数可如下图所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/DispatchConfig.ini.png" width="739" height="369" /></p>
+<p class="版权所有">
+
+修改配置文件</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+5）安装完成后，用配置用户登录GIS系统，在IE文件夹目录下的Config文件夹下会生成一个原始的资源配置文件，包括：AuthConfig.ini、CallActiveOCX_Version.xml、config.client、OCXTmpData.xml、ResourceConfig.xml、Sds.ini。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+6）打开IE目录下的cfg配置文件夹，用记事本打开“rdt.dat”文件，将“Inter_DATA_IP_Addr”、“Inter_DATA_IP_Mask”地址更改为调度台本机IP地址及网关。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+7）登录N2000，将之前设置的配置用户修改为调度用户。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+8）再用调度用户登录GIS系统，可以发现呼叫控件注册成功，可正常发起呼叫等业务。</p>
+
+
+
+<p class="正文">
+<img alt="" src="chm.png" width="90" height="59" />&nbsp; 
+<span style='font-family:黑体;'><strong>说明：</strong></span></p>
+<p class="正文">
+
+调度用户不能创建资源配置文件，只有配置用户能创建资源配置文件，但无发起各种调度业务的权限。调度用户需要调用资源配置文件才能完成相关的调度业务。</p>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div2')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 若登录后报错“Load Eds 
+Information Fail”？</p>
+
+</Div>
+<Div id="div2">
+
+<p class="正文">
+
+该问题是由环境未配置正确造成的。</p>
+<p class="正文">
+
+检查方法包括：</p>
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）hosts文件中是否添加网管IP的映射；</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）调度台本机IP地址是否能与网管ping通；</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>3）网管中配置的调度台IP地址是否与GIS客户端本机IP地址一致。</p>
+</Div>
+<Div style="cursor:hand" onclick="isHidden('div3')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 
+若登录后在日志中显示“呼叫控件注册失败”，并且在“CallActiveocx.log”日志中有“Error： Eds System Initialize 
+Fail！ Error code is :N?&quot;</p>
+
+</Div>
+<Div id="div3">
+
+<p class="正文">
+
+出现该问题检查方法可对照下表：</p>
+<table style="width: 825px" align="center" class="表格变色">
+	<tr class="表格第一行">
+		<td style="width: 825px; height: 24px" class="style3">N取值</td>
+		<td style="width: 825px; height: 24px" class="style3">问题原因</td>
+		<td style="width: 825px; height: 24px" class="style3">解决方法</td>
+	</tr>
+	<tr>
+		<td style="width: 825px; height: 24px" class="style3">14000000</td>
+		<td style="width: 825px; height: 24px" class="style3">资源配置文件未加载</td>
+		<td style="width: 825px; height: 24px" class="style3">
+		用配置用户登录GIS，生成资源配置文件后再用调度用户登录GIS系统</td>
+	</tr>
+	<tr>
+		<td style="width: 825px; height: 24px" class="style3">14000001</td>
+		<td style="width: 825px; height: 24px" class="style3">资源配置文件加载失败</td>
+		<td style="width: 825px; height: 24px" class="style3">
+		删除资源配置文件后，用配置用户登录GIS，重新生成资源配置文件后再用调度用户登录GIS系统</td>
+	</tr>
+	<tr>
+		<td style="width: 825px; height: 24px" class="style3">12</td>
+		<td style="width: 825px; height: 24px" class="style3">1050端口被其他进程占用</td>
+		<td style="width: 825px; height: 24px" class="style3">单击[开始/运行]，输入cmd，弹出cmd.exe窗口，输入“netstat 
+		-a 
+		-o”，找到“1050”端口对应的进程ID（即该行的最后一列），然后在任务管理器中找到该进程（可通过查看-&gt;选择列-&gt;勾选PID（进程标识符）），结束该进程即可</td>
+	</tr>
+	<tr>
+		<td style="width: 825px; height: 24px" class="style3">50</td>
+		<td style="width: 825px; height: 24px" class="style3">用户名称错误</td>
+		<td style="width: 825px" class="style3" rowspan="2">在网管中核实用户名称和密码是否正确</td>
+	</tr>
+	<tr>
+		<td style="width: 825px; height: 24px" class="style3">51</td>
+		<td style="width: 825px; height: 24px" class="style3">用户密码错误</td>
+	</tr>
+	<tr>
+		<td style="width: 825px; height: 24px" class="style3">1</td>
+		<td style="width: 825px; height: 24px" class="style3">用户名称的长度不符合要求</td>
+		<td style="width: 825px; height: 24px" class="style3">长度范围为1～16个字符串</td>
+	</tr>
+	<tr>
+		<td style="width: 825px; height: 24px" class="style3">2</td>
+		<td style="width: 825px; height: 24px" class="style3">用户密码的长度不符合要求</td>
+		<td style="width: 825px; height: 24px" class="style3">长度范围为6～16个字符串</td>
+	</tr>
+</table>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div4')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 若对某组发起组呼，总是收到“对方挂断”？</p>
+
+</Div>
+<Div id="div4">
+
+<p class="正文">
+
+该问题是因为该组下面没有任何在线成员所造成的。</p>
+<p class="正文">
+
+检查方法：查看该组下面是否有在线成员。</p>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div5')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 
+若登录后，系统界面只有警员没有地图？</p>
+
+</Div>
+<Div id="div5">
+
+<p class="正文">
+
+该问题是因为最后一次退出时，其当前位置不在地图范围内造成的。</p>
+<p class="正文">
+
+检查方法：重新定位某些在地图层级范围内的用户即可。</p>
+
+</Div>
+
+<p class="正文">
+
+&nbsp;</p>
+
+
+
+<p class="上一页下一页">
+	<a href="outline_15.5(uplink%20private%20call).htm">
+	<img alt="" src="top.gif" width="54" height="34" class="style1" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<img alt="" src="mulu2.png" width="49" height="60" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<img alt="" src="next2.png" width="54" height="34" /></p>
+
+<p class="版权所有">
+Copyright © 2011 Eastcom, Inc. All right reserved.</p> 
+
+</body>
+
+</html>

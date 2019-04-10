@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Copyofstyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        //如果不在子列表上，就隐藏
+        function hor_ul_onmouseout(ul) {
+            if (event.clientY <= 30) {
+                hiddenUL(ul);
+            }
+        }
+        function hiddenUL(ul) {
+            ul.style.display = 'none';
+        }
+        function showUL(ul) {
+            ul.style.display = 'block';
+        }
+    </script>
+    <script src="../../Prototype.js" type="text/javascript"></script>
+</head>
+<body scroll="no">
+    <%--工具栏--%>
+    <div id="toolbar_div" class="toolbar_div">
+        <ul class="hor_ul">
+            <li>
+                <img id='mapmoveflag' alt="拖动" src="Images/dt_mapmove.gif" /></li>
+            <li>
+                <img id='' onmouseover="showUL($('ul_zoomin_out'))" onmouseout="hor_ul_onmouseout($('ul_zoomin_out'))"
+                    alt="缩放" src="Images/zoomin_out.gif" /></li>
+            <li>
+                <img id='choose' onmouseover="showUL($('ul_choose'))" onmouseout="hor_ul_onmouseout($('ul_choose'))"
+                    alt="选择" src="Images/choose.gif" /></li>
+            <li>
+                <img id='mapcountdisflag' alt="测距" onclick="ToolBar.click(this)" src="Images/dt_cd.gif" /></li>
+            <li>
+                <img id='mappoi' alt="点信息" onclick="ToolBar.click(this)" src="Images/dxx.gif" /></li>
+            <li>
+                <img id='' alt="图层" onclick="mydisplayLayerManager()" src="Images/dt_layer.gif" /></li>
+            <li>
+                <img id='Img6' alt="小区查询" onclick="showSearhPage()" src="Images/xqcx.gif" /></li>
+            <li>
+                <img id='Img7' alt="投诉设置" onclick="ShowComplainSetPage()" src="Images/tssz.gif" /></li>
+            <li>
+                <img id='Img9' alt="投诉报表" onclick="ShowComplainDataReport()" src="Images/tszlbb.gif" /></li>
+        </ul>
+        <ul id="ul_zoomin_out" class="ver_ul_zoomin_out" onmouseover="showUL($('ul_zoomin_out'))"
+            onmouseout="hiddenUL($('ul_zoomin_out'))">
+            <li>
+                <img id='zoominflag' alt="放大" onclick="hiddenUL($('ul_zoomin_out'))" src="Images/dt_zoomin.gif" /></li>
+            <li>
+                <img id='zoomoutflag' alt="缩小" onclick="hiddenUL($('ul_zoomin_out'))" src="Images/dt_zoomout.gif" /></li>
+        </ul>
+        <ul id="ul_choose" class="ver_ul_choose" onmouseout="hiddenUL($('ul_choose'))">
+            <li>
+                <img id='zoompanselflag' alt="框选" onclick="hiddenUL($('ul_choose'))" src="Images/dt_pansel.gif" /></li>
+            <li>
+                <img id='zoomcirselflag' alt="圈选" onclick="hiddenUL($('ul_choose'))" src="Images/dt_cirsel.gif" /></li>
+            <li>
+                <img id='zoompoiselflag' alt="点选" onclick="hiddenUL($('ul_choose'))" src="Images/dt_poisel.gif" /></li>
+        </ul>
+    </div>
+</body>
+</html>

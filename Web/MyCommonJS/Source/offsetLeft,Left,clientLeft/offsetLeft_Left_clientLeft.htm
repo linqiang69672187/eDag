@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>无标题页</title>
+
+    <script type="text/javascript">
+    window.onload=function thisOnload()
+    {
+        var msg="";
+        msg+="body.clientTop:"+document.body.clientTop;
+        msg+="; \nbody.clientLeft:"+document.body.clientLeft;
+        msg+="; \nbody.clientHeight:"+document.body.clientHeight;
+        msg+="; \nbody.clientWidth:"+document.body.clientWidth;
+        msg+="; \nbody.offsetHeight:"+document.body.offsetHeight;
+        msg+="; \nbody.offsetWidth:"+document.body.offsetWidth;
+        msg+="; \nbody.padding:"+document.body.style.padding;
+        msg+="; \ndiv.clientLeft:"+document.getElementById("div").clientLeft;
+        msg+="; \ndiv.clientTop:"+document.getElementById("div").clientTop;
+        msg+="; \ndiv.offsetTop:"+document.getElementById("div").offsetTop;
+        msg+="; \ndiv.offsetLeft:"+document.getElementById("div").offsetLeft;
+        msg+="; \ndiv.style.left:"+document.getElementById("div").style.left;
+        msg+="; \ndiv.offsetHeight:"+document.getElementById("div").offsetHeight;
+        msg+="; \ndiv.scrollHeight:"+document.getElementById("div").scrollHeight;
+        msg+="; \ndiv.clientHeight:"+document.getElementById("div").clientHeight;
+        alert(msg);
+    }
+    </script>
+
+</head>
+<!--http://xo-tobacoo.javaeye.com/blog/242730-->
+<body style="background-color: White; margin: 10px; border-color: Blue; border-style: solid;
+    padding: 20px; height: 500px; width: 800px; border-width: 10px;">
+    <div id="div" style="position: absolute; top: 220px; left: 320px; border-color: Blue;
+        border-style: solid; width: 200px; height: 100px; border-width: 10px; overflow: auto;">
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+        Div Test
+        <br />
+    </div>
+</body>
+</html>

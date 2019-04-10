@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>选取移动用户</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>选取移动用户</h2>
+<p class="text">移动用户的选取模式包括：</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#a">单用户点选</a></p>
+  </li>
+  <li>
+    <p><a href="#b">多用户点选</a></p>
+  </li>
+  <li>
+    <p><a href="#c">框选</a></p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 选中单个用户的操作步骤如下：</p>
+</div>
+<div id="div1">
+  <p class="text">在地图上找到移动用户1，并单击左键即可选中用户1，同时在用户1右上角有选中的标记。若单击另一用户2，则用户1被取消选中，选中标记转到了用户2上。</p>
+  <p class="text">当用户在地图上处于被选中状态时，调度员在地图任意位置单击左键，用户被取消选中，选中标记消失。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 选中多个用户的操作步骤如下：</p>
+</div>
+<div id="div2">
+  <p class="text">调度员可按住Ctrl键，然后逐个单击要选中的用户，被选中的多个用户右上角都有选中的特殊标记。</p>
+  <p class="text">当调度员在地图上任意位置单击左键，则被选中的多个用户都被取消选中，选中标记消失。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> 框选移动用户的操作步骤如下：</p>
+</div>
+<div id="div3">
+  <p class="text">若需选中某一区域内的所有用户，可采用“框选”的操作方式。</p>
+  <p>1）在地图操作工具栏中单击“<img src="pic/Map/框选图标.png" width="38" height="34" />”框选图标。</p>
+  <p>2）在地图上框选移动用户，该区域内被选中的所有用户（包括显示和隐藏的）都将呈现在用户列表中，并且提供显示、隐藏、快速定位、群发短信等功能，如下图所示。</p>
+  <p>3）同时，用户也可在“当前选中用户列表”对话框中查看某一用户详细信息。</p>
+  <p class="center"><img src="pic/Map/框选移动用户.png" width="1066" height="571" /></p>
+  <p class="center">框选移动用户</p>
+</div>
+<p class="text">&nbsp;</p>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<ul>
+  <li>
+    <p>框选功能特别适用于当大量警员重叠在一起无法区分的情况。</p>
+  </li>
+  <li>
+    <p>框选功能还支持<a href="outline_6.4(mass texting).html">短信群发</a>功能，当某区域发生突发事件时，调度员可以快速选择这一区域附近的警员，向他们发送短信下达命令（点击短信按钮），便于指令的下发与各警员之间的相互交流沟通。</p>
+  </li>
+    <li>
+    <p>框选功能还支持<a href="outline_7.10(GPS report switch).html#a">GPS上报开关</a>，<a href="outline_7.10(GPS report switch).html#b">GPS上报参数设置</a>的功能，调度员可以快速选择这一区域附近的警员，对他们进行GPS上报开关和上报参数的设置命令（点击GPS上报开关和GPS上报参数设置按钮）</p>
+  </li>
+      <li>
+    <p>框选功能还支持<a href="outline_7.11(Dynamic call).html">动态重组</a><a href="outline_7.10(GPS report switch).html#b"></a>的功能，调度员可以快速选择这一区域附近的警员，对他们进行动态重组。</p>
+  </li>
+  <li>
+    <p>单击用户列表右侧箭头，调度员可选中该用户或者对该用户进行选中、调度业务（包括<a href="outline_7.1(private call).html">单呼</a>、<a href="outline_7.2(group call).html">组呼</a>）、应用业务（包括<a href="outline_5.8(located).html#b">定位</a>、<a href="outline_5.7(lock).html#c">锁定</a>以及<a href="outline_5.9(attention).html">关注</a>）以及短信功能（包括<a href="outline_6.1(private message).html">个人短信</a>、<a href="outline_6.2(group message).html">小组短信</a>以及<a href="outline_6.3(status message).html">状态信息</a>）。</p>
+  </li>
+</ul>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_4.0(find user).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_4(map management).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_4.2(measuring distance).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

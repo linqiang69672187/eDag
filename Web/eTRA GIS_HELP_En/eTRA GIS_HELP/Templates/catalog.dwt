@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<p align="right"><img src="../pic/logo.png" width="138" height="64" /></p>
+<!-- TemplateBeginEditable name="Title" -->
+<h1>Title</h1>
+<p class="text">&nbsp;</p>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="Mulu" -->
+<p class="Mulu"><img src="../pic/catalog.png" width="15" height="16" /> 标题1</p>
+<p class="Mulu"><img src="../pic/catalog.png" width="15" height="16" /> 标题2</p>
+<p class="Mulu"><img src="../pic/catalog.png" width="15" height="16" /> 标题3</p>
+<!-- TemplateEndEditable -->
+<p class="text">&nbsp;</p>
+<!-- TemplateBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><img src="../pic/top.gif" width="60" height="49" /></div></td>
+    <td width="141"><div align="center"><img src="../pic/mulu.gif" width="49" height="60" /></div></td>
+    <td width="110"><div align="center"><img src="../pic/next.gif" width="60" height="49" /></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- TemplateEndEditable -->
+<p>&nbsp;</p>
+</body>
+</html>

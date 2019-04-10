@@ -1,0 +1,8 @@
+﻿
+namespace MyModel
+{
+    class useparameter
+    {
+
+    }
+}

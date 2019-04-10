@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script type="text/javascript">
+
+        alert(pdt2Id_zj("57102221"));
+        /**
+     * 浙江标准	
+     * @param pdtId
+     * @return
+     */
+        function pdt2Id_zj(pdtId) {
+            var idString = pdtId;
+            var np = parseInt(pdtId.substring(0, 3));//区号
+            var in_s = pdtId.substring(3, 8);
+            var rin = parseInt(in_s,10);//组呼号
+            var id = parseInt(pdtId);
+            if (in_s != null && ((rin >= 1 && rin <= 29999) || (rin >= 30020 && rin <= 32767))) {
+                id = (np - 296) * parseInt("8000", 16) + rin;
+                idString = id + "";
+            }
+            return idString;
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

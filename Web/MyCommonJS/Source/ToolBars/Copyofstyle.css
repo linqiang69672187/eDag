@@ -1,0 +1,50 @@
+﻿body
+{
+    margin: 0px;
+}
+.toolbar_div
+{
+    z-index: 999;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.ver_ul_zoomin_out
+{
+    background-color: Red;
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    left: 45px;
+    top: 21px;
+}
+.ver_ul_zoomin_out li
+{
+    padding: 0px;
+}
+.ver_ul_choose
+{
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    left: 90px;
+    top: 21px;
+}
+.ver_ul_choose li
+{
+    padding: 0;
+}
+.hor_ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.hor_ul li
+{
+    float: left;
+}

@@ -1,0 +1,71 @@
+﻿
+/* root element for tabs  */
+ul.tabs { 
+	list-style:none; 
+	margin:0 !important; 
+	padding:0;	
+	border-bottom:lid #666;	
+	height:18px;
+	width:295px;
+	margin-left:0px;
+	margin-top:-5px;
+}
+
+/* s
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+
+	font-size:11px;
+	display:block;
+	height: 18px;  
+	line-height:20px;
+	width: 50px;
+	text-align:center;	
+	text-decoration:none;
+	color:#fff;
+	padding:0px;
+	margin:0px;	
+	position:relative;
+	top:1px;
+	
+}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+background: url(../img/tree_bg2x.gif) no-repeat 4px 1px;	
+	
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	background: url(../img/tree_bg2x.gif) no-repeat 4px 1px;	
+	cursor:default !important; 
+	color:#00f416 !important;
+	
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;		
+}
+

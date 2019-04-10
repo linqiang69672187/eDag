@@ -1,0 +1,46 @@
+﻿<node id="entityroot"  validity="false"  pid="0" text="Entity Lists"  selected="none" checked="true" url="javascript:" >
+  <node id="zhishuuserroot"  validity="false"  pid="0" text="直属" selected="true" display="none" url="javascript:" ></node>
+  <node id="entity2"  validity="false"  pid="1" text="Unit Name" selected="none" color="#CC9933" url="javascript:" childrenids="[2][3][4]">
+    <node id="zhishuuser2"  pid="1" text="直属" selected="true" url="javascript:" childrenids="[2]">
+      <node id="usertype1"  entitytext="Unit Name"    pid="1" text="城管aas" typename="城管aas" entityid="2" selected="true"  url="javascript:"></node>
+    </node>
+    <node id="entity3"     pid="2" text="东方通信" selected="true" url="javascript:" childrenids="[3][4]">
+      <node id="zhishuuser3"      pid="2" text="直属" selected="true" url="javascript:" childrenids="[3]">
+        <node id="usertype1" entitytext="东方通信"    pid="2" text="城管aas" typename="城管aas" entityid="3" selected="true"  url="javascript:"></node>
+        <node id="usertype8" entitytext="东方通信"    pid="2" text="武警" typename="武警" entityid="3" selected="true"  url="javascript:"></node>
+      </node>
+      <node id="entity4"     pid="3" text="东信软件" selected="true" url="javascript:" childrenids="[4]">
+        <node id="zhishuuser4"      pid="3" text="直属" selected="true" url="javascript:" childrenids="[4]">
+          <node id="usertype1" entitytext="东信软件"    pid="3" text="城管aas" typename="城管aas" entityid="4" selected="true"  url="javascript:"></node>
+        </node>
+      </node>
+    </node>
+  </node>
+</node>
+
+
+
+ { id: 1, pId: 0, name: "Entity Lists",parentId:0,entityId:1}
+ { id: 2, pId: 1, name: "Unit Name",parentId:1,entityId:2} 
+ 
+ { id: 10001, pId: 2, name: "直属",parentId:1,entityId:2} 
+ { id: 10003, pId: 10002, name: "城管aas",parentId:1,entityId:2}
+ { id: 3, pId: 2, name: "东方通信",parentId:2,entityId:3}
+ { id: 10002, pId: 3, name: "直属",parentId:2,entityId:3} 
+ { id: 10004, pId: 10003, name: "城管aas",parentId:2,entityId:3}
+ { id: 10004, pId: 10003, name: "武警",parentId:2,entityId:3} 
+ { id: 4, pId: 3, name: "东信软件",parentId:3,entityId:4}
+ { id: 10003, pId: 4, name: "直属",parentId:3,entityId:4} 
+ { id: 10005, pId: 10004, name: "城管aas",parentId:3,entityId:4}
+ 
+ { id: 1, pId: 0, name: "Entity Lists",parentId:0,entityId:1}, 
+ { id: 2, pId: 1, name: "Unit Name",parentId:1,entityId:2}, 
+ { id: 10002, pId: 2, name: "直属",parentId:1,entityId:2}, 
+ { id: 10003, pId: 10002, name: "城管aas",parentId:1,entityId:2},
+ { id: 3, pId: 2, name: "东方通信",parentId:2,entityId:3}, 
+ { id: 10003, pId: 3, name: "直属",parentId:2,entityId:3},
+ { id: 10004, pId: 10003, name: "城管aas",parentId:2,entityId:3}, 
+ { id: 10005, pId: 10003, name: "武警",parentId:2,entityId:3}, 
+ { id: 4, pId: 3, name: "东信软件",parentId:3,entityId:4}, 
+ { id: 10004, pId: 4, name: "直属",parentId:3,entityId:4}, 
+ { id: 10005, pId: 10004, name: "城管aas",parentId:3,entityId:4},

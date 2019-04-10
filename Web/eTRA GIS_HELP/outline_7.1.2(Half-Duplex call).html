@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>半双工单呼</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>半双工单呼</h2>
+<p class="text">在本节，我们主要介绍以下几种半双工单呼的发起/接听方式：</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p>呼叫工具栏：<a href="#a">发起半双工单呼</a>；<a href="#b">接听半双工单呼</a></p>
+  </li>
+  <li>
+    <p>呼叫面板：<a href="#c">发起半双工单呼</a>；<a href="#d">接听半双工单呼</a></p>
+  </li>
+  <li>
+    <p>呼叫上行面板：<a href="#e">接听半双工单呼</a>；<a href="#f">发起半双工单呼</a></p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫工具栏发起半双工单呼</p>
+</div>
+<div id="div1">
+  1）在地图上选中移动用户，例如选中“24004”。
+  </p>
+  <p>2）单击呼叫工具栏的＜单呼＞图标<img src="pic/Call/半双工单呼/呼叫工具栏/单呼图标.PNG" width="62" height="60" />，右侧会出现模式菜单栏，选择“对讲模式”，如下图1.1所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫工具栏/发起半双工呼叫.png" width="395" height="283" /></p>
+  <p class="center">图1.1 呼叫工具栏发起半双工呼叫</p>
+  <p>3）用户按住PTT键接听，呼叫建立，并有优先语音发送权，地图上警员图标侧出现对讲模式呼叫下行图标<img src="pic/Call/全双工单呼/呼叫工具栏/对方呼叫下发图标.png" width="19" height="18" />，当无线用户释放PTT键，呼叫工具栏显示“（24004）：发射权已释放”。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫工具栏/呼叫已建立1.png" width="469" height="111" /></p>
+  <p class="center">图1.2 对讲模式呼叫建立</p>
+  <p>4）调度台按下＜PTT呼叫＞（或键盘空格键）获取授权，如图1.2所示。松开＜PTT呼叫＞释放授权。</p>
+    <p class="center"><img src="pic/Call/半双工单呼/呼叫工具栏/调度台获取授权.png" width="464" height="113" /></p>
+  <p class="center">图1.3 调度台获取授权</p>
+
+  <p>5）无线用户再按PTT键呼叫发送语音，呼叫工具栏显示“（24004）：获取授权”。</p>
+    <p class="center"><img src="pic/Call/半双工单呼/呼叫工具栏/用户获取授权.png" width="481" height="121" /></p>
+  <p class="center">图1.4 用户获得授权</p>
+  <p>6）呼叫完成后，按下<img src="pic/Call/半双工单呼/呼叫工具栏/结束图标.PNG" width="62" height="61" />图标结束本次通话。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫工具栏接听半双工单呼</p>
+</div>
+<div id="div2">
+  <p>1）若调度台接收到用户“24004”发起的半双工呼叫请求，呼叫工具栏显示“（24004）：有呼叫请求进入”，调度台按住＜接听＞即可通话，地图上警员图标侧出现半双工模式呼叫上行图标<img src="pic/Call/半双工单呼/呼叫工具栏/呼叫上行图标.png" width="22" height="22" />，如图1.5所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫工具栏/调度台接听半双工单呼.png" width="373" height="136" /></p>
+  <p class="center">图1.5 半双工呼叫请求进入</p>
+  <p>2）调度台按住＜PTT呼叫＞后不松开，可获取授权；语音发送完成后，松开＜PTT呼叫＞后，释放授权。</p>
+  <p>3）无线用户在调度台释放权限后，可以按住PTT键发送语音，松开PTT键释放授权，呼叫工具栏显示如图1.6所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫工具栏/用户释放授权.png" width="465" height="108" /></p>
+  <p class="center">图1.6 无线用户释放授权</p>
+  <p>4）半双工呼叫完成后，按下<img src="pic/Call/半双工单呼/呼叫工具栏/结束图标.PNG" width="62" height="61" />图标结束本次通话。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫面板发起半双工单呼</p>
+</div>
+<div id="div3">
+  <p>1）在系统操作菜单栏中单击<span class="text">［调度功能/呼叫面板］</span>，弹出“呼叫面板”对话框。</p>
+  <p>2）单击“呼叫业务”模块中的“单呼”，弹出“单呼”对话框。输入无线终端标识号，系统自动获取终端标识对应的姓名、单位及编号。</p>
+  <p>3）选择“呼叫方式”为“对讲模式”，单击＜PTT＞按钮，如图2.1所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫面板/呼叫正在处理中.png" width="380" height="270" /></p>
+  <p class="center">图2.1 对讲模式</p>
+  <p>4）如果收到正常的回铃音且对端用户摘机后，按下PTT键授权讲话，如图2.2所示。释放PTT键释放授权。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫面板/用户获取授权.png" width="380" height="270" /></p>
+  <p class="center">图2.2 用户获取授权</p>
+  <p>5）当无线用户释放授权时，调度员可按住＜PTT＞获取授权，发送语音信息，释放＜PTT＞则释放授权，如图2.3所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫面板/调度台释放授权.png" width="380" height="270" /></p>
+  <p class="center">图2.3 调度台释放授权</p>
+  <p>6）调度员可单击＜挂断＞结束呼叫，此时，界面变回＜PTT＞按钮，如图2.4所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫面板/结束半双工呼叫.png" width="379" height="270" /></p>
+  <p class="center">图2.4 结束半双工呼叫</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div4')">
+  <p class="expanding"><a name="d" id="d"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫面板接听半双工单呼</p>
+</div>
+<div id="div4">
+  <p>1）若调度台接收到用户“1008（1008）”发起的半双工呼叫请求，“单呼”对话框显示如图2.5所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫面板/呼叫请求进入.png" width="379" height="269" /></p>
+  <p class="center">图2.5 呼叫请求进入</p>
+  <p>2）调度台按住＜PTT＞即可获取授权进行通话，如图2.6所示。释放＜PTT＞则释放发射权。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫面板/调度台获取授权.png" width="380" height="269" /></p>
+  <p class="center">图2.6 调度台获取授权</p>
+  <p>3）当调度台释放发射权时，无线用户可按住PTT键发射语音信息，释放PTT键释放授权，如图2.7所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫面板/用户释放发射权.png" width="379" height="270" /></p>
+  <p class="center">图2.7 用户释放发射权</p>
+  <p>4）通话结束时，调度台可单击＜挂断＞结束半双工通话。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div5')">
+  <p class="expanding"><a name="e" id="e"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫上行面板接听半双工单呼</p>
+</div>
+<div id="div5">
+  <p>1）若调度台接收到用户“1008（1008）”发起的半双工单呼请求，此时，在呼叫上行面板中显示如图3.1所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫上行面板/有呼叫请求进入.png" width="323" height="220" /></p>
+  <p class="center">图3.1 有呼叫请求进入</p>
+  <p>2）单击＜接听＞接收用户的半双工单呼。按住＜PTT＞键，调度台即可获取授权，如图3.2所示。松开＜PTT＞键释放授权。单击＜挂断＞则拒绝接听。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫上行面板/调度台获取授权.png" width="323" height="223" /></p>
+  <p class="center">图3.2 调度台获取授权</p>
+  <p>3）无线用户在调度台释放权限后，可以按住PTT键发送语音，松开PTT键则释放授权。</p>
+  <p>4）半双工单呼完成后，调度员按下＜挂断＞按钮或者用户挂断即可结束本次通话，如图3.3所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫上行面板/结束半双工单呼.png" width="323" height="224" /></p>
+  <p class="center">图3.3 结束半双工单呼</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div6')">
+  <p class="expanding"><a name="f" id="f"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫上行面板发起半双工单呼</p>
+</div>
+<div id="div6">
+  <p>1）选中呼叫上行面板中的普通全双工单呼面板，单击＜呼叫＞按钮，此时＜呼叫＞按钮变为＜PTT＞，＜关闭＞按钮变灰，如图3.4所示。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫上行面板/发起半双工单呼.png" width="323" height="219" /></p>
+  <p class="center">图3.4 发起半双工单呼</p>
+  <p>2）用户按住PTT键接听，呼叫建立，并有优先语音发射权，如图3.5所示。当用户释放PTT键时，显示“1008:发射权已释放”。</p>
+  <p class="center"><img src="pic/Call/半双工单呼/呼叫上行面板/用户获取授权.png" width="324" height="224" /></p>
+  <p class="center">图3.5 用户获取授权</p>
+  <p>3）调度台按下＜PTT＞按钮获取授权，松开＜PTT＞则释放授权。</p>
+  <p>4）调度员按下＜挂断＞按钮或者用户挂断即可结束本次通话，此时＜呼叫＞、＜关闭＞两个按钮可用，＜挂断＞按钮变灰。</p>
+</div>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<ul>
+  <li>
+    <p>在呼叫上行面板中，调度员只能对已有半双工单呼上行记录的终端发起半双工单呼。</p>
+  </li>
+  <li>
+    <p>其他发起/接听半双工单呼方法的操作步骤与通过呼叫面板发起/接听半双工单呼的操作步骤类似。</p>
+  </li>
+</ul>
+<table width="100" border="0" align="right" cellspacing="1">
+  <tr>
+    <td width="96"><a href="#top"><img src="pic/top.png" width="15" height="17" border="0" /></a><a href="#top"> 返回顶端</a></td>
+  </tr>
+</table>
+<p class="text">&nbsp;</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_7.1.1(Full-Duplex call).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_7.1(private call).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_7.2(group call).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

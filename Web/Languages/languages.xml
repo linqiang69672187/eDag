@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- 
+Specify enabled languages here
+-->
+  <language name="简体中文" key="zh-CN" />
+  <language name="U.S. English" key="en-US" emailCharset="iso-8859-1" />
+
+<!-- Disabled since they are not fully complete
+
+	note: the folders and files must exist on your server before enabling these
+	If a user / site has a disabled theme selected, it will default to en-US
+	
+  <language name="Chinese Simplified" key="zh-CN" />
+  <language name="Chinese Traditional" key="zh-TW" />
+  <language name="Danish" key="da-DK" emailCharset="iso-8859-1" />
+  <language name="Hellenic" key="el-GR" />
+  <language name="Italian" key="it-it" emailCharset="iso-8859-1" />
+  <language name="Netherlands" key="nl-NL" emailCharset="iso-8859-1" />
+  <language name="Portuguese" key="pt-PT" emailCharset="iso-8859-1" />
+  <language name="Russian" key="ru" emailCharset="iso-8859-5" />
+  <language name="Swedish" key="sv" emailCharset="iso-8859-1" />
+  <language name="Japanese" key="ja-jp" emailCharset="iso-2022-jp" />
+  <language name="Catalan" key="ca-ca" emailCharset="iso-8859-1" />
+  <language name="Czech" key="cs-CZ" emailCharset="iso-8859-2" />
+  <language name="German" key="de-de" emailCharset="iso-8859-1" />
+  <language name="French" key="fr-fr" emailCharset="iso-8859-1" />
+  <language name="Slovak" key="sk-SK" emailCharset="iso-8859-2" />
+-->
+
+</root>

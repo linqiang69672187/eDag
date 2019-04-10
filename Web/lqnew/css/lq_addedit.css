@@ -1,0 +1,16 @@
+﻿body{ font-size:12px; margin:0px;background-color:transparent;}
+.STYLE4{color:#fff;width:70px;float:left;}
+.gridheadcss th{background-image:url(../images/tab_14.gif);height:25px;}
+#GridView1{ margin-top:3px;}
+/*span{color:#000000;font-size:12px;}*/
+.search_add{margin-left:50;float:left;width:500px;}
+.hor_ul{padding: 0;margin: 0;margin-top: 5px;margin-left: 0px;list-style-type: none;color:#ffffff;}  
+ .hor_ul li{float: left;margin-left:5px;}
+#DropDownList1,#DropDownList2,#DropDownList3,#DropDownList4,#DropDownList5,#DropDownList6,#DropDownList7,#DropDownList8{font-family: "宋体"; font-size: 12px; BEHAVIOR: url('../../css/selectBox.htc'); cursor: hand;margin-top:3px;border:0px;}
+a{ color:#000000;text-decoration:none;}
+.style1{width: 100%;background-color:#C0DE98;}
+.style3{height:22px;}
+.style1 td{background-color:#ffffff;color:#006633;}
+.style4{width: 76px;height: 23px;margin-top:10px;}
+#form1{background-color:#ffffff;}
+b,hr{font-size:12px;}

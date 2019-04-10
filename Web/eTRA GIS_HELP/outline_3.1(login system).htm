@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录/退出GIS系统</title>
+<script>
+ function isHidden(oDiv){ 
+ var vDiv = document.getElementById(oDiv); 
+ vDiv.style.display = (vDiv.style.display == 'none')?'block':'none'; 
+ } 
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style type="text/css">
+.style1 {
+	border-width: 0px;
+}
+</style>
+</head>
+
+<body style="background-color: #F5F0E6; width: 98%;">
+
+<p>
+
+
+<img alt="" src="logo.png" width="138" height="64" style="float: right" /></p>
+<p>&nbsp;</p>
+<h3 class="标题">登录/退出GIS调度台</h3>
+
+<Div style="cursor:hand" onclick="isHidden('div1')"> 
+
+
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 
+调度台登录</p>
+
+</Div>
+<Div id="div1">
+
+
+
+<p class="正文">
+
+GIS调度台登录步骤如下：</p>
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在IE浏览器中输入GIS调度台服务器IP地址（可向管理员咨询）并回车，进入eTRA 
+GIS调度系统的登录界面，如下图1所示。</p>
+<p class=版权所有><img alt="" src="pic/登录界面.png" width="618" height="430" /></p>
+<p class=版权所有>图1. eTRA GIS调度系统登录界面</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）输入正确的用户名、密码，单击&lt;登陆&gt;发送注册请求。</p>
+
+
+
+<p class="正文">
+<img alt="" src="chm.png" width="90" height="59" />&nbsp; 
+<span style='font-family:黑体;'><strong>说明：</strong></span></p>
+<ul>
+	<li>
+	<p class="正文">用户输入的用户名和密码，不超过20个ASCII字符的字符串。</p>
+	</li>
+	<li>
+	<p class="正文">用户名不同，操作权限也不相同。</p>
+	</li>
+	<li>
+	<p class="正文">使用属于不同等级公安局的调度员登录GIS系统，登录后只能修改和自己同级和比自己等级低的无线用户信息。</p>
+	</li>
+</ul>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+
+3）服务器响应相关的登录权限判断，登录成功后，系统将显示客户端操作主界面，如下图2所示。否则提示登录错误。</p>
+<p class="版权所有">
+
+<img alt="" src="pic/客户端主界面.png" width="1010" height="757" /></p>
+<p class="版权所有">
+
+图2. 客户端主界面</p>
+<p class="正文">
+
+界面各个区域分别对应各个操作区域，详情请参见“<a href="outline_3.2(interface).htm">主界面布局</a>”。</p>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div2')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 登录失败</p>
+
+</Div>
+<Div id="div2">
+
+<p class="正文">
+
+存在以下几种情况之一时，都将导致登录失败：</p>
+<ul>
+	<li>
+	<p class="正文">网络故障</p>
+	</li>
+	<li>
+	<p class="正文">用户名或密码不正确</p>
+	</li>
+</ul>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div3')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 退出调度台</p>
+
+</Div>
+<p class="正文">调度台退出是指关闭GIS应用程序，清空所有客户端用户的用户名和密码，即完全退出调度台的使用。</p>
+<p class="正文">在菜单栏中单击“<img alt="" src="pic/退出系统.png" width="83" height="29" />”，即可退出调度台。</p>
+
+<p class="正文">
+
+&nbsp;</p>
+
+<p class="上一页下一页">
+	<a href="outline_3(login%20and%20interface).htm">
+	<img alt="" src="top.gif" width="54" height="34" class="style1" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a href="outline_3(login%20and%20interface).htm"> 
+	<img alt="" src="mulu.gif" width="49" height="60" class="style1" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="outline_3.2(interface).htm">
+	<img alt="" src="next.gif" width="54" height="34" class="style1" /></a></p>
+
+<p class="版权所有">
+Copyright © 2011 Eastcom, Inc. All right reserved.</p> 
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>历史轨迹</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>历史轨迹</h2>
+<p class="text">调度员可对选定移动用户在选定时间段内的运动轨迹在界面上进行回放。同时，调度员可通过<a href="#a">地图右键操作</a>以及<a href="#b">呼叫面板</a>两种方式查看用户的历史轨迹。</p>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过地图右键操作查看历史轨迹的具体操作步骤如下：</p>
+</div>
+<div id="div1">
+  <p>1）单击地图上的移动用户。</p>
+  <p>2）右键选择<span class="text">［应用业务/历史轨迹］</span>，弹出用户历史轨迹播放配置对话框。</p>
+  <p>3）选择“播放开始时间”、“播放结束时间”、“播放时间间隔”、“每页显示条数”（假设为N条）以及线条的“颜色”、“宽度”。此时，在窗口的最下方会形象地显示轨迹线条的样式，如下图1所示。</p>
+  <p class="center"><img src="pic/Application/查看历史轨迹播放.png" width="380" height="286" /></p>
+  <p class="center">图1. 查看历史轨迹播放</p>
+  <p>4）单击＜确定＞，系统会重新打开一个IE浏览器，并且在地图上，会用线条的方式显示该用户在该时间段内前N条的行驶路线，如下图2所示。</p>
+  <p class="center"><img src="pic/Application/历史轨迹回放.png" width="1278" height="1010" /></p>
+  <p class="center">图2. 历史轨迹回放</p>
+  <p>5）单击“播放下一页”，此时在地图上会用线条的方式显示该用户在该时间段内下个N条的行驶路线。</p>
+  <p>6）单击右下角的“快速显示所有轨迹”，则会用线条的方式快速显示该用户在该时间段内所有的行驶路线。</p>
+  <p>7）关闭浏览器结束历史轨迹的播放。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫面板查看历史轨迹的具体操作步骤如下：</p>
+</div>
+<div id="div2">
+  <p>1）在系统操作菜单栏中单击<span class="text">［调度功能/呼叫面板］</span>，弹出“呼叫面板”对话框。</p>
+  <p>2）单击“应用业务”模块中的“历史轨迹”，弹出”查看历史轨迹播放“对话框。</p>
+  <p>3）输入播放人员的终端标识或单击右侧＜选择＞添加要查看历史轨迹的移动用户，选择“播放开始时间”、“播放结束时间”、“播放时间间隔”、“每页显示条数”（假设为N条）以及线条的“颜色”、“宽度”。此时，在窗口的最下方会形象地显示轨迹线条的样式，如下图3所示。</p>
+  <p class="center"><img src="pic/Application/查看历史轨迹播放-呼叫面板.png" width="351" height="363" /></p>
+  <p class="center">图3. 查看历史轨迹播放</p>
+  <p>4）单击＜确定＞，系统会重新打开一个IE浏览器，并且在地图上，会用线条的方式显示该用户在该时间段内前N条的行驶路线。</p>
+  <p>5）关闭浏览器结束历史轨迹的播放。</p>
+</div>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<ul>
+  <li>
+    <p>单次查询历史轨迹的最大时间跨度为24个小时。</p>
+  </li>
+  <li>
+    <p>若用户在指定时间段内数据为空时，则弹出的“eTRA GIS调度应用系统历史轨迹回放”对话框的数据显示栏中显示“无历史轨迹记录”。</p>
+  </li>
+</ul>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_5.4(real-time trace).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_5(application service).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_5.6(electronic fence).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>组短信</title>
+<script>
+ function isHidden(oDiv){ 
+ var vDiv = document.getElementById(oDiv); 
+ vDiv.style.display = (vDiv.style.display == 'none')?'block':'none'; 
+ } 
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style type="text/css">
+.style4 {
+	border: 1px solid #000000;
+}
+.style5 {
+	border-width: 0px;
+}
+</style>
+</head>
+
+<body style="background-color: #F5F0E6; width: 98%;">
+
+<p>
+
+
+<img alt="" src="logo.png" width="138" height="64" style="float: right" /></p>
+<p>&nbsp;</p>
+<h3 class="标题">组短信</h3>
+
+<Div style="cursor:hand" onclick="isHidden('div1')"> 
+
+
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 发送/接收个人信息</p>
+
+</Div>
+<Div id="div1">
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>1）在地图上选中移动用户。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>2）右键单击[短信业务/组短信]，弹出“短消息发送”对话框。如下图所示。</p>
+
+<p class="版权所有">
+
+<img alt="" src="pic/短信业务/发送组短信.png" width="379" height="344" /></p>
+<p class="版权所有">
+
+发送组短信</p>
+
+
+
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>3）用户根据实际需要输入短信内容等。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>4）单击&lt;发送&gt;按钮将短信发送给属于这个组的所有移动用户。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+5）短信发送成功后，在系统左下方的消息日志中会显示如：“[发送（短信）]向大连2（4119002）发送成功[13：43：22]”。</p>
+<p class=正文 style='margin-left:0cm;text-indent:0cm;'>
+6）若调度台收到其他用户发来的组短息，则在消息日志中显示收到的短信内容及发送方ISSI编号。</p>
+
+</Div>
+
+<Div style="cursor:hand" onclick="isHidden('div2')"> 
+
+<p class=缩展目录>
+<img alt="" src="Snap2.png" width="15" height="17" /> 组短信信息说明</p>
+
+</Div>
+<Div id="div2">
+
+<table style="width: 825px" align="center" class="表格变色">
+	<tr class="表格第一行">
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>参数名称</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>描述</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>类型</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>缺省值</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>ISSI</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>发送方或接收方编组GSSI号或ISSI号（可多个）</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>1～13666666</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>N/A</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>内容</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>短信内容</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>0～140个字符串，支持中英文混合</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>N/A</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>回执</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>选择是否请求回执</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>通过在回执右侧是否打勾选择</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>不要回执</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 20%; height: 24px" class="style4">
+		<p>发送到</p>
+		</td>
+		<td style="width: 32%; height: 24px" class="style4">
+		<p>短信接收方设备</p>
+		</td>
+		<td style="width: 33%; height: 24px" class="style4">
+		<p>调度台组短信发送到公网手机或者发送到数字集群终端</p>
+		</td>
+		<td style="width: 15%; height: 24px" class="style4">
+		<p>发送到数字集群终端</p>
+		</td>
+	</tr>
+	</table>
+
+
+
+</Div>
+
+
+
+<p class="正文">
+<img alt="" src="chm.png" width="90" height="59" />&nbsp; 
+<span style='font-family:黑体;'><strong>说明：</strong></span></p>
+<ul>
+	<li>
+	<p class="正文">组短信的发送也可通过单击[调度功能/呼叫面板]中的“普通短消息”完成。</p>
+	</li>
+	<li>
+	<p class="正文">另外也可参见“<a href="outline_12(Send%20SMS).htm">短信群发</a>”一节。</p>
+	</li>
+</ul>
+<p class="正文">
+
+&nbsp;</p>
+
+<p class="上一页下一页">
+	<a href="outline_13.2.1(private%20message).htm">
+	<img alt="" src="top.gif" width="54" height="34" class="style5" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<a href="outline_13.2(SDS%20service%20management).htm"> 
+	<img alt="" src="mulu.gif" width="49" height="60" class="style5" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="outline_13.2.3(status%20message).htm">
+	<img alt="" src="next.gif" width="54" height="34" class="style5" /></a></p>
+
+<p class="版权所有">
+Copyright © 2011 Eastcom, Inc. All right reserved.</p> 
+
+</body>
+
+</html>

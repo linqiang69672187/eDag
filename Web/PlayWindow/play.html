@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>实时视频播放</title>
+    <script type="text/javascript" src="/JS/jquery-1.10.2.js"></script>
+    <style type="text/css">
+        body {
+            font-family: "微软雅黑";
+            background-color: #eee;
+            padding: 0;
+            margin: 0;
+        }
+
+        .box, .videoPanel {
+            width: 400px;
+            height: 260px;
+            background-color: #444;
+        }
+
+       
+      
+    </style>
+</head>
+<body>
+
+    <div id="video" class="videoPanel mt10">
+        <object id="videoObj" width="390px" height="213px" style="display:block" classid="CLSID:9A33E5BA-5963-416A-BF16-B2C195081BF9"></object>
+    </div>
+
+    <script type="text/javascript">
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return (r[2]); return null;
+        }
+
+        //全局缓存serverIp
+        var globalServerIP = '';
+        //全局缓存本地IP
+        var _localIP = '';
+        var cid = "";
+
+
+        var deviceName = GetQueryString("deviceName");
+        var cameraNum = GetQueryString("cameraNum");
+        var deviceNum = GetQueryString("deviceNum");
+        var realm = GetQueryString("realm");
+        var latitude = GetQueryString("latitude");
+        var longitude = GetQueryString("longitude");
+
+
+        function play() {
+
+            var $videoPanel = $('#video');
+            var activex = document.getElementById('videoObj');
+            //var cameraURI = "sip:44040202001310110101@4401160002";
+            ////alert(cameraURI);
+            //var port = -1;//port设置为-1请求底层打开端口以后会随机返回一个端口值
+            //var num = 0;//num为一个无用值，置0即可
+            //var deviceId = "44040202001320110101";
+            //var cameraName = "110101人民东路-市政府";
+            var cameraURI = "sip:" + cameraNum + "@" + realm;
+            //alert(cameraURI);
+            var port = -1;//port设置为-1请求底层打开端口以后会随机返回一个端口值
+            var num = 0;//num为一个无用值，置0即可
+            var deviceId = deviceNum;
+            frameId = deviceNum;//提前赋值用于测试--xzj--20181101
+            var cameraName = deviceName;
+            var serverIP = window.parent.getCookieByName('videoIp');
+            globalServerIP = serverIP;
+            $videoPanel.data({ 'cameraURI': cameraURI, 'deviceId': deviceId, 'port': port, 'num': num, 'cameraName': cameraName });
+            if (_localIP != "") {
+                // activex.ax_openRecvPort(_localIP, port);//注释用于测试--xzj--20181101
+            }
+            else {
+                //activex.ax_getHostIp(serverIP);//注释用于测试--xzj--20181101
+            }
+        }
+
+        function getLocalIpCallBack($activex, result, ip) {
+            if (result == 0) {//如果成功获取本地IP地址
+                var $videoPanel = $activex.parents('.videoPanel');
+                //成功处理
+                var port = $videoPanel.data('port');
+                _localIP = ip;
+                //打开端口获取ip以后
+                $activex.get(0).ax_openRecvPort(ip, port);
+            }
+        }
+
+        var frameId;
+        function openPortCallBack($activex, result, port) {
+            var $videoPanel = $activex.parents('.videoPanel');
+            if (result === 0) {//如果当前事件响应成功    	
+                var cameraURI = $videoPanel.data('cameraURI');
+                var deviceId = $videoPanel.data('deviceId');
+                var ip = _localIP;
+                var num = $videoPanel.data('num');
+                frameId = deviceId;
+                requestPlay(ip, port, cameraURI, deviceId, globalServerIP, num);
+
+            } else if (result !== 0) {
+                alert('打开端口失败');
+            }
+        }
+
+        /**请求获取播放参数**/
+        /**cameraURI:String, 摄像机设备URI（sip:+cameraNum+@+域名）
+        deviceId:String,     编码器编号
+        port:string,         底层协议好的端口（收流端口）
+        ip:String,           底层的目的ip(收流IP)
+        num: number          选中的分屏号，没有写0
+        */
+        function requestPlay(ip, port, cameraURI, deviceId, serverIP, num) {
+            var playParameter = "{'streamIp':'" + ip + "','streamPort':'" + port + "','cameraUri':'" + cameraURI + "','deviceId':'" + deviceId + "'}";
+            //调用webservice方法
+            //var host = window.location.host;
+            //要发送到的webservice的数据
+            var data;
+            data = '<?xml version="1.0" encoding="utf-8"?>';
+            data = data + '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">';
+            data = data + '<soap:Body>';
+            //调用方法和命名空间
+            data = data + '<' + 'play' + ' xmlns="http://web.videoclues.zhvmp.jp.com">';
+            //发送参数 
+            data = data + '<username>' + 'JP_admin' + '</username>';
+            data = data + '<password>' + 'JP_admin' + '</password>';
+            data = data + '<playParameterJson>' + playParameter + '</playParameterJson>';
+            data = data + '<flag>' + num.toString() + '</flag>';
+            data = data + '</' + 'play' + '>';
+            data = data + '</soap:Body>';
+            data = data + '</soap:Envelope>';
+
+            var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            //java webservice接口url
+            var URL = 'http://' + serverIP + ':8080/zhvmp/services/PublicInterfaceService?wsdl';
+            xmlhttp.Open("POST", URL, false);
+            xmlhttp.SetRequestHeader('Content-Type', 'text/xml; charset=utf-8');
+            xmlhttp.SetRequestHeader('SOAPAction', 'http://web.videoclues.zhvmp.jp.com/' + 'play');
+            xmlhttp.Send(data);
+
+            var str = xmlhttp.responseXML.text;
+            var result = eval("(" + xmlhttp.responseXML.text + ")");
+            if (result.result == "SUCCESS") {
+                cid = result.data.cid;
+                var ssrc = result.data.ssrc;
+                playRealtimeVideo(ip, port, ssrc, cid, num);
+                //alert('播放成功！');
+            }
+            else {
+                alert(result.message);
+            }
+        }
+
+        function playRealtimeVideo(ip, port, ssrc, cid, num) {
+            var $videoPanel = $('#video');
+            $videoPanel.data({ 'cid': cid });
+            var activex = document.getElementById('videoObj');
+            activex.ax_livePlay(ip, port, ssrc);
+            //$.activexP.getActivex(num).livePlay(ip, port, ssrc, cid, playRealtimeVideoCallBack);
+        }
+        function playRealtimeVideoCallBack($activex, result, speed) {
+            var $videoPanel = $activex.parents('.videoPanel');
+            if (result === 0) {
+                //var num = $videoPanel.getNum();
+                //$videoPanel.data({
+                //    'playstate': 'livePlay'
+                //});
+                //$videoPanel.setViewState('activex');
+            } else if (result !== 0) {//如果当前事件响应不成功，错误显屏
+                //$videoPanel.setTips('错误提示：' + $.activexP.constList.activexError[result]).setViewState('tips');
+                alert("播放失败");
+            }
+        }
+
+        $('.stop').on('click', function stop() {
+            var serverIP = window.parent.getCookieByName('videoIp');
+            globalServerIP = serverIP;
+            requestStop(cid, serverIP, '1');
+        });
+
+        function stop() {
+            var serverIP = window.parent.getCookieByName('videoIp');
+            globalServerIP = serverIP;
+           // alert("stop");
+            //alert(cid);
+            requestStop(cid, serverIP, '1');
+
+        }
+
+        var orginalLeft;
+        var orginalTop;
+        function enlarge() {
+
+            orginalLeft = this.parent.document.getElementById("cameraDiv_" + frameId).style.left;
+            orginalTop = this.parent.document.getElementById("cameraDiv_" + frameId).style.top;
+            this.parent.document.getElementById("aa_cameraDiv_" + frameId).style.width = "768px";
+            this.parent.document.getElementById("aa_cameraDiv_" + frameId).style.height = "470px";
+            this.parent.document.getElementById("frame_cameraDiv_" + frameId).style.width = "765px";
+            this.parent.document.getElementById("frame_cameraDiv_" + frameId).style.height = "470px";
+            this.parent.document.getElementById("cameraDiv_" + frameId).style.width = "765px";
+            this.parent.document.getElementById("cameraDiv_" + frameId).style.height = "470px";
+            this.parent.document.getElementById("cameraDiv_" + frameId).style.left = "200px";
+            this.parent.document.getElementById("cameraDiv_" + frameId).style.top = "50px";
+            this.parent.document.getElementById("controlDiv_cameraDiv_" + frameId).style.left = (768 / 2 - 35)+"px";
+            $("#videoObj").width(765);
+            $("#videoObj").height(423);
+            $("#video").width(765);
+            $("#video").height(423);
+
+        }
+        function shrink() {        
+            this.parent.document.getElementById("aa_cameraDiv_" + frameId).style.width = "390px";
+            this.parent.document.getElementById("aa_cameraDiv_" + frameId).style.height = "260px";
+            //this.parent.document.getElementById("div1_cameraDiv_" + frameId).style.width = 670;
+            //this.parent.document.getElementById("div1_cameraDiv_" + frameId).style.height = 370;
+            this.parent.document.getElementById("frame_cameraDiv_" + frameId).style.width = "390px";
+            this.parent.document.getElementById("frame_cameraDiv_" + frameId).style.height = "260px";
+            this.parent.document.getElementById("cameraDiv_" + frameId).style.width = "390px";
+            this.parent.document.getElementById("cameraDiv_" + frameId).style.height = "260px";
+            this.parent.document.getElementById("controlDiv_cameraDiv_" + frameId).style.left = (390 / 2 - 35)+"px";
+            $("#video").width(400);
+            $("#video").height(260);
+            $("#videoObj").width(390);
+            $("#videoObj").height(213);
+
+            if ((orginalLeft != "" && orginalTop != "") && (typeof (orginalLeft) != "undefined" && typeof (orginalTop) != "undefined")) {
+                this.parent.document.getElementById("cameraDiv_" + frameId).style.left = orginalLeft;
+                this.parent.document.getElementById("cameraDiv_" + frameId).style.top = orginalTop;
+            }
+
+            orginalLeft = this.parent.document.getElementById("cameraDiv_" + frameId).style.left;
+            orginalTop = this.parent.document.getElementById("cameraDiv_" + frameId).style.top;
+
+
+        }
+
+
+        function requestControl(directionType) {
+
+            var ptzParameterJson = "{'directionType':'" + directionType + "','zoomType':'0','cameraId':'" + deviceNum + "','speed':'100','priority':'4'}";
+            //调用webservice方法
+            //var host = window.location.host;
+            //要发送到的webservice的数据
+            var data;
+            data = '<?xml version="1.0" encoding="utf-8"?>';
+            data = data + '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">';
+            data = data + '<soap:Body>';
+            //调用方法和命名空间
+            data = data + '<' + 'ptzCmd' + ' xmlns="http://web.videoclues.zhvmp.jp.com">';
+            //发送参数 
+            data = data + '<username>' + 'eastcom' + '</username>';
+            data = data + '<password>' + '123456' + '</password>';
+            data = data + '<ptzParameterJson>' + ptzParameterJson + '</ptzParameterJson>';
+            data = data + '</' + 'ptzCmd' + '>';
+            data = data + '</soap:Body>';
+            data = data + '</soap:Envelope>';
+
+            var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            //java webservice接口url
+            var URL = 'http://' + globalServerIP + ':8080/zhvmp/services/PublicInterfaceService?wsdl';
+            xmlhttp.Open("POST", URL, false);
+            xmlhttp.SetRequestHeader('Content-Type', 'text/xml; charset=utf-8');
+            xmlhttp.SetRequestHeader('SOAPAction', 'http://web.videoclues.zhvmp.jp.com/' + 'ptzCmd');
+            xmlhttp.Send(data);
+
+            var str = xmlhttp.responseXML.text;
+            var result = eval("(" + xmlhttp.responseXML.text + ")");
+            if (result.result == "SUCCESS") {
+                
+                alert('云台控制成功！');
+            }
+            else {
+                alert(result.message);
+            }
+        }
+
+        /**function：请求停止
+           参数：
+           request_cid 请求停止的视频的cid
+           flag 	   分屏号，没有写0	
+        */
+        function requestStop(request_cid, serverIP, flag) {
+            //alert(request_cid);
+
+            if (request_cid == "")
+                return;
+
+            //var activex = document.getElementById('videoObj');
+            //activex.ax_liveStop();
+            cid = "";
+            //json参数
+           
+
+            var cidJson = "{'cid':'" + request_cid + "','flag':'" + flag + "'}";
+            //调用webservice方法
+            //webService()
+            //var host = window.location.host;
+            var data;
+            data = '<?xml version="1.0" encoding="utf-8"?>';
+            data = data + '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">';
+            data = data + '<soap:Body>';
+            data = data + '<' + 'bye' + ' xmlns="http://web.videoclues.zhvmp.jp.com">';
+            //data = data + '<updateFlag>'+json+'</updateFlag>'; 
+            data = data + '<username>' + 'JP_admin' + '</username>';
+            data = data + '<password>' + 'JP_admin' + '</password>';
+            data = data + '<cid>' + cidJson + '</cid>';
+            data = data + '</' + 'bye' + '>';
+            data = data + '</soap:Body>';
+            data = data + '</soap:Envelope>';
+
+            var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            var URL = 'http://' + serverIP + ':8080/zhvmp/services/PublicInterfaceService?wsdl';
+            xmlhttp.Open("POST", URL, false);
+            xmlhttp.SetRequestHeader('Content-Type', 'text/xml; charset=utf-8');
+            xmlhttp.SetRequestHeader('SOAPAction', 'http://web.videoclues.zhvmp.jp.com/' + 'bye');
+            xmlhttp.Send(data);
+
+            var str = xmlhttp.responseXML.text;
+            //alert(str);
+            var result = eval("(" + xmlhttp.responseXML.text + ")");
+            //alert(result);
+            if (result.result == "SUCCESS") {
+                var activex = document.getElementById('videoObj');
+                activex.ax_liveStop();
+                cid = "";
+                //alert("停止成功");
+            }
+            else {
+                //alert(result);
+                var activex = document.getElementById('videoObj');
+                activex.ax_liveStop();
+                cid = "";
+            }
+            //else {
+            //    alert(result.message);
+            //}
+        }
+        function stopLivePlayHandle(result) {
+            //if (result == 0) {
+            //    alert("视频停止成功");
+            //} else {
+            //    alert(result.message);
+            //}
+        }
+
+
+        $(document).ready(function () {
+            play();
+        });
+    </script>
+        <!--初始化给视频控件绑定事件-->
+    <script language="javascript" for="videoObj" event="on_notifyGetHostIp(ip, result)">
+        var activex = document.getElementById('videoObj');
+        //console.log('视频面板----获取本地IP事件通知on_notifyGetHostIp的ip返回值' + ip);
+        //console.log('视频面板----获取本地IP事件通知on_notifyGetHostIp的result返回值' + result);
+        var $activex = $(activex);
+        getLocalIpCallBack($activex, result, ip);
+    </script>
+    <script language="javascript" for="videoObj" event="on_notifyOpenRecvPort(port, result)">
+        var activex = document.getElementById('videoObj');
+        //console.log('视频面板----打开端口事件通知on_notifyOpenRecvPort的port返回值' + port);
+        //console.log('视频面板----打开端口事件通知on_notifyOpenRecvPort的result返回值'+result);
+        var $activex = $(activex);
+        openPortCallBack($activex, result, port);
+    </script>
+        <script language="javascript" for="videoObj" event="on_notifyLivePlay(speed, result)">
+            var activex = document.getElementById('videoObj');
+            //console.log('视频面板----播放实时视频事件通知on_notifyLivePlay的result返回值' + result);
+            //如果使用者设置了回调函数，直接执行
+            var $activex = $(activex);
+            //播放回调
+            playRealtimeVideoCallBack($activex, result, speed);
+    </script>
+        <script language="javascript" for="videoObj" event="on_notifyLiveStop(result)">
+            var activex = document.getElementById('videoObj');
+            //如果使用者设置了回调函数，直接执行
+            var $activex = $(activex);
+            //alert(result);
+            stopLivePlayHandle(result);
+    </script>
+</body>
+</html>

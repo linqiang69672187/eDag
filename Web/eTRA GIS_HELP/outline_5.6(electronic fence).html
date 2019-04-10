@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>电子栅栏</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>电子栅栏</h2>
+<p class="text">调度员可在地图上定义一个区域（可显示或隐藏区域边界），将移动用户划在该区域中。当移动用户离开这个区域时会有报警提示。GIS系统日志中也会出现相关的提示信息。调度员亦可在需要时取消移动用户的电子栅栏。</p>
+<p class="text">本节主要介绍调度员用户通过<a href="#a">地图右键操作</a>或者调度功能菜单中的<a href="#b">呼叫面板</a>两种方式添加电子栅栏信息。在呼叫面板中还可以对电子栅栏的信息进行维护。包括新增、修改和删除电子栅栏以及定位/显示电子栅栏。</p>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过地图右键添加电子栅栏具体操作步骤如下：</p>
+</div>
+<div id="div1">
+  <p>1）在地图上选中移动用户。</p>
+  <p>2）右键单击<span class="text">［应用业务/电子栅栏］</span>，弹出“选择电子栅栏样式”对话框。如下图所示。</p>
+  <p class="center"><img src="pic/Application/选择电子栅栏.png" width="450" height="323" /></p>
+  <p class="center">选择电子栅栏</p>
+  <p>3）调度员也可根据实际需要新增多个移动用户，选择“电子栅栏形状”，输入“名称”，选择“填充”颜色、“轮廓”、“透明度”以及“样式”等。此时，在窗口的右中心位置会形象地显示电子栅栏形状的样式。</p>
+  <p>4）单击＜开始在地图上画图＞。在地图上确定起始点，然后在地图上开始画被控区域形状，此时，在画图过程中，鼠标上方会有悬浮提示如何操作。</p>
+  <p>5）操作完成后，系统提示“电子栅栏添加成功”。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> 通过呼叫面板维护电子栅栏的具体操作步骤如下：</p>
+</div>
+<div id="div2">
+  <p>1）在系统操作菜单栏中单击<span class="text">［调度功能/呼叫面板］</span>，弹出“呼叫面板”对话框。</p>
+  <p>2）单击“应用业务”模块中的“电子栅栏”，弹出“电子栅栏信息维护”对话框。如下图所示。</p>
+   <p class="center"><img src="pic/Application/电子栅栏信息维护.png" width="601" height="101" /></p>
+  <p class="center">电子栅栏信息维护</p>
+  <p>3）电子栅栏列表每条记录后面都有4个选项，分别是显示、定位、修改和删除。</p>
+  <p>4）在“电子栅栏信息维护”对话框点击＜新增＞，弹出“选择电子栅栏样式”对话框。开始新增电子栅栏。</p>
+     <p class="center"><img src="pic/Application/选择电子栅栏.png" width="450" height="323" /></p>
+  <p class="center">新增电子栅栏</p>
+  <p>5）在需修改的电子栅栏右侧单击＜修改＞，或者在地图上双击电子栅栏，弹出“修改”电子栅栏对话框，用户根据实际需要修改删除用户成员，如下图所示。</p>
+    <p class="center"><img src="pic/Application/修改电子栅栏.png" width="437" height="291" /></p>
+  <p class="center">修改电子栅栏</p>
+  <p>6）在“电子栅栏信息维护”对话框的电子栅栏列表右侧单击删除图标<img src="pic/Application/删除栅栏图标.png" width="22" height="21" />，系统弹出确定删除该电子栅栏信息的确认窗口。</p>
+     <p class="center"><img src="pic/Application/删除电子栅栏.png" width="611" height="197" /></p>
+  <p class="center">删除电子栅栏</p>
+  <p>7）在“电子栅栏信息维护”对话框的电子栅栏列表右侧单击“定位”<img src="pic/Application/定位图标.PNG" width="25" height="23" />图标，地图的中心点会立即定位到该栅栏当前在地图上所处的位置，并且有特殊图标标记，实现快速定位功能，如下图所示。</p>
+      <p class="center"><img src="pic/Application/定位电子栅栏.png" width="316" height="309" /></p>
+  <p class="center">定位电子栅栏</p>
+  <p>8）在“电子栅栏信息维护”对话框的电子栅栏列表右侧，在“显示”一栏下，若勾选，则在地图上可显示该电子栅栏；若“显示”打叉，则在地图上隐藏该电子栅栏。</p>
+  <p>9）设置了电子栅栏以后，如果用户越出了电子栅栏，系统日志里会有提示信息。</p>
+        <p class="center"><img src="pic/Application/电子栅栏提示信息.png" width="305" height="125" /></p>
+  <p class="center">用户越出电子栅栏提示信息</p>
+</div>
+<p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">说明：</span></p>
+<p class="text">各图形样式确定范围的方式不一样：</p>
+<ul>
+  <li>
+    <p>矩形：在地图上确定起始点，然后点击鼠标左键不松开，移动到结束点后松开鼠标左键结束。信息包含各顶点的经纬度。</p>
+  </li>
+  <li>
+  <p>椭圆形：在地图上确定起始点，然后点击鼠标左键不松开，移动到结束点后松开鼠标左键结束。信息包含：中心经纬度及半径。</p>
+  </li>
+  <li>
+    <p>多边形：在地图上单击鼠标左键开始画图与继续画图，单击鼠标右键结束画图，开始后不得缩放地图。信息包含各顶点的经纬度。</p>
+  </li>
+</ul>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_5.5(historical trace).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_5(application service).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_5.7(lock).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

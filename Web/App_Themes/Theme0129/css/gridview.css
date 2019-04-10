@@ -1,0 +1,38 @@
+﻿
+.grid_head
+{
+    color: #4f6b72;
+    font-size: 12px;
+    font-family: 宋体;
+    background-image: url(../images/bgbj.gif);
+}
+
+.datatable
+{
+    word-break: break-all;
+    border: solid 1px #D2E2EF;
+    width: 100%;
+    padding: 0px;
+}
+.datatable td
+{
+    border: 1px solid #D2E2EF;
+    font-size: 12px;
+    font-family: 宋体;
+    color: #000000;
+    text-align: center;
+}
+.datatable tr.over td, .datatable tr:hover td
+{
+    background: #F5FAFA;
+    color: #000000;
+}
+.datatable tr th a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    font: bold 11px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+}

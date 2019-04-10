@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size:12px;
+	background-color:transparent;
+	
+}
+a{cursor:hand;}
+.STYLE1 {font-size: 12px;
+        height: 22px;
+        vertical-align:middle;
+    }
+.STYLE4 {
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+a:link {
+	font-size: 12px;
+	color: #06482a;
+	text-decoration: none;  
+
+}
+a:visited {
+	font-size: 12px;
+	color: #06482a;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: underline;
+}
+a:active {
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.STYLE7 {font-size: 12}
+
+    .style1
+    {
+        font-size: 12px;
+        height: 18px;
+    }
+
+    .style3
+    {
+        width: 20px;
+        height: 21px;
+    }
+    .style4
+    {
+        width: 20px;
+        height: 23px;
+     
+    }
+    .style5
+    {
+        width: 20px;
+        height: 20px;
+    }
+    
+  
+
+    .style6
+    {
+        width: 18px;
+        height: 17px;
+    }
+
+
+-->
+</style>
+    <link href="../CSS/smartMenu.css" rel="stylesheet" type="text/css" />
+<script>
+    function cl(str) {
+    switch (str)
+    {
+        case "cl1":
+            document.getElementById("cl1").innerHTML = "<img class='style2' src='../Images/out_windowpic/overdone.png' />[已处理]";
+            if (document.getElementById("cl2").innerHTML == "") {
+                document.getElementById("cl2").innerHTML = " <img  style=cursor:hand;  src=../Images/out_windowpic/djcl.png onclick=window.parent.lq_opencamarapc('pc');cl('cl2') />";
+            }
+            break;
+        case "cl2":
+            document.getElementById("cl2").innerHTML = "<img class='style2' src='../Images/out_windowpic/overdone.png' />[已处理]";
+            if (document.getElementById("cl3").innerHTML == "") {
+                document.getElementById("cl3").innerHTML = " <img  style=cursor:hand;  src=../Images/out_windowpic/djcl.png onclick=window.parent.lq_opencamarapc('hosipital');cl('cl3') />";
+            }
+            break;
+        case "cl3":
+            document.getElementById("cl3").innerHTML = "<img class='style2' src='../Images/out_windowpic/overdone.png' />[已处理]";
+            if (document.getElementById("cl4").innerHTML == "") {
+                document.getElementById("cl4").innerHTML = " <img  src=../Images/out_windowpic/djcl.png onclick=window.parent.lq_opencamarapc('ddhj');cl('cl4') />";
+            }
+            break;
+
+        case "cl4":
+            document.getElementById("cl4").innerHTML = "<img class='style2' src='../Images/out_windowpic/overdone.png' />[已处理]";
+            if (document.getElementById("cl5").innerHTML == "") {
+                document.getElementById("cl5").innerHTML = " <img style=cursor:hand;  src=../Images/out_windowpic/djcl.png onclick=window.parent.lq_opencamarapc('hb');cl('cl5') />";
+            }
+            break;
+        case "cl5":
+            document.getElementById("cl5").innerHTML = "<img style=cursor:hand;  class='style2' src='../Images/out_windowpic/overdone.png' />[已处理]";
+           
+            break;
+
+}
+
+
+    }
+    var imageMenuData = [
+    [{
+        text: "图片描边",
+        data: [[{
+            text: "5像素深蓝",
+            func: function () {
+                $(this).css("border", "5px solid #34538b");
+            }
+        }, {
+            text: "5像素浅蓝",
+            func: function () {
+                $(this).css("border", "5px solid #a0b3d6");
+            }
+        }, {
+            text: "5像素淡蓝",
+            func: function () {
+                $(this).css("border", "5px solid #cad5eb");
+            }
+        }]]
+    }, {
+        text: "图片内间距",
+        func: function () {
+            $(this).css("padding", "10px");
+        }
+    }, {
+        text: "图片背景色",
+        func: function () {
+            $(this).css("background-color", "#beceeb");
+        }
+    }],
+    [{
+        text: "查看原图",
+        func: function () {
+            var src = $(this).attr("src");
+            window.open(src.replace("/s512", ""));
+        }
+    }]
+];
+
+</script>
+    <script src="../JQuery/jquery-1.5.2.js" type="text/javascript"></script>
+    <script src="../JS/jquery-smartMenu4.js" type="text/javascript"></script>
+</head>
+
+<body>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15" height="32"><img src="images/tab_03.png" width="15" height="32" /></td>
+        <td width="1101" background="images/tab_05.gif"><img src="images/311.png" width="16" height="16" /> <span class="STYLE4">应急预案</span></td>
+        <td width="281" background="images/tab_05.gif" align="right">
+            <img class="style6"  style="cursor:hand;"onclick="window.parent.lq_closedemo()" onmouseover="javascript:this.src='images/close_un.png';" onmouseout="javascript:this.src='images/close.png';" src="images/close.png" /></td>
+        <td width="14"><img src="images/tab_07.png" width="14" height="32" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15" background="images/tab_12.gif">&nbsp;</td>
+        <td bgcolor="#f3ffe3"><table width="99%" border="0" align="center" cellpadding="2" 
+                cellspacing="1" bgcolor="#c0de98" >
+          <tr style="height:25px;">
+            <td  background="images/tab_14.gif" align="center" class="style1">
+                处理步骤</td>
+            <td width="80px" align="center" background="images/tab_14.gif" class="style1">
+                </td>
+          </tr>
+          <tr>
+            <td  bgcolor="#FFFFFF" align="left">
+                <div id="simple-target-1"><img  class="style4" src="../Images/out_windowpic/see_info.png"/> <a onclick="window.parent.lq_opencamarapc('camara');cl('cl1')">查看就近摄像头</a></div></td>
+            <td   align="center" bgcolor="#FFFFFF" id="cl1">
+                <img  src="../Images/out_windowpic/djcl.png" style="cursor:hand;" onclick="window.parent.lq_opencamarapc('camara');cl('cl1')" /></td>
+          </tr>
+            <tr>
+            <td  bgcolor="#FFFFFF" align="left">
+                <div id="simple-target-2"><img class="style5" src="../Images/out_windowpic/pc_position.png" /> <a onclick="window.parent.lq_opencamarapc('pc');cl('cl2')">查看附近警力分布</a></div></td>
+            <td   align="center" bgcolor="#FFFFFF" id="cl2">
+                </td>
+            </tr>
+         <tr >
+            <td  bgcolor="#FFFFFF" align="left">
+                <div id="Div1"><img class="style5" src="../Images/out_windowpic/hosipital.png" /> <a onclick="window.parent.lq_opencamarapc('hosipital');cl('cl3')">联系就近医院</a></div></td>
+            <td   align="center" bgcolor="#FFFFFF" id="cl3">
+                </td>
+            </tr>
+            <tr>
+            <td  bgcolor="#FFFFFF" align="left"> <div id="simple-target-3"><img  src="../Images/out_windowpic/outvoice.png" /> <a onclick="window.parent.lq_opencamarapc('ddhj');cl('cl4')">向就近警员发送调度指令、发起呼叫</a>&nbsp; </div></td>
+            <td   align="center" bgcolor="#FFFFFF" id="cl4"></td>
+            </tr>
+            <tr>
+            <td  bgcolor="#FFFFFF" align="left">
+                <div id="simple-target-4"><img class="style3" src="../Images/out_windowpic/hubgz.png" /> <a onclick="window.parent.lq_opencamarapc('hb');cl('cl5')">向相关派出所/分局汇报</a></div></td>
+            <td   align="center" bgcolor="#FFFFFF" id="cl5"></td>
+            </tr>
+            </table></td>
+        <td width="14" background="images/tab_16.gif">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="15"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="15" height="29"><img src="images/tab_20.png" width="15" height="29" /></td>
+        <td background="images/tab_21.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="25%"  nowrap="nowrap">&nbsp;</td>
+            <td width="75%" valign="top" class="STYLE1">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="14"><img src="images/tab_22.png" width="14" height="29" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+
+</body>
+<script >
+    $("td").smartMenu(imageMenuData);
+</script>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../time.js" type="text/javascript"></script>
+    <script src="../shorteningEvent.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var obj = document.getElementById("blockDiv");
+            var moveAcceleration = new MoveAcceleration();
+            moveAcceleration.data.obj = obj;
+            moveAcceleration.data.v0 = { x: -200, y: -100 }; //像素/s
+            moveAcceleration.data.a = { x: 100, y: 50 };
+            moveAcceleration.init();
+            var stopTime = 2000; // 200 * 1000 / 100;unit--mm
+            moveAcceleration.addEventListener("startMove", startMove, moveAcceleration);
+            moveAcceleration.addEventListener("positionSetByTime", positionSetByTime, moveAcceleration, stopTime);
+            moveAcceleration.startMove();
+        }
+        function startMove(cls) {
+            if (Math.abs(cls.data.v0.x) <= 50 && Math.abs(cls.data.v0.y) <= 50) {
+                cls.stopMove();
+            }
+        }
+        function positionSetByTime(cls, stopTime) {
+            if (cls.data.time == stopTime) {
+                cls.stopMove();
+                var movedDis = cls.formula.s.call(cls, stopTime);
+                alert("x:" + movedDis.x + ",y:" + movedDis.y);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="blockDiv" style="background-color: Red; position: absolute; left: 200px;
+        top: 200px; width: 20px; height: 20px;">
+    </div>
+</body>
+</html>

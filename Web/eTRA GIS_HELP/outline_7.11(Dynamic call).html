@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>终端GPS信息上报开关</title>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>动态重组呼叫</h2>
+<p class="text">动态重组作为补充业务的一部分，相当于一个临时通话组。</p>
+<p class="text">在配置用户登录界面，相关配置员已创建了动态组，动态组的创建和删除，请参考<a href="outline_3.6(Dynamic).html">配置用户动态组信息维护</a>。而调度用户拥有往动态组里添加组成员，并进行动态重组、解重组等权限。</p>
+<p class="text">动态重组呼叫只能由调度台发起。</p>
+<p class="text">在本节中主要介绍：</p>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#a">添加动态组成员</a></p>
+  </li>
+  <li>
+    <p><a href="#b">动态组信息维护</a></p>
+  </li>
+  <li>
+     <p><a href="#c">框选用户进行动态重组</a></p>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" />添加动态组成员</p>
+</div>
+<div id="div1">
+  <p>给动态组里添加组成员的步骤如下：</p>
+  <p>1）在系统操作菜单栏中单击<span class="text">［调度功能/呼叫面板］</span>，弹出“呼叫面板”对话框。</p>
+  <p>2）单击“呼叫业务”模块中的“动态重组”，弹出“动态重组”对话框。</p>
+    <p align="center"><img src="pic/Gps/动态重组1.png" width="581" height="362" /></p>
+  <p class="center">图1.1 动态重组对话框 </p>
+  <p>3）先在对话框里下方的”动态组名称“下拉框里选择一个动态组，然后对话框上方的”终端标识“文本框里在输入无线终端标识号，点击边上＜添加＞按扭，或者点击用户成员右边＜选择＞按扭，跳出用户列表，在列表上勾选成员。选择完成后，点击确定。如图1.2所示。</p>
+  <p align="center"><img src="pic/Gps/动态重组2.png" width="1041" height="510" /></p>
+  <p class="center">图1.2 用户选择框 </p>
+  <p>4）选择完成后，系统自动获取终端标识对应的名称、终端标识和类型，列表显示。如图1.3所示。</p>
+   <p align="center"><img src="pic/Gps/动态重组3.png" width="581" height="363" /></p>
+  <p class="center">图1.3 动态重组对话框选择用户 </p>
+  <p>5）在列表上可以单击＜删除＞按钮，删除选中的用户。设置完成后，点击“确定”按扭。会跳出重组进程提示对话框，显示动态重组执行的进程和结果。如图1.4所示： </p>
+  <p class="center"><img src="pic/Gps/动态重组进度.png" width="327" height="196" /></p>
+  <p class="center">图1.4动态重组进程提示框</p>
+  <p>6）在执行过程中，还可以点击提示框的“取消执行”按扭，取消此次动态重组。</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" />动态组信息维护</p>
+</div>
+<div id="div2">
+<p>在配置用户创建了动态组，调度用户往动态组添加了组成员以后，调度用户还需要对整个动态组进行重组、解重组等操作。步骤如下：</p>
+  <p>1）在系统操作菜单栏中单击<span class="text">［调度功能/动态信息维护］</span>，弹出下面对话框。</p>
+  <p class="center"><img src="pic/Gps/动态组信息维护1.png" width="885" height="498" /></p>
+  <p class="center">图2.1 动态组信息维护对话框 </p>
+  <p>2）在对话框的左边列表选择一个动态重名，界面右边就会列表显示此动态组的所有组成员，可以在“成员SSI”里输入ISSI号进行过滤，或者点击边上＜状态＞下拉框，再点击“查询”按扭进行过滤显示。如图2.2所示。</p>
+   <p class="center"><img src="pic/Gps/动态组信息维护.png" width="885" height="499" /></p>
+  <p class="center">图2.2 选择动态组成员</p>
+  <p>3）在对话框里勾选用户列表需要操作的用户，对未重组的用户再根据需要点击下方的“重组”按扭进行重组。对已经重组的用户可以点击下方的“解除重组”按扭进行操作，或者点击“删除成员”按扭直接把用户从此动态组里删除。 </p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" />框选用户进行动态重组</p>
+</div>
+<div id="div3">
+  <p>除了通过在呼叫面板上点击按扭进行添加动态组成员外，还可通过框选用户进行添加。<br />
+1）在地图操作工具栏中单击“<img src="pic/Map/框选图标.png" width="38" height="34" />”框选图标。</p>
+  <p><br />
+    2）在地图上框选移动用户，该区域内被选中的所有用户（包括显示和隐藏的）都将呈现在用户列表中，如图3.1所示。</p>
+  <p class="center"><img src="pic/Gps/框选用户列表.png" width="649" height="495" /></p>
+  <p class="center">图3.1 <span class="text">框选用户列表</span></p>
+  <p>3）在上图中根据需要单击＜动态重组 ＞按钮，对列表中的用户进行设置。接下去操作步骤同<a href="#a">添加动态组成员</a>。</p>
+
+</div>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<!-- InstanceBeginEditable name="Link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_7.5(multi-sel call).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_7(dispatch function).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_7.6(BS call).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

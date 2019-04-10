@@ -1,0 +1,16 @@
+﻿body{font-size:12px; margin:0px;background-color:transparent;}
+.STYLE4{color:#fff;width:70px;float:left;}
+.gridheadcss th{background-image:url(../images/tab_14.gif);height:25px;}
+#GridView1{margin-top:3px;}
+/*span{color:#FFFFFF;}*/
+.search_add{margin-left:50;float:left;width:500px;}
+.hor_ul{padding: 0;margin: 0;margin-left: 0px;list-style-type: none;color:#ffffff;}  
+.hor_ul li{float: left;margin-left:5px;height: 18px;}
+#DropDownList1,#DropDownList2,.mylist{font-family: "宋体"; font-size: 12px; BEHAVIOR: url('../../css/selectBox.htc'); cursor: hand;margin-top:-1px;border:0px;}
+
+a{color:#000000;text-decoration:none;}
+a:hover{color:#0D9F1B;text-decoration:none;}
+img{border:0px;}
+#GridView1 font{padding-left:3px;}
+#GridView1 span{color:#000000;}
+

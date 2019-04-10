@@ -1,0 +1,278 @@
+﻿.ol-popup {
+
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 210px;
+    height: 260px;/*xzj--20181224--修改高度，200改为260*/
+}
+
+    .ol-popup:after, .ol-popup:before {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .ol-popup:after {
+        border-top-color: white;
+        border-width: 10px;
+        left: 48px;
+        margin-left: -10px;
+    }
+
+    .ol-popup:before {
+        border-top-color: #cccccc;
+        border-width: 11px;
+        left: 48px;
+        margin-left: -11px;
+    }
+
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+    .ol-popup-closer:after {
+        content: "✖";
+    }
+
+.contextmenu {
+    border: 1px solid #808080;
+    position: absolute;
+    width: 100px;
+    height: auto;
+    z-index: 9;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+}
+
+    .contextmenu ul {
+        width: 100%;
+        padding-right: 25px;
+        list-style: none;
+    }
+
+    .contextmenu > ul > li {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+        height: 20px;
+        background:url("../../Images/triangle-arrow-r.png") no-repeat 85px 6px;
+    }
+
+        .contextmenu > ul > li > a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .contextmenu > ul > li:hover {
+            background-color: #aecff7;
+        }
+            /*-----------------------------xzj--2018/4/13-------------------------------------------*/
+            .contextmenu > ul > li:hover > ul {
+                background-color: #fff;
+                display: block;
+            }
+
+/*--xzj--20181122--添加英文用的样式*/
+.en_contextmenu
+{
+    border: 1px solid #808080;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    z-index: 9;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+}
+.en_contextmenu ul
+{
+    /*width: 100%;
+    padding-right: 25px;*/
+    list-style: none;
+}
+.en_contextmenu > ul > li
+{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    height: 20px;
+    background: url("../../Images/triangle-arrow-r.png") no-repeat 135px 6px;
+}
+.en_contextmenu > ul > li > a
+{
+    color: #000;
+    text-decoration: none;
+}
+.en_contextmenu > ul > li:hover
+{
+    background-color: #aecff7;
+}
+.en_contextmenu > ul > li:hover > ul
+{
+    background-color: #fff;
+    display: block;
+}
+.en_sub_menu
+{
+    display: none;
+    position: relative;
+    top: -25px;
+    left: 150px;
+}
+ /*--xzj--20181122--添加英文用的样式*/
+.normal_menu, .call_menu
+{
+    border: 1px solid #808080;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+}
+
+.sub_menu {
+    display: none;
+    position:relative;
+    top: -25px;
+    left: 100px;
+}
+
+    .normal_menu li  {
+       /*width: 75px;--xzj--20181122--原来的为注释的
+        text-align: left;
+        padding: 5px 25px;
+        height: 20px;
+        line-height: 20px;
+        background:url("../../Images/tree0.png") no-repeat 5px 6px;*/
+    width: 125px;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    background: url("../../Images/tree0.png") no-repeat 5px 6px;
+    }
+
+    .en_normal_menu
+    { /*--xzj--20181122--添加英文用的样式*/
+        border: 1px solid #808080;
+        position: absolute;
+        background-color: #ffffff;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+    }
+    
+        .en_normal_menu li /*--xzj--20181122--添加英文用的样式*/
+        {
+            width: 200px;
+            text-align: left;
+            height: 30px;
+            line-height: 30px;
+            background: url("../../Images/tree0.png") no-repeat 5px 6px;
+        }
+    
+            .en_normal_menu li:hover
+            { /*--xzj--20181122--添加英文用的样式*/
+                background-color: #aecff7;
+            }
+    
+            .en_normal_menu li a
+            { /*--xzj--20181122--添加英文用的样式*/
+                color: #000;
+                text-decoration: none;
+                padding-left: 25px;
+                display: block;
+            }
+    
+    .call_menu li
+    {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+        height: 15px;
+    }
+        .normal_menu li:hover, .call_menu li:hover {
+            background-color: #aecff7;
+        }
+
+/*.normal_menu li a, .call_menu li a {--xzj--20181122--注释原来的,改为后面两个分开的样式
+            color: #000;
+            text-decoration: none;
+        }*/
+
+        .normal_menu li a
+        {
+            color: #000;
+            text-decoration: none;
+            padding-left: 25px;
+            display: block;
+        }
+        
+        .call_menu li a
+        {
+            color: #000;
+            text-decoration: none;
+        }
+
+    .waves {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        margin-left: -12px;
+        margin-top: -12px;
+        border-radius: 50%;
+        -webkit-backface-visibility: hidden;
+        pointer-events: none;
+        /*z-index:2;*/
+    }
+
+    .waves:before {
+        position: absolute;
+        background: #FF897B;
+        margin-left: -12px;
+        margin-top: -12px;
+        width: 50px;
+        height: 50px;
+        content: "";
+        display: block;
+        border-radius: 50%;
+        -webkit-backface-visibility: hidden;
+        animation: wave-animate 1s infinite ease-out;
+    }
+
+    .waves:after {
+        position: absolute;
+        background: #FD3007;
+        margin-left: -12px;
+        margin-top: -12px;
+        width: 50px;
+        height: 50px;
+        content: "";
+        display: block;
+        border-radius: 50%;
+        -webkit-backface-visibility: hidden;
+        opacity: 0;
+        animation: wave-animate 1s 0.5s infinite ease-out;
+    }
+
+    @keyframes wave-animate {
+     0% {
+        transform: scale(0);
+        opacity: 1;
+        transform-origin: center;
+     }
+
+     100% {
+        transform: scale(3);
+        opacity: 0;
+        transform-origin: center;
+     }
+    }

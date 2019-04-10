@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/text.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Login/Logout</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="main.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+function isHidden(odiv){ 
+ var vdiv = document.getElementById(odiv); 
+ vdiv.style.display = (vdiv.style.display == 'none')?'block':'none'; 
+ }
+</script>
+<style type="text/css">
+<!--
+body {
+	background-color: #F0F0F0;
+}
+-->
+</style></head>
+
+<body>
+<a name="top" id="top"></a><p align="right"><img src="pic/logo.png" width="138" height="64" /></p>
+<!-- InstanceBeginEditable name="Title" -->
+<h2>Login/Logout</h2>
+<ul class="xiangmuliebiao">
+  <li>
+    <p><a href="#a">Login</a></p>
+  </li>
+  <li>
+    <p><a href="#b">Logout</a></p>
+  </li>
+  <li><a href="#c">Web Setting</a> </li>
+</ul>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="DIV" -->
+<div style="cursor:hand" onclick="isHidden('div1')">
+  <p class="expanding"><a name="a" id="a"></a><img src="pic/Snap2.png" width="15" height="17" /> Login </p>
+</div>
+<div id="div1">
+  <p>The  system divides the dispatchers into configuration users and dispatch users. Configuration  users can perform the basis information maintenance, marshaling information maintenance,  log configuration and map operation. Dispatch users can perform all the scheduling  functions.</p>
+  <p>The  steps of logging into the system are as follows:</p>
+  <p>1)  Enter the URL of the  dispatch console in IE browser and press Enter. The  login interface pops up, shown in Figure 1.</p>
+  <p class="center"><img src="pic/system/login.png" width="515" height="364" /></p>
+  <p class="center">Figure 1. Login interface</p>
+  <p>2)  Select the user type, and enter the username and  password. Click &lt;Login&gt;.</p>
+  <p class="text">3) The system will display the operation interface, shown in Figure 2 and Figure 3.</p>
+  <p class="center"><img src="pic/system/config user operation interface.png" width="941" height="615" /></p>
+  <p class="center">Figure 2. Configuration user operation interface</p>
+  <p class="center"><img src="pic/system/dispatch user operation interface.png" width="941" height="778" /></p>
+  <p class="center">Figure 3. Dispatch user operation interface</p>
+  <p class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">Note:</span></p>
+  <ul>
+    <li>
+      <p>The username  and password are not more than a string of  20 ASCII characters.</p>
+    </li>
+    <li>
+      <p>Different username has different operation  permissions.</p>
+    </li>
+    <li>
+      <p>Network  failure or incorrect username/password may result in login failure.</p>
+    </li>
+  </ul>
+</div>
+<div style="cursor:hand" onclick="isHidden('div2')">
+  <p class="expanding"><a name="b" id="b"></a><img src="pic/Snap2.png" width="15" height="17" /> Logout </p>
+</div>
+<div id="div2">
+  <p>Click <img src="pic/system/logout.png" width="68" height="26" /> in the  menu bar to exit the system.</p>
+  <p><span class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">Note:</span></span></p>
+  <p>If not all the resources are released during logout,  the exit will fail.</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div3')">
+  <p class="expanding"><a name="c" id="c"></a><img src="pic/Snap2.png" width="15" height="17" /> Set the Site as a Trusted Site</p>
+</div>
+<div id="div3">
+  <p>After the installation is  complete, we need to set the login site of  the GIS system as a trusted site. Otherwise,  it may be intercepted.</p>
+  <p>The steps are as follows:</p>
+  <p>1)  Enter  the IP address in the IE address bar in the format of http://GIS IP address:port/login.aspx, such as http://10.8.52.241:8080/login.aspx. It will jump to the login interface of the GIS system.</p>
+  <p><span class="text"><img src="pic/chm.png" width="90" height="59" /><span class="black">Note:</span></span></p>
+  <p>The port is  variable according to the practical applications.</p>
+  <p>2) Click  [Tools/Internet Options] to open the Options dialog box.</p>
+  <p>3) Click  the “Security” tab, and a dialog box pops up.</p>
+  <p>4)  Click  “Trusted Sites”, and then click “Default Level&quot;.  Set the security level to &quot;Low”.</p>
+  <p>5) Click  &quot;Sites…&quot;, and a dialog box pops up.</p>
+  <p>6) Cancel the selection of &quot;Require server  verification (https:) for all sites in this zone&quot;, and click &lt;Add&gt;.</p>
+  <p>7) After adding the website, click &lt;OK&gt;, then click  &lt;Apply&gt; &lt;OK&gt; in the Internet Options dialog box.</p>
+  <p>8) Restart  the IE browser to take the configuration into effect.</p>
+</div>
+<div style="cursor:hand" onclick="isHidden('div4')">
+  <p class="expanding"><a name="d" id="d"></a><img src="pic/Snap2.png" width="15" height="17" /> Close the Compatibility View</p>
+</div>
+<div id="div4">
+  <p>The Compatibility View may lead to some script  errors and features are not  available. Therefore, we need to close the Compatibility  View.</p>
+  <p>The steps are as follows:</p>
+  <p>1) Click  [Tools/Compatibility View Settings]. The “Compatibility View  Settings” dialog box pops up.</p>
+  <p>2) Cancel the selection of “Display Intranet sites in Compatibility View”.</p>
+  <p>3)   Click  &lt;Close&gt;.</p>
+</div>
+<!-- InstanceEndEditable -->
+<p class="text">&nbsp;</p>
+<!-- InstanceBeginEditable name="link" -->
+<table width="447" border="0" align="center" cellspacing="20">
+  <tr>
+    <td width="110"><div align="center"><a href="outline_1.2(Product Function).html"><img src="pic/top.gif" width="60" height="49" border="0" /></a></div></td>
+    <td width="141"><div align="center"><a href="outline_1(eTRA GIS Dispatching System).html"><img src="pic/mulu.gif" width="49" height="60" border="0" /></a></div></td>
+    <td width="110"><div align="center"><a href="outline_1.5(Main Interface).html"><img src="pic/next.gif" width="60" height="49" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center"><span class="version">Copyright &copy; 2012 Eastcom, Inc. All rights reserved.</span></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

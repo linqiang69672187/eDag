@@ -1,0 +1,36 @@
+﻿body
+{
+    background-color: Gray;
+    margin: 0px;
+    font-size: 12px;
+}
+.toolbar_div
+{
+    background-color: Blue;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.ver_ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    left: 45px;
+    top: 21px;
+}
+.ver_ul li
+{
+}
+.hor_ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.hor_ul li
+{
+    background-color: Red;
+    float: left;
+}
